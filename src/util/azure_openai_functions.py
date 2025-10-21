@@ -38,15 +38,26 @@ class OpenAIHandler:
         """
         # Get API key directly from environment variables
         api_key = os.getenv("AZURE_OPENAI_API_KEY")
+        azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
         
         if not api_key:
             raise ValueError("AZURE_OPENAI_API_KEY environment variable is not set")
         
-        return openai.AzureOpenAI(
-            api_key=api_key,  
-            api_version="2024-06-01",
-            azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT")
-        )
+        if not azure_endpoint:
+            raise ValueError("AZURE_OPENAI_ENDPOINT environment variable is not set")
+        
+        print(f"Connecting to Azure OpenAI endpoint: {azure_endpoint}")
+        print(f"Using API key: {api_key[:10]}...")
+        
+        try:
+            return openai.AzureOpenAI(
+                api_key=api_key,  
+                api_version="2024-12-01-preview",
+                azure_endpoint=azure_endpoint
+            )
+        except Exception as e:
+            print(f"Error creating Azure OpenAI client: {e}")
+            raise
 
     def transcribe_audio(self, audio_path, language):
 
@@ -69,13 +80,20 @@ class OpenAIHandler:
 
         # If any file doesn't exist, proceed with transcription
         # Transcription request
-        with open(audio_path, "rb") as audio_file:
-            transcription = self.client.audio.transcriptions.create(
-                model=self.model_name_transcription,
-                language=language,
-                file=audio_file,
-                response_format="verbose_json",
-            )
+        print(f"Using transcription model: {self.model_name_transcription}")
+        print(f"Transcribing file: {audio_path}")
+        
+        try:
+            with open(audio_path, "rb") as audio_file:
+                transcription = self.client.audio.transcriptions.create(
+                    model=self.model_name_transcription,
+                    file=audio_file,
+                    response_format="verbose_json",
+                )
+        except Exception as e:
+            print(f"Error during transcription: {e}")
+            print(f"Error type: {type(e)}")
+            raise
 
         # Convert the transcription object to a dictionary
         transcription_dict = transcription.to_dict()
@@ -322,6 +340,68 @@ class OpenAIHandler:
         except Exception as e:
             print(f"An error occurred while creating manual based on multiple files: {e}")
             return None
+
+    def chat_with_gpt(self, chat_history):
+        """
+        Chat with GPT-4o using the chat history.
+        Streams the response back to the UI.
+        """
+        print("chat_with_gpt function is used")
+        
+        try:
+            # Prepare messages for the API
+            messages = []
+            for message in chat_history:
+                messages.append({
+                    "role": message["role"],
+                    "content": message["content"]
+                })
+            
+            SessionManager.update_activity()
+            response = self.client.chat.completions.create(
+                model=self.model_name_gpt,
+                messages=messages,
+                max_tokens=4096,
+                temperature=0.7,
+                top_p=1.0,
+                n=1,
+                stream=True,
+                stream_options={"include_usage": True}
+            )
+            
+            full_response = ""
+            usage_info = None
+
+            for chunk in response:
+                # Check if this chunk contains usage information (final chunk)
+                if hasattr(chunk, 'usage') and chunk.usage is not None:
+                    usage_info = chunk.usage
+                    print(f"Token Usage: {usage_info.prompt_tokens}")
+                    print(f"Completion: {usage_info.completion_tokens}")
+                    self.logging_handler.log_usage(
+                        model_name=self.model_name_gpt, 
+                        log_usage_amount=usage_info.prompt_tokens, 
+                        log_usage_unit="Input tokens"
+                    )
+                    self.logging_handler.log_usage(
+                        model_name=self.model_name_gpt, 
+                        log_usage_amount=usage_info.completion_tokens, 
+                        log_usage_unit="Output tokens"
+                    )
+                    
+                    SessionManager.update_activity()
+                    continue  # Skip processing this chunk as content since it's the usage chunk
+                
+                # Process content chunks
+                if chunk.choices and chunk.choices[0].delta.content is not None:
+                    content = chunk.choices[0].delta.content
+                    full_response += content
+                    yield content
+            
+            return full_response
+        except Exception as e:
+            print(f"An error occurred during chat: {e}")
+            yield f"Sorry, I encountered an error: {str(e)}"
     
       
     def rewrite_to_manual(self, extracted_text, output_language):
