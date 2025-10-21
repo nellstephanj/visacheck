@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.my_virtual_env/
+myenv
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Pytest
+.cache/
+
+# Ignore files in data/processed and data/raw
+data
+
+# Ignore resource files - They take too much space
+res/demo/
+res/video/
+
+# Environment file
+.env
+
+# AI tools
+.claude/
+.claudecode/
+claude-code.log
+claude_code_config.json
+CLAUDE.md
+settings.local.json
+.github/copilot/
+.copilot/
+copilot-chat.json
+.aws-codewhisperer/
+codewhisperer/
+
+
+

@@ -1,0 +1,20 @@
+[global]
+disableWidgetStateDuplicationWarning = true
+showWarningOnDirectExecution = false
+
+[theme]
+base="light"
+primaryColor="#0070AD"
+secondaryBackgroundColor="#f3f3f3"
+textColor="#0070AD"
+
+[server]
+# Security settings
+enableCORS = true
+enableXsrfProtection = true
+maxUploadSize = 1000
+baseUrlPath = ""
+
+[client]
+toolbarMode = "minimal"
+#showErrorDetails = "none"
