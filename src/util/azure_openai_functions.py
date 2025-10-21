@@ -14,11 +14,8 @@ class OpenAIHandler:
     def __init__(self, azure_handler: AzureHandler, logging_handler: LoggingHandler, settings: Settings):
         self.settings = settings
         self.logging_handler = logging_handler
-        # Use cached OpenAI client for performance - pass primitive values for caching
-        self.client = self._get_cached_openai_client(
-            azure_handler.key_vault_url,
-            azure_handler.connection_string
-        )
+        # Use cached OpenAI client for performance
+        self.client = self._get_cached_openai_client()
         
         # Initialize message templates
         self.system_messages = {
@@ -34,18 +31,16 @@ class OpenAIHandler:
     
     @staticmethod
     @st.cache_resource  # Cache the expensive OpenAI client creation
-    def _get_cached_openai_client(key_vault_url: str, connection_string: str):
+    def _get_cached_openai_client():
         """
-        Create and cache OpenAI client. This avoids repeated Key Vault calls.
+        Create and cache OpenAI client. Uses API key directly from environment variables.
         Cached across all users since API configuration is the same.
-        Uses primitive string arguments that can be hashed by Streamlit.
         """
-        # Create temporary AzureHandler for Key Vault access
-        from util.azure_functions import AzureHandler
-        temp_azure_handler = AzureHandler(connection_string, key_vault_url)
+        # Get API key directly from environment variables
+        api_key = os.getenv("AZURE_OPENAI_API_KEY")
         
-        API_secret_name = os.getenv("API_SECRET_NAME", "")
-        api_key = temp_azure_handler.get_secret_from_key_vault(API_secret_name)
+        if not api_key:
+            raise ValueError("AZURE_OPENAI_API_KEY environment variable is not set")
         
         return openai.AzureOpenAI(
             api_key=api_key,  

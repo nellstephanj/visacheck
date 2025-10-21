@@ -3,16 +3,13 @@ import streamlit as st
 from azure.data.tables import TableServiceClient, UpdateMode
 from azure.core.exceptions import ResourceNotFoundError, AzureError, ResourceExistsError
 from typing import Optional, Dict, Any
-from azure.identity import DefaultAzureCredential
-from azure.keyvault.secrets import SecretClient
 import os
 
 logger = logging.getLogger(__name__)
 
 class AzureHandler:
-    def __init__(self, connection_string: str, key_vault_url: str):
+    def __init__(self, connection_string: str):
         self.connection_string = connection_string
-        self.key_vault_url = key_vault_url
         self.table_clients = {}  # Cache for table clients
 
     def _get_table_client(self, table_name: str) -> TableServiceClient:
@@ -88,30 +85,6 @@ class AzureHandler:
         table_client: TableServiceClient = self._get_table_client(table_name)
         table_client.delete_entity(partition_key=partition_key, row_key=row_key)
     
-    def get_secret_from_key_vault(self, secret_name):
-        """Get secret from Key Vault with caching for performance"""
-        return self._get_cached_secret(self.key_vault_url, secret_name)
-    
-    @staticmethod
-    @st.cache_resource  # Cache secrets across all users (same secrets for everyone)
-    def _get_cached_secret(key_vault_url: str, secret_name: str):
-        """
-        Cache Key Vault secrets for performance. Secrets are shared across users.
-        Only fetches from Key Vault once per secret per app session.
-        """
-        # Create a credential object using managed identity
-        if os.environ.get("AZURE_CLIENT_ID"):
-            credential = DefaultAzureCredential(managed_identity_client_id=os.environ["AZURE_CLIENT_ID"])
-        else:
-            credential = DefaultAzureCredential()
-
-        # Create a SecretClient to interact with the key vault  
-        secret_client = SecretClient(vault_url=key_vault_url, credential=credential)
-
-        # Retrieve the password from the key vault
-        retrieved_secret = secret_client.get_secret(secret_name)
-
-        return retrieved_secret.value
     
     def check_table_exists(self, table_name: str) -> bool:
         """Checks if a table exists in Azure Table Storage."""

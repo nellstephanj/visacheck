@@ -261,22 +261,18 @@ def main():
     # Load environment variables from .env file
     load_dotenv()
     table_name_users = os.getenv("TABLE_NAME_USERS")
-    key_vault_url = os.getenv("KEY_VAULT_URL")
 
     # Initialize the AzureHandler
     connection_string = os.getenv("AZURE_CONNECTION_STRING")
     if connection_string is None:
         st.error("Unable to retrieve connection string")
         return
-    if key_vault_url is None:
-        st.error("Unable to retrieve key vault URL")
-        return
     if table_name_users is None:
         st.error("Unable to retrieve users table name")
         return
 
     # Create Azure handler (internal caching handles performance)
-    azure_handler = AzureHandler(connection_string, key_vault_url)
+    azure_handler = AzureHandler(connection_string)
     user_handler = UserHandler(azure_handler, table_name_users)
 
     # Initialize singleton background cleanup scheduler
