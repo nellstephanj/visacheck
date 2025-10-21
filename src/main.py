@@ -240,20 +240,13 @@ def main_page(azure_handler: AzureHandler, table_name: str):
     # Help and support section at the bottom - outside the container so it's always visible
     st.divider()
     
-    # Create three columns for the buttons
-    col1, col2, col3 = st.columns(3)
+    # Create two columns for the buttons
+    col1, col2 = st.columns(2)
     
     with col1:
-        with st.popover("📚 Documentation", width="stretch"):
-            help_text_path = os.path.join(settings.RES_HELP_DIR, 'help_text.md')
-            with open(help_text_path, 'r') as f:
-                help_content = f.read()
-            st.markdown(help_content)
-    
-    with col2:
         st.link_button("✉️ Mail Support", "mailto:support@visacheck.com", type="secondary", width="stretch")
     
-    with col3:
+    with col2:
         st.link_button("🐛 Report a Bug", "mailto:support@visacheck.com", type="secondary", width="stretch")
 
 
