@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000041",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Melbourne FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Taylor",
+  "surname": "Scott",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "675 Station Rd",
+    "unit_number": "3",
+    "postal_code": "2670",
+    "city": "Brisbane",
+    "state": "WA",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1967,
+    "month": 12,
+    "day": 19
+  },
+  "place_of_birth": {
+    "city": "Brisbane",
+    "state": "WA",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Chef"
+}

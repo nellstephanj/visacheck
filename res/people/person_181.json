@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000181",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Brisbane FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": " Rowan",
+  "surname": "Wilson",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "5 Station Rd",
+    "unit_number": "A",
+    "postal_code": "8653",
+    "city": "Adelaide",
+    "state": "NSW",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1941,
+    "month": 2,
+    "day": 20
+  },
+  "place_of_birth": {
+    "city": "Canberra",
+    "state": "NSW",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Temporary Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Student"
+}

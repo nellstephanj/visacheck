@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000101",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Sydney FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Drew",
+  "surname": "Wilson",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "636 High St",
+    "unit_number": "",
+    "postal_code": "5772",
+    "city": "Melbourne",
+    "state": "NT",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1988,
+    "month": 12,
+    "day": 22
+  },
+  "place_of_birth": {
+    "city": "Snowy Plain",
+    "state": "NT",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Temporary Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000143",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Brisbane FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Drew",
+  "surname": "Smith",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "470 Main St",
+    "unit_number": "3",
+    "postal_code": "8640",
+    "city": "Perth",
+    "state": "TAS",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1997,
+    "month": 4,
+    "day": 12
+  },
+  "place_of_birth": {
+    "city": "Hobart",
+    "state": "TAS",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Retail Worker"
+}

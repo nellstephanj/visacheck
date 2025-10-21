@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000029",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Brisbane FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Skyler",
+  "surname": "Lee",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "782 Station Rd",
+    "unit_number": "A",
+    "postal_code": "3998",
+    "city": "Canberra",
+    "state": "WA",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1951,
+    "month": 10,
+    "day": 4
+  },
+  "place_of_birth": {
+    "city": "Darwin",
+    "state": "WA",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Retail Worker"
+}

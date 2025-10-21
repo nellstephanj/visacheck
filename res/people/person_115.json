@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000115",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Brisbane FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Jamie",
+  "surname": "Baker",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "531 High St",
+    "unit_number": "",
+    "postal_code": "7182",
+    "city": "Snowy Plain",
+    "state": "NT",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 2004,
+    "month": 9,
+    "day": 1
+  },
+  "place_of_birth": {
+    "city": "Canberra",
+    "state": "NT",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Retail Worker"
+}

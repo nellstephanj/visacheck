@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000103",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Brisbane FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Riley",
+  "surname": "Young",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "903 Eagles Road",
+    "unit_number": "3",
+    "postal_code": "6029",
+    "city": "Brisbane",
+    "state": "ACT",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1993,
+    "month": 10,
+    "day": 14
+  },
+  "place_of_birth": {
+    "city": "Canberra",
+    "state": "ACT",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Temporary Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Manager"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000148",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-21",
+  "intake_location": "Brisbane FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Blake",
+  "surname": "Baker",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "806 Main St",
+    "unit_number": "1",
+    "postal_code": "4722",
+    "city": "Darwin",
+    "state": "VIC",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 2017,
+    "month": 9,
+    "day": 16
+  },
+  "place_of_birth": {
+    "city": "Canberra",
+    "state": "VIC",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Teacher"
+}

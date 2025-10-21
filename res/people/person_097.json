@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000097",
+  "case_type": "Work Visa",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-21",
+  "intake_location": "Sydney FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Sam",
+  "surname": "Johnson",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "547 High St",
+    "unit_number": "3",
+    "postal_code": "8318",
+    "city": "Melbourne",
+    "state": "ACT",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1961,
+    "month": 5,
+    "day": 9
+  },
+  "place_of_birth": {
+    "city": "Mount Reaper",
+    "state": "ACT",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Temporary Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Teacher"
+}

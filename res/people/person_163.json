@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000163",
+  "case_type": "Work Visa",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Sydney FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Alex",
+  "surname": "Lee",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "706 Station Rd",
+    "unit_number": "3",
+    "postal_code": "1700",
+    "city": "Sydney",
+    "state": "QLD",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1984,
+    "month": 6,
+    "day": 5
+  },
+  "place_of_birth": {
+    "city": "Darwin",
+    "state": "QLD",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Permanent Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Unemployed"
+}

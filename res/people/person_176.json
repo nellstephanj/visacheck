@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000176",
+  "case_type": "Work Visa",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Melbourne FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Charlie",
+  "surname": "Wilson",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "307 High St",
+    "unit_number": "2",
+    "postal_code": "2356",
+    "city": "Hobart",
+    "state": "TAS",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1975,
+    "month": 5,
+    "day": 1
+  },
+  "place_of_birth": {
+    "city": "Brisbane",
+    "state": "TAS",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Student"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000087",
+  "case_type": "Work Visa",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Melbourne FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Blake",
+  "surname": "Lee",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "866 Main St",
+    "unit_number": "3",
+    "postal_code": "8189",
+    "city": "Canberra",
+    "state": "NT",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1961,
+    "month": 10,
+    "day": 6
+  },
+  "place_of_birth": {
+    "city": "Perth",
+    "state": "NT",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Temporary Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Consultant"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000171",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Brisbane FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Alex",
+  "surname": "Adams",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "446 Eagles Road",
+    "unit_number": "A",
+    "postal_code": "6399",
+    "city": "Snowy Plain",
+    "state": "TAS",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 2013,
+    "month": 6,
+    "day": 19
+  },
+  "place_of_birth": {
+    "city": "Brisbane",
+    "state": "TAS",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Temporary Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

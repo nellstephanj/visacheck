@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000180",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-21",
+  "intake_location": "Sydney FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Sasha",
+  "surname": "Brown",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "872 Eagles Road",
+    "unit_number": "3",
+    "postal_code": "3380",
+    "city": "Mount Reaper",
+    "state": "ACT",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1989,
+    "month": 2,
+    "day": 8
+  },
+  "place_of_birth": {
+    "city": "Snowy Plain",
+    "state": "ACT",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Consultant"
+}

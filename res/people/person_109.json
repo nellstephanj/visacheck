@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000109",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Brisbane FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Morgan",
+  "surname": "Martin",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "305 Eagles Road",
+    "unit_number": "",
+    "postal_code": "6478",
+    "city": "Sydney",
+    "state": "VIC",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 2007,
+    "month": 10,
+    "day": 6
+  },
+  "place_of_birth": {
+    "city": "Hobart",
+    "state": "VIC",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Temporary Resident",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Chef"
+}

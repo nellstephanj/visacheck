@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000014",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-21",
+  "intake_location": "Melbourne FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Charlie",
+  "surname": "Young",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "211 Main St",
+    "unit_number": "2",
+    "postal_code": "3404",
+    "city": "Sydney",
+    "state": "SA",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1970,
+    "month": 2,
+    "day": 9
+  },
+  "place_of_birth": {
+    "city": "Darwin",
+    "state": "SA",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Permanent Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Chef"
+}

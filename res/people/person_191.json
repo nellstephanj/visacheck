@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000191",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Brisbane FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Cameron",
+  "surname": "Wilson",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "708 Main St",
+    "unit_number": "",
+    "postal_code": "7606",
+    "city": "Snowy Plain",
+    "state": "ACT",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1944,
+    "month": 9,
+    "day": 10
+  },
+  "place_of_birth": {
+    "city": "Perth",
+    "state": "ACT",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Chef"
+}

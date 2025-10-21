@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000117",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Melbourne FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": " Rowan",
+  "surname": "King",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "457 Eagles Road",
+    "unit_number": "A",
+    "postal_code": "7428",
+    "city": "Brisbane",
+    "state": "NT",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1994,
+    "month": 7,
+    "day": 21
+  },
+  "place_of_birth": {
+    "city": "Mount Reaper",
+    "state": "NT",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}

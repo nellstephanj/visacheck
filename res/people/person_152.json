@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000152",
+  "case_type": "Work Visa",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-21",
+  "intake_location": "Melbourne FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Sasha",
+  "surname": "Clark",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "975 Station Rd",
+    "unit_number": "3",
+    "postal_code": "6301",
+    "city": "Hobart",
+    "state": "NSW",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 2014,
+    "month": 4,
+    "day": 9
+  },
+  "place_of_birth": {
+    "city": "Darwin",
+    "state": "NSW",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Permanent Resident",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Teacher"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000129",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-21",
+  "intake_location": "Melbourne FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Cameron",
+  "surname": "Baker",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "945 Main St",
+    "unit_number": "",
+    "postal_code": "1712",
+    "city": "Hobart",
+    "state": "NSW",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1957,
+    "month": 12,
+    "day": 11
+  },
+  "place_of_birth": {
+    "city": "Adelaide",
+    "state": "NSW",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Student"
+}

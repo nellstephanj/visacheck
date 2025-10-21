@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000136",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-21",
+  "intake_location": "Melbourne FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Lee",
+  "surname": "King",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "839 Main St",
+    "unit_number": "3",
+    "postal_code": "7051",
+    "city": "Melbourne",
+    "state": "WA",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1962,
+    "month": 9,
+    "day": 16
+  },
+  "place_of_birth": {
+    "city": "Melbourne",
+    "state": "WA",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Temporary Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Teacher"
+}

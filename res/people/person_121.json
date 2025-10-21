@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000121",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Brisbane FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Sam",
+  "surname": "Taylor",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "875 Eagles Road",
+    "unit_number": "1",
+    "postal_code": "3944",
+    "city": "Melbourne",
+    "state": "WA",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1969,
+    "month": 5,
+    "day": 1
+  },
+  "place_of_birth": {
+    "city": "Snowy Plain",
+    "state": "WA",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Permanent Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Developer"
+}

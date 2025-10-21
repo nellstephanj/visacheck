@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000055",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Melbourne FO",
+  "applicant_is_minor": true,
+  "urgent": true,
+  "given_names": "Morgan",
+  "surname": "Wilson",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "462 High St",
+    "unit_number": "3",
+    "postal_code": "2241",
+    "city": "Hobart",
+    "state": "ACT",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1997,
+    "month": 10,
+    "day": 27
+  },
+  "place_of_birth": {
+    "city": "Mount Reaper",
+    "state": "ACT",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Temporary Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Student"
+}

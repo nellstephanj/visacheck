@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000157",
+  "case_type": "Work Visa",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Brisbane FO",
+  "applicant_is_minor": false,
+  "urgent": true,
+  "given_names": "Taylor",
+  "surname": "Johnson",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "722 High St",
+    "unit_number": "",
+    "postal_code": "2280",
+    "city": "Brisbane",
+    "state": "VIC",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1993,
+    "month": 5,
+    "day": 27
+  },
+  "place_of_birth": {
+    "city": "Brisbane",
+    "state": "VIC",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Temporary Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Retail Worker"
+}

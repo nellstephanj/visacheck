@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000144",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Melbourne FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Drew",
+  "surname": "Baker",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "297 Station Rd",
+    "unit_number": "1",
+    "postal_code": "8773",
+    "city": "Snowy Plain",
+    "state": "QLD",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1951,
+    "month": 12,
+    "day": 21
+  },
+  "place_of_birth": {
+    "city": "Melbourne",
+    "state": "QLD",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Temporary Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Unemployed"
+}

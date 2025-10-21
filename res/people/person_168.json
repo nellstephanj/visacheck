@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000168",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-21",
+  "intake_location": "Sydney FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Robin",
+  "surname": "Wright",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "788 High St",
+    "unit_number": "3",
+    "postal_code": "4729",
+    "city": "Snowy Plain",
+    "state": "QLD",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1973,
+    "month": 1,
+    "day": 3
+  },
+  "place_of_birth": {
+    "city": "Sydney",
+    "state": "QLD",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}

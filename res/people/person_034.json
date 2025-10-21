@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000034",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Sydney FO",
+  "applicant_is_minor": true,
+  "urgent": true,
+  "given_names": "Avery",
+  "surname": "Wilson",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "661 High St",
+    "unit_number": "A",
+    "postal_code": "1576",
+    "city": "Darwin",
+    "state": "QLD",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1966,
+    "month": 4,
+    "day": 5
+  },
+  "place_of_birth": {
+    "city": "Perth",
+    "state": "QLD",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Permanent Resident",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Manager"
+}
