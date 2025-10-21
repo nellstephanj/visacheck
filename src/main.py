@@ -306,6 +306,7 @@ def main():
     from pages.password import password_page
     from pages.intake import intake_page
     from pages.matching import matching_page
+    from pages.active_applications import active_applications_page
     
     if not is_authenticated:
         # Not authenticated - only login page
@@ -317,6 +318,7 @@ def main():
         # Authenticated - main pages
         pages = [
             st.Page(main_page_wrapper, title="VisaCheck", icon="📄"),
+            st.Page(active_applications_page, title="Active Applications", icon="📊"),
             st.Page(intake_page, title="Visa Intake", icon="📋"),
             st.Page(matching_page, title="EU-VIS Matching", icon="🔍")
         ]
