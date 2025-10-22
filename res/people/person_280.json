@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000280",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Bangalore FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Amit",
+  "surname": "Gupta",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "1944 Jefferson Cross",
+    "unit_number": "",
+    "postal_code": "382346",
+    "city": "Thane",
+    "state": "Maharashtra",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1997,
+    "month": 6,
+    "day": 30
+  },
+  "place_of_birth": {
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Retail Worker"
+}

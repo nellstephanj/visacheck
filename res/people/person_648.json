@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000648",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Blida FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Zahra",
+  "surname": "Rahmani",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Algeria",
+  "address": {
+    "street_number": "3397 Oak Avenue",
+    "unit_number": "",
+    "postal_code": "14462",
+    "city": "Tlemcen",
+    "state": "Tlemcen Province",
+    "country": "Algeria"
+  },
+  "date_of_birth": {
+    "year": 2001,
+    "month": 7,
+    "day": 3
+  },
+  "place_of_birth": {
+    "city": "Tlemcen",
+    "state": "Tlemcen Province",
+    "country": "Algeria"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Chef"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000667",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Blida FO",
+  "applicant_is_minor": true,
+  "urgent": true,
+  "given_names": "Mohammed",
+  "surname": "Chabane",
+  "variation_in_birth_certificate": true,
+  "gender": "Other",
+  "country_of_nationality": "Algeria",
+  "address": {
+    "street_number": "7734 Main Boulevard",
+    "unit_number": "",
+    "postal_code": "78366",
+    "city": "Djelfa",
+    "state": "Djelfa Province",
+    "country": "Algeria"
+  },
+  "date_of_birth": {
+    "year": 1959,
+    "month": 2,
+    "day": 25
+  },
+  "place_of_birth": {
+    "city": "Algiers",
+    "state": "Algiers Province",
+    "country": "Algeria"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Chef"
+}

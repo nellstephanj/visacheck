@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000522",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kuala Lumpur FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Fatimah",
+  "surname": "Pillai",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "4423 Lincoln Jalan",
+    "unit_number": "Blok 33",
+    "postal_code": "23403",
+    "city": "Kuantan",
+    "state": "Pahang",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1951,
+    "month": 2,
+    "day": 5
+  },
+  "place_of_birth": {
+    "city": "Alor Setar",
+    "state": "Kedah",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

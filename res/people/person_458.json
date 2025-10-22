@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000458",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Delhi FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Atul",
+  "surname": "Verma",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "7795 Oak Main Road",
+    "unit_number": "",
+    "postal_code": "889857",
+    "city": "Chandigarh",
+    "state": "Punjab",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1991,
+    "month": 10,
+    "day": 22
+  },
+  "place_of_birth": {
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Developer"
+}

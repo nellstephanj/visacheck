@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000776",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Port Said FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Khaled",
+  "surname": "Hassan",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Egypt",
+  "address": {
+    "street_number": "5167 Jefferson ميدان",
+    "unit_number": "دور 8",
+    "postal_code": "70982",
+    "city": "Tanta",
+    "state": "Gharbia Governorate",
+    "country": "Egypt"
+  },
+  "date_of_birth": {
+    "year": 1950,
+    "month": 4,
+    "day": 20
+  },
+  "place_of_birth": {
+    "city": "Shubra El Kheima",
+    "state": "Qalyubia Governorate",
+    "country": "Egypt"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}

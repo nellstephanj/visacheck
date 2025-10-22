@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000520",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kuala Lumpur FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Hassan",
+  "surname": "Kumar",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "461 First Jalan",
+    "unit_number": "Unit 1",
+    "postal_code": "07893",
+    "city": "Kuala Terengganu",
+    "state": "Terengganu",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1947,
+    "month": 1,
+    "day": 6
+  },
+  "place_of_birth": {
+    "city": "Klang",
+    "state": "Selangor",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Teacher"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000577",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kota Kinabalu FO",
+  "applicant_is_minor": false,
+  "urgent": true,
+  "given_names": "Muthu",
+  "surname": "Rahman",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "9397 Washington Tingkat",
+    "unit_number": "",
+    "postal_code": "63842",
+    "city": "Malacca City",
+    "state": "Malacca",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1989,
+    "month": 3,
+    "day": 6
+  },
+  "place_of_birth": {
+    "city": "Kuantan",
+    "state": "Pahang",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Developer"
+}

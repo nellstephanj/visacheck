@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000856",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mexico City FO",
+  "applicant_is_minor": false,
+  "urgent": true,
+  "given_names": "Elena",
+  "surname": "Ruiz",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "7674 Jefferson Avenida",
+    "unit_number": "Depto 30",
+    "postal_code": "47161",
+    "city": "Cuernavaca",
+    "state": "Morelos",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1988,
+    "month": 12,
+    "day": 1
+  },
+  "place_of_birth": {
+    "city": "León",
+    "state": "Guanajuato",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

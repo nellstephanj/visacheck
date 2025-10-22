@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000697",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Constantine FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Khadija",
+  "surname": "Benali",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Algeria",
+  "address": {
+    "street_number": "7386 First Place",
+    "unit_number": "",
+    "postal_code": "87967",
+    "city": "Djelfa",
+    "state": "Djelfa Province",
+    "country": "Algeria"
+  },
+  "date_of_birth": {
+    "year": 1945,
+    "month": 6,
+    "day": 21
+  },
+  "place_of_birth": {
+    "city": "Tiaret",
+    "state": "Tiaret Province",
+    "country": "Algeria"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

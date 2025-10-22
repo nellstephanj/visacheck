@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000430",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kolkata FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Geeta",
+  "surname": "Yadav",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "4616 Oak Cross",
+    "unit_number": "",
+    "postal_code": "354645",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1981,
+    "month": 5,
+    "day": 11
+  },
+  "place_of_birth": {
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Student"
+}

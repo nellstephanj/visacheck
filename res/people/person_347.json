@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000347",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kolkata FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Sita",
+  "surname": "Chopra",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "5607 Jefferson Lane",
+    "unit_number": "",
+    "postal_code": "229600",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1959,
+    "month": 6,
+    "day": 27
+  },
+  "place_of_birth": {
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Teacher"
+}

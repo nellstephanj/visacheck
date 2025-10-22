@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000326",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kolkata FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Atul",
+  "surname": "Kumar",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "9821 Jefferson Main Road",
+    "unit_number": "Apartment 41",
+    "postal_code": "114902",
+    "city": "Bhubaneshwar",
+    "state": "Odisha",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1958,
+    "month": 11,
+    "day": 6
+  },
+  "place_of_birth": {
+    "city": "Nainital",
+    "state": "Uttarakhand",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Manager"
+}

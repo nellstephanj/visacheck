@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000627",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Algiers FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Samir",
+  "surname": "Mansouri",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Algeria",
+  "address": {
+    "street_number": "9240 Jefferson Place",
+    "unit_number": "Apt 16",
+    "postal_code": "04388",
+    "city": "Blida",
+    "state": "Blida Province",
+    "country": "Algeria"
+  },
+  "date_of_birth": {
+    "year": 1996,
+    "month": 5,
+    "day": 6
+  },
+  "place_of_birth": {
+    "city": "Béchar",
+    "state": "Béchar Province",
+    "country": "Algeria"
+  },
+  "residency_status_in_country_of_residence": "Temporary Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Manager"
+}

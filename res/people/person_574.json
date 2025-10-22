@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000574",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kuching FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Muhammad",
+  "surname": "Ali",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "8971 Lincoln Lorong",
+    "unit_number": "",
+    "postal_code": "77303",
+    "city": "Malacca City",
+    "state": "Malacca",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1959,
+    "month": 10,
+    "day": 25
+  },
+  "place_of_birth": {
+    "city": "Petaling Jaya",
+    "state": "Selangor",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Consultant"
+}

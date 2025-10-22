@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000705",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Cairo FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Mariam",
+  "surname": "Gamal",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Egypt",
+  "address": {
+    "street_number": "8114 Jefferson طريق",
+    "unit_number": "دور 31",
+    "postal_code": "51853",
+    "city": "Asyut",
+    "state": "Asyut Governorate",
+    "country": "Egypt"
+  },
+  "date_of_birth": {
+    "year": 1944,
+    "month": 7,
+    "day": 24
+  },
+  "place_of_birth": {
+    "city": "Shubra El Kheima",
+    "state": "Qalyubia Governorate",
+    "country": "Egypt"
+  },
+  "residency_status_in_country_of_residence": "Temporary Resident",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Unemployed"
+}

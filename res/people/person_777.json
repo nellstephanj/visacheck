@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000777",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Giza FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Mahmoud",
+  "surname": "Ibrahim",
+  "variation_in_birth_certificate": true,
+  "gender": "Male",
+  "country_of_nationality": "Egypt",
+  "address": {
+    "street_number": "7792 Second طريق",
+    "unit_number": "",
+    "postal_code": "74206",
+    "city": "El Mahalla El Kubra",
+    "state": "Gharbia Governorate",
+    "country": "Egypt"
+  },
+  "date_of_birth": {
+    "year": 1980,
+    "month": 9,
+    "day": 10
+  },
+  "place_of_birth": {
+    "city": "Giza",
+    "state": "Giza Governorate",
+    "country": "Egypt"
+  },
+  "residency_status_in_country_of_residence": "Temporary Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Student"
+}

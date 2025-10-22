@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000618",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Annaba FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Fatima",
+  "surname": "Mahmoudi",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Algeria",
+  "address": {
+    "street_number": "5859 Oak Chemin",
+    "unit_number": "App 7",
+    "postal_code": "03401",
+    "city": "Blida",
+    "state": "Blida Province",
+    "country": "Algeria"
+  },
+  "date_of_birth": {
+    "year": 1958,
+    "month": 6,
+    "day": 12
+  },
+  "place_of_birth": {
+    "city": "Constantine",
+    "state": "Constantine Province",
+    "country": "Algeria"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Chef"
+}

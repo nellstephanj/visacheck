@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000593",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kuala Lumpur FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Ali",
+  "surname": "Rahman",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "9728 Second Persiaran",
+    "unit_number": "Blok 42",
+    "postal_code": "74716",
+    "city": "Petaling Jaya",
+    "state": "Selangor",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1967,
+    "month": 3,
+    "day": 14
+  },
+  "place_of_birth": {
+    "city": "Malacca City",
+    "state": "Malacca",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Manager"
+}

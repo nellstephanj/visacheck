@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000657",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Algiers FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Karim",
+  "surname": "Ouali",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Algeria",
+  "address": {
+    "street_number": "6117 Park Rue",
+    "unit_number": "",
+    "postal_code": "51067",
+    "city": "Oran",
+    "state": "Oran Province",
+    "country": "Algeria"
+  },
+  "date_of_birth": {
+    "year": 1949,
+    "month": 1,
+    "day": 12
+  },
+  "place_of_birth": {
+    "city": "Oran",
+    "state": "Oran Province",
+    "country": "Algeria"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}

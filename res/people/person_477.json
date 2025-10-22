@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000477",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kolkata FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Suresh",
+  "surname": "Bansal",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "8606 Washington Lane",
+    "unit_number": "",
+    "postal_code": "949755",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1945,
+    "month": 8,
+    "day": 25
+  },
+  "place_of_birth": {
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Manager"
+}

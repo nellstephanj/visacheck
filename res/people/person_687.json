@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000687",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Annaba FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Leila",
+  "surname": "Ferhat",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Algeria",
+  "address": {
+    "street_number": "3777 First Place",
+    "unit_number": "Bloc 49",
+    "postal_code": "38083",
+    "city": "Annaba",
+    "state": "Annaba Province",
+    "country": "Algeria"
+  },
+  "date_of_birth": {
+    "year": 1949,
+    "month": 4,
+    "day": 15
+  },
+  "place_of_birth": {
+    "city": "Djelfa",
+    "state": "Djelfa Province",
+    "country": "Algeria"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Manager"
+}

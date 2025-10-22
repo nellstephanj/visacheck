@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000619",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Blida FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Omar",
+  "surname": "Ouali",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Algeria",
+  "address": {
+    "street_number": "1400 Oak Avenue",
+    "unit_number": "",
+    "postal_code": "71835",
+    "city": "Béchar",
+    "state": "Béchar Province",
+    "country": "Algeria"
+  },
+  "date_of_birth": {
+    "year": 2001,
+    "month": 2,
+    "day": 8
+  },
+  "place_of_birth": {
+    "city": "Algiers",
+    "state": "Algiers Province",
+    "country": "Algeria"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Retail Worker"
+}

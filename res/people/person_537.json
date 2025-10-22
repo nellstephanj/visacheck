@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000537",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kota Kinabalu FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Ibrahim",
+  "surname": "Kumar",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "3002 Washington Lorong",
+    "unit_number": "",
+    "postal_code": "79810",
+    "city": "Kota Kinabalu",
+    "state": "Sabah",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1981,
+    "month": 2,
+    "day": 23
+  },
+  "place_of_birth": {
+    "city": "George Town",
+    "state": "Penang",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000629",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Annaba FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Ahmed",
+  "surname": "Benaissa",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Algeria",
+  "address": {
+    "street_number": "595 Second Boulevard",
+    "unit_number": "",
+    "postal_code": "44941",
+    "city": "Oran",
+    "state": "Oran Province",
+    "country": "Algeria"
+  },
+  "date_of_birth": {
+    "year": 1996,
+    "month": 5,
+    "day": 23
+  },
+  "place_of_birth": {
+    "city": "Bordj Bou Arréridj",
+    "state": "Bordj Bou Arréridj Province",
+    "country": "Algeria"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

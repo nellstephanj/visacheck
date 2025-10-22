@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000882",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Monterrey FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Isabel",
+  "surname": "Ruiz",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "4794 Jefferson Calle",
+    "unit_number": "Local 49",
+    "postal_code": "05351",
+    "city": "Tijuana",
+    "state": "Baja California",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1971,
+    "month": 12,
+    "day": 22
+  },
+  "place_of_birth": {
+    "city": "San Luis Potosí",
+    "state": "San Luis Potosí",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Temporary Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}

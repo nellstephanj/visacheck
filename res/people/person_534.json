@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000534",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kuching FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Ali",
+  "surname": "Singh",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "7685 Park Tingkat",
+    "unit_number": "",
+    "postal_code": "55412",
+    "city": "Petaling Jaya",
+    "state": "Selangor",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1999,
+    "month": 1,
+    "day": 31
+  },
+  "place_of_birth": {
+    "city": "Johor Bahru",
+    "state": "Johor",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Unemployed"
+}

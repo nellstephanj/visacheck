@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000874",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mexico City FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Isabel",
+  "surname": "Cruz",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "2940 Washington Calle",
+    "unit_number": "",
+    "postal_code": "07975",
+    "city": "Tampico",
+    "state": "Tamaulipas",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1991,
+    "month": 3,
+    "day": 10
+  },
+  "place_of_birth": {
+    "city": "Mexico City",
+    "state": "Mexico City",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Temporary Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Unemployed"
+}

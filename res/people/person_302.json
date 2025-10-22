@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000302",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Delhi FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Rakesh",
+  "surname": "Gupta",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "3280 Washington Main Road",
+    "unit_number": "",
+    "postal_code": "395949",
+    "city": "Surat",
+    "state": "Gujarat",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1962,
+    "month": 3,
+    "day": 23
+  },
+  "place_of_birth": {
+    "city": "Delhi",
+    "state": "Delhi",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Student"
+}

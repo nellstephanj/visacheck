@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000378",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Delhi FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Usha",
+  "surname": "Jain",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "1375 First Main Road",
+    "unit_number": "Flat 39",
+    "postal_code": "195287",
+    "city": "Nainital",
+    "state": "Uttarakhand",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1987,
+    "month": 10,
+    "day": 26
+  },
+  "place_of_birth": {
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Student"
+}

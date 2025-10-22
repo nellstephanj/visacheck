@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000892",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Guadalajara FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Guadalupe",
+  "surname": "Flores",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "7287 Main Callejón",
+    "unit_number": "Local 23",
+    "postal_code": "40386",
+    "city": "Guadalajara",
+    "state": "Jalisco",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1978,
+    "month": 9,
+    "day": 29
+  },
+  "place_of_birth": {
+    "city": "Monterrey",
+    "state": "Nuevo León",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Student"
+}

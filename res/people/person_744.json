@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000744",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Giza FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Khadija",
+  "surname": "Hassan",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Egypt",
+  "address": {
+    "street_number": "5240 Jefferson طريق",
+    "unit_number": "",
+    "postal_code": "29471",
+    "city": "Asyut",
+    "state": "Asyut Governorate",
+    "country": "Egypt"
+  },
+  "date_of_birth": {
+    "year": 1943,
+    "month": 5,
+    "day": 16
+  },
+  "place_of_birth": {
+    "city": "Cairo",
+    "state": "Cairo Governorate",
+    "country": "Egypt"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Teacher"
+}

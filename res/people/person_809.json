@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000809",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Guadalajara FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Patricia",
+  "surname": "González",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "2755 Second Boulevard",
+    "unit_number": "",
+    "postal_code": "00205",
+    "city": "Tijuana",
+    "state": "Baja California",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1951,
+    "month": 8,
+    "day": 24
+  },
+  "place_of_birth": {
+    "city": "Querétaro",
+    "state": "Querétaro",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Unemployed"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000266",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Delhi FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Geeta",
+  "surname": "Chhotray",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "7629 Oak Road",
+    "unit_number": "Apartment 34",
+    "postal_code": "776836",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1994,
+    "month": 3,
+    "day": 11
+  },
+  "place_of_birth": {
+    "city": "Thane",
+    "state": "Maharashtra",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Unemployed"
+}

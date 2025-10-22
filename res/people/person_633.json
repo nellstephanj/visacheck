@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000633",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Oran FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Amina",
+  "surname": "Cherif",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Algeria",
+  "address": {
+    "street_number": "7629 Jefferson Avenue",
+    "unit_number": "App 7",
+    "postal_code": "84501",
+    "city": "Sidi Bel Abbès",
+    "state": "Sidi Bel Abbès Province",
+    "country": "Algeria"
+  },
+  "date_of_birth": {
+    "year": 1950,
+    "month": 6,
+    "day": 6
+  },
+  "place_of_birth": {
+    "city": "Bordj Bou Arréridj",
+    "state": "Bordj Bou Arréridj Province",
+    "country": "Algeria"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Student"
+}

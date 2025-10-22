@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000720",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Giza FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Dina",
+  "surname": "Ibrahim",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Egypt",
+  "address": {
+    "street_number": "1926 Oak شارع",
+    "unit_number": "",
+    "postal_code": "24701",
+    "city": "Fayyum",
+    "state": "Fayyum Governorate",
+    "country": "Egypt"
+  },
+  "date_of_birth": {
+    "year": 1967,
+    "month": 11,
+    "day": 13
+  },
+  "place_of_birth": {
+    "city": "Shubra El Kheima",
+    "state": "Qalyubia Governorate",
+    "country": "Egypt"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Developer"
+}

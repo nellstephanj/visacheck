@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000845",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mérida FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Juan",
+  "surname": "Ruiz",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "4069 First Calle",
+    "unit_number": "",
+    "postal_code": "97156",
+    "city": "Querétaro",
+    "state": "Querétaro",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1977,
+    "month": 4,
+    "day": 26
+  },
+  "place_of_birth": {
+    "city": "León",
+    "state": "Guanajuato",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}

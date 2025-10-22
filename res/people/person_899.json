@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000899",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mexico City FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Guadalupe",
+  "surname": "Reyes",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "6450 Oak Callejón",
+    "unit_number": "",
+    "postal_code": "30344",
+    "city": "Cuernavaca",
+    "state": "Morelos",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1946,
+    "month": 10,
+    "day": 13
+  },
+  "place_of_birth": {
+    "city": "Tampico",
+    "state": "Tamaulipas",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}

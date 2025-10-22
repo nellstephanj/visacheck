@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000621",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Blida FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Nadia",
+  "surname": "Mahmoudi",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Algeria",
+  "address": {
+    "street_number": "6970 Lincoln Chemin",
+    "unit_number": "",
+    "postal_code": "28776",
+    "city": "Oran",
+    "state": "Oran Province",
+    "country": "Algeria"
+  },
+  "date_of_birth": {
+    "year": 1953,
+    "month": 4,
+    "day": 5
+  },
+  "place_of_birth": {
+    "city": "Béchar",
+    "state": "Béchar Province",
+    "country": "Algeria"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

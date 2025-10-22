@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000701",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Giza FO",
+  "applicant_is_minor": false,
+  "urgent": true,
+  "given_names": "Dina",
+  "surname": "Mostafa",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Egypt",
+  "address": {
+    "street_number": "3089 Main ميدان",
+    "unit_number": "",
+    "postal_code": "63174",
+    "city": "Shubra El Kheima",
+    "state": "Qalyubia Governorate",
+    "country": "Egypt"
+  },
+  "date_of_birth": {
+    "year": 1963,
+    "month": 11,
+    "day": 20
+  },
+  "place_of_birth": {
+    "city": "Mansoura",
+    "state": "Dakahlia Governorate",
+    "country": "Egypt"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Consultant"
+}

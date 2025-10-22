@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000237",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kolkata FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Vikash",
+  "surname": "Gupta",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "6207 Washington Marg",
+    "unit_number": "",
+    "postal_code": "410844",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1952,
+    "month": 8,
+    "day": 14
+  },
+  "place_of_birth": {
+    "city": "Pune",
+    "state": "Maharashtra",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Scientist"
+}

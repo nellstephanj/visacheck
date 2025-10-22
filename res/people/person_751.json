@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000751",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Alexandria FO",
+  "applicant_is_minor": true,
+  "urgent": true,
+  "given_names": "Khaled",
+  "surname": "Abdel Rahman",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Egypt",
+  "address": {
+    "street_number": "8295 Washington شارع",
+    "unit_number": "",
+    "postal_code": "12970",
+    "city": "Suez",
+    "state": "Suez Governorate",
+    "country": "Egypt"
+  },
+  "date_of_birth": {
+    "year": 1952,
+    "month": 10,
+    "day": 30
+  },
+  "place_of_birth": {
+    "city": "Zagazig",
+    "state": "Sharqia Governorate",
+    "country": "Egypt"
+  },
+  "residency_status_in_country_of_residence": "Temporary Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Scientist"
+}

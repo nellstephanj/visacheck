@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000743",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Cairo FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Mahmoud",
+  "surname": "Fouad",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Egypt",
+  "address": {
+    "street_number": "3405 Washington ميدان",
+    "unit_number": "",
+    "postal_code": "71261",
+    "city": "Port Said",
+    "state": "Port Said Governorate",
+    "country": "Egypt"
+  },
+  "date_of_birth": {
+    "year": 1990,
+    "month": 11,
+    "day": 5
+  },
+  "place_of_birth": {
+    "city": "Alexandria",
+    "state": "Alexandria Governorate",
+    "country": "Egypt"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Manager"
+}

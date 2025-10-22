@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000393",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Bangalore FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Priya",
+  "surname": "Mishra",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "7280 Jefferson Cross",
+    "unit_number": "",
+    "postal_code": "224158",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1970,
+    "month": 1,
+    "day": 18
+  },
+  "place_of_birth": {
+    "city": "Surat",
+    "state": "Gujarat",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Chef"
+}

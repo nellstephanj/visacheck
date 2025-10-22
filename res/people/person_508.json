@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000508",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kota Kinabalu FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Fatimah",
+  "surname": "Tan",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "6241 Jefferson Lebuh",
+    "unit_number": "Blok 33",
+    "postal_code": "34372",
+    "city": "Ipoh",
+    "state": "Perak",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1987,
+    "month": 1,
+    "day": 18
+  },
+  "place_of_birth": {
+    "city": "George Town",
+    "state": "Penang",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000713",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Cairo FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Amira",
+  "surname": "Ahmed",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Egypt",
+  "address": {
+    "street_number": "3918 First ميدان",
+    "unit_number": "",
+    "postal_code": "09609",
+    "city": "Giza",
+    "state": "Giza Governorate",
+    "country": "Egypt"
+  },
+  "date_of_birth": {
+    "year": 1987,
+    "month": 3,
+    "day": 20
+  },
+  "place_of_birth": {
+    "city": "Mansoura",
+    "state": "Dakahlia Governorate",
+    "country": "Egypt"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Manager"
+}

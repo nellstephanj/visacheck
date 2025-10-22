@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000501",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "George Town FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Muhammad",
+  "surname": "Ismail",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "4493 Jefferson Jalan",
+    "unit_number": "",
+    "postal_code": "05135",
+    "city": "Malacca City",
+    "state": "Malacca",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1970,
+    "month": 7,
+    "day": 11
+  },
+  "place_of_birth": {
+    "city": "Klang",
+    "state": "Selangor",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Retail Worker"
+}

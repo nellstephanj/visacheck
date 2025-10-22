@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000415",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Bangalore FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Geeta",
+  "surname": "Choudhary",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "6656 First Lane",
+    "unit_number": "",
+    "postal_code": "452097",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1969,
+    "month": 3,
+    "day": 29
+  },
+  "place_of_birth": {
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Teacher"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000877",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Guadalajara FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Isabel",
+  "surname": "Cruz",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "3373 Washington Calle",
+    "unit_number": "",
+    "postal_code": "98411",
+    "city": "Mexico City",
+    "state": "Mexico City",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1969,
+    "month": 4,
+    "day": 21
+  },
+  "place_of_birth": {
+    "city": "Aguascalientes",
+    "state": "Aguascalientes",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Unemployed"
+}

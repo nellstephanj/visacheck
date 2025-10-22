@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000862",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mérida FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Antonio",
+  "surname": "Ruiz",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "979 Jefferson Callejón",
+    "unit_number": "",
+    "postal_code": "09648",
+    "city": "Aguascalientes",
+    "state": "Aguascalientes",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1999,
+    "month": 1,
+    "day": 11
+  },
+  "place_of_birth": {
+    "city": "Juárez",
+    "state": "Chihuahua",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Student"
+}

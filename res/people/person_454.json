@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000454",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Bangalore FO",
+  "applicant_is_minor": false,
+  "urgent": true,
+  "given_names": "Lata",
+  "surname": "Bansal",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "184 Lincoln Main Road",
+    "unit_number": "",
+    "postal_code": "397713",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1957,
+    "month": 9,
+    "day": 6
+  },
+  "place_of_birth": {
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Temporary Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Developer"
+}

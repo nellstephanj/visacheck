@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000308",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Delhi FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Ajay",
+  "surname": "Agarwal",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "2092 Jefferson Road",
+    "unit_number": "",
+    "postal_code": "000335",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1984,
+    "month": 7,
+    "day": 13
+  },
+  "place_of_birth": {
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Scientist"
+}

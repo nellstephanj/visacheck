@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000300",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kolkata FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Kavita",
+  "surname": "Chhotray",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "6562 Washington Main Road",
+    "unit_number": "",
+    "postal_code": "491844",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1945,
+    "month": 12,
+    "day": 29
+  },
+  "place_of_birth": {
+    "city": "Delhi",
+    "state": "Delhi",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Temporary Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Scientist"
+}

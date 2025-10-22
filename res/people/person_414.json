@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000414",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kolkata FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Radha",
+  "surname": "Mishra",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "9995 Lincoln Lane",
+    "unit_number": "Flat 37",
+    "postal_code": "392990",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1961,
+    "month": 6,
+    "day": 24
+  },
+  "place_of_birth": {
+    "city": "Nainital",
+    "state": "Uttarakhand",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Temporary Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Scientist"
+}

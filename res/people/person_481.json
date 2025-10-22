@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000481",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mumbai FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Deepak",
+  "surname": "Tiwari",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "4387 Jefferson Lane",
+    "unit_number": "",
+    "postal_code": "113438",
+    "city": "Chandigarh",
+    "state": "Punjab",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1987,
+    "month": 6,
+    "day": 1
+  },
+  "place_of_birth": {
+    "city": "Delhi",
+    "state": "Delhi",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Consultant"
+}

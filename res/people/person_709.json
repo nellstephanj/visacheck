@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000709",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Alexandria FO",
+  "applicant_is_minor": false,
+  "urgent": true,
+  "given_names": "Salma",
+  "surname": "Nasser",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Egypt",
+  "address": {
+    "street_number": "6755 First منطقة",
+    "unit_number": "",
+    "postal_code": "41396",
+    "city": "Tanta",
+    "state": "Gharbia Governorate",
+    "country": "Egypt"
+  },
+  "date_of_birth": {
+    "year": 1998,
+    "month": 2,
+    "day": 9
+  },
+  "place_of_birth": {
+    "city": "Shubra El Kheima",
+    "state": "Qalyubia Governorate",
+    "country": "Egypt"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

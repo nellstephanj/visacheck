@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000256",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Chennai FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Suresh",
+  "surname": "Chhotray",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "6334 First Lane",
+    "unit_number": "Flat 8",
+    "postal_code": "404090",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1958,
+    "month": 4,
+    "day": 23
+  },
+  "place_of_birth": {
+    "city": "Pune",
+    "state": "Maharashtra",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Consultant"
+}

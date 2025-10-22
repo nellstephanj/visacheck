@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000402",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Delhi FO",
+  "applicant_is_minor": false,
+  "urgent": true,
+  "given_names": "Priya",
+  "surname": "Verma",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "2718 Washington Marg",
+    "unit_number": "Flat 37",
+    "postal_code": "492039",
+    "city": "Chandigarh",
+    "state": "Punjab",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1999,
+    "month": 3,
+    "day": 3
+  },
+  "place_of_birth": {
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Consultant"
+}

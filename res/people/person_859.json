@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000859",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mérida FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "José",
+  "surname": "Morales",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "8588 Second Callejón",
+    "unit_number": "",
+    "postal_code": "31982",
+    "city": "Tijuana",
+    "state": "Baja California",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1954,
+    "month": 9,
+    "day": 29
+  },
+  "place_of_birth": {
+    "city": "Torreón",
+    "state": "Coahuila",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

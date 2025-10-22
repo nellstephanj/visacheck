@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000699",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Constantine FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Tayeb",
+  "surname": "Boumediene",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Algeria",
+  "address": {
+    "street_number": "1734 Jefferson Boulevard",
+    "unit_number": "Apt 24",
+    "postal_code": "92892",
+    "city": "Tebessa",
+    "state": "Tebessa Province",
+    "country": "Algeria"
+  },
+  "date_of_birth": {
+    "year": 1994,
+    "month": 2,
+    "day": 24
+  },
+  "place_of_birth": {
+    "city": "Annaba",
+    "state": "Annaba Province",
+    "country": "Algeria"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Consultant"
+}

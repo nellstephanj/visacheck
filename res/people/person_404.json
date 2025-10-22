@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000404",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Bangalore FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Ramesh",
+  "surname": "Mehta",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "4018 Second Main Road",
+    "unit_number": "Block 46",
+    "postal_code": "874558",
+    "city": "Delhi",
+    "state": "Delhi",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1959,
+    "month": 2,
+    "day": 18
+  },
+  "place_of_birth": {
+    "city": "Delhi",
+    "state": "Delhi",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Developer"
+}

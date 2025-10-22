@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000742",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Cairo FO",
+  "applicant_is_minor": false,
+  "urgent": true,
+  "given_names": "Mariam",
+  "surname": "Mohamed",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Egypt",
+  "address": {
+    "street_number": "7085 Park منطقة",
+    "unit_number": "",
+    "postal_code": "42178",
+    "city": "Aswan",
+    "state": "Aswan Governorate",
+    "country": "Egypt"
+  },
+  "date_of_birth": {
+    "year": 1980,
+    "month": 12,
+    "day": 18
+  },
+  "place_of_birth": {
+    "city": "Fayyum",
+    "state": "Fayyum Governorate",
+    "country": "Egypt"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Teacher"
+}

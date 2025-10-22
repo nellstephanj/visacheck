@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000780",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Cairo FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Amira",
+  "surname": "Mahmoud",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Egypt",
+  "address": {
+    "street_number": "1200 Second حي",
+    "unit_number": "",
+    "postal_code": "16305",
+    "city": "Ismailia",
+    "state": "Ismailia Governorate",
+    "country": "Egypt"
+  },
+  "date_of_birth": {
+    "year": 1993,
+    "month": 12,
+    "day": 10
+  },
+  "place_of_birth": {
+    "city": "Luxor",
+    "state": "Luxor Governorate",
+    "country": "Egypt"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Manager"
+}

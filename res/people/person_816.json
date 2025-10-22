@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000816",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Guadalajara FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "María",
+  "surname": "Rodríguez",
+  "variation_in_birth_certificate": true,
+  "gender": "Other",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "8423 Park Boulevard",
+    "unit_number": "",
+    "postal_code": "25761",
+    "city": "San Luis Potosí",
+    "state": "San Luis Potosí",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1970,
+    "month": 10,
+    "day": 15
+  },
+  "place_of_birth": {
+    "city": "Monterrey",
+    "state": "Nuevo León",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

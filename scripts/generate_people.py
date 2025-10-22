@@ -69,7 +69,7 @@ def make_person(i, template):
     }
     person["date_of_birth"] = dob
     person["place_of_birth"] = {"city": random.choice(CITIES), "state": state, "country": "Australia"}
-    person["residency_status_in_australia"] = random.choice(["Permanent Resident", "Citizen", "Temporary Resident"]) 
+    person["residency_status_in_country_of_residence"] = random.choice(["Permanent Resident", "Citizen", "Temporary Resident"]) 
     person["civil_status"] = random.choice(["Single", "Married", "Divorced"]) 
     person["packaged_member_of_eu"] = False
     person["occupation"] = random.choice(OCCUPATIONS)

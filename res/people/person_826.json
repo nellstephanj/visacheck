@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000826",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Tijuana FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Ana",
+  "surname": "Morales",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "1351 Main Callejón",
+    "unit_number": "",
+    "postal_code": "36279",
+    "city": "Aguascalientes",
+    "state": "Aguascalientes",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1970,
+    "month": 7,
+    "day": 28
+  },
+  "place_of_birth": {
+    "city": "Tijuana",
+    "state": "Baja California",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Student"
+}

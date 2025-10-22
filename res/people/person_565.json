@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000565",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kota Kinabalu FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Fatimah",
+  "surname": "Pillai",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "2529 First Persiaran",
+    "unit_number": "Unit 49",
+    "postal_code": "10980",
+    "city": "Alor Setar",
+    "state": "Kedah",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 2000,
+    "month": 5,
+    "day": 5
+  },
+  "place_of_birth": {
+    "city": "Kota Bharu",
+    "state": "Kelantan",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Unemployed"
+}

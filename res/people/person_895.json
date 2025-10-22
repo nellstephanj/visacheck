@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000895",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mexico City FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Alejandro",
+  "surname": "Gómez",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "2667 Lincoln Avenida",
+    "unit_number": "",
+    "postal_code": "08954",
+    "city": "Mexico City",
+    "state": "Mexico City",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1997,
+    "month": 4,
+    "day": 12
+  },
+  "place_of_birth": {
+    "city": "San Luis Potosí",
+    "state": "San Luis Potosí",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Scientist"
+}

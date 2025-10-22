@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000532",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kuching FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Ibrahim",
+  "surname": "Lim",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "6291 Main Tingkat",
+    "unit_number": "",
+    "postal_code": "11733",
+    "city": "Miri",
+    "state": "Sarawak",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1954,
+    "month": 10,
+    "day": 6
+  },
+  "place_of_birth": {
+    "city": "Alor Setar",
+    "state": "Kedah",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Scientist"
+}
