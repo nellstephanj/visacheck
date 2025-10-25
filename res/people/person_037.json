@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000037",
+  "case_type": "Work Visa",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-21",
+  "intake_location": "Melbourne FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Taylor",
+  "surname": "Adams",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "866 Eagles Road",
+    "unit_number": "",
+    "postal_code": "7548",
+    "city": "Hobart",
+    "state": "TAS",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 2008,
+    "month": 6,
+    "day": 22
+  },
+  "place_of_birth": {
+    "city": "Hobart",
+    "state": "TAS",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Permanent Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Consultant"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000083",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-21",
+  "intake_location": "Melbourne FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Cameron",
+  "surname": "Clark",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "165 High St",
+    "unit_number": "1",
+    "postal_code": "4316",
+    "city": "Mount Reaper",
+    "state": "VIC",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1970,
+    "month": 6,
+    "day": 16
+  },
+  "place_of_birth": {
+    "city": "Perth",
+    "state": "VIC",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Consultant"
+}

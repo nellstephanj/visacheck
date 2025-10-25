@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000559",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Johor Bahru FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Ibrahim",
+  "surname": "Ibrahim",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "2271 Oak Jalan",
+    "unit_number": "",
+    "postal_code": "48465",
+    "city": "Petaling Jaya",
+    "state": "Selangor",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1948,
+    "month": 8,
+    "day": 22
+  },
+  "place_of_birth": {
+    "city": "Kota Kinabalu",
+    "state": "Sabah",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Unemployed"
+}

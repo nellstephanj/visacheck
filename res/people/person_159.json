@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000159",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-21",
+  "intake_location": "Melbourne FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": " Rowan",
+  "surname": "Lee",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "352 Main St",
+    "unit_number": "3",
+    "postal_code": "7492",
+    "city": "Melbourne",
+    "state": "NSW",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1988,
+    "month": 6,
+    "day": 16
+  },
+  "place_of_birth": {
+    "city": "Mount Reaper",
+    "state": "NSW",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Permanent Resident",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Chef"
+}

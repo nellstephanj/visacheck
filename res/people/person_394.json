@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000394",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Chennai FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Radha",
+  "surname": "Mehta",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "4794 Washington Cross",
+    "unit_number": "Apartment 21",
+    "postal_code": "528592",
+    "city": "Nainital",
+    "state": "Uttarakhand",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1940,
+    "month": 5,
+    "day": 4
+  },
+  "place_of_birth": {
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

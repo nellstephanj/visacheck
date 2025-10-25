@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000167",
+  "case_type": "Work Visa",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-21",
+  "intake_location": "Brisbane FO",
+  "applicant_is_minor": false,
+  "urgent": true,
+  "given_names": "Casey",
+  "surname": "Brown",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "981 Main St",
+    "unit_number": "",
+    "postal_code": "3193",
+    "city": "Melbourne",
+    "state": "QLD",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1968,
+    "month": 12,
+    "day": 15
+  },
+  "place_of_birth": {
+    "city": "Sydney",
+    "state": "QLD",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Temporary Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Consultant"
+}

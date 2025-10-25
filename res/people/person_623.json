@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000623",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Constantine FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Khadija",
+  "surname": "Kaci",
+  "variation_in_birth_certificate": true,
+  "gender": "Male",
+  "country_of_nationality": "Algeria",
+  "address": {
+    "street_number": "1608 Park Rue",
+    "unit_number": "",
+    "postal_code": "15854",
+    "city": "Constantine",
+    "state": "Constantine Province",
+    "country": "Algeria"
+  },
+  "date_of_birth": {
+    "year": 2000,
+    "month": 9,
+    "day": 16
+  },
+  "place_of_birth": {
+    "city": "Sidi Bel Abbès",
+    "state": "Sidi Bel Abbès Province",
+    "country": "Algeria"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

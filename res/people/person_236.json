@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000236",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Bangalore FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Geeta",
+  "surname": "Arora",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "9295 Washington Lane",
+    "unit_number": "",
+    "postal_code": "055958",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1945,
+    "month": 11,
+    "day": 11
+  },
+  "place_of_birth": {
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Consultant"
+}

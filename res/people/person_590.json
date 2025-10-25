@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000590",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kuching FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Devi",
+  "surname": "Hassan",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "6402 Lincoln Persiaran",
+    "unit_number": "",
+    "postal_code": "57432",
+    "city": "Kota Bharu",
+    "state": "Kelantan",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1973,
+    "month": 7,
+    "day": 24
+  },
+  "place_of_birth": {
+    "city": "Kuala Terengganu",
+    "state": "Terengganu",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Consultant"
+}

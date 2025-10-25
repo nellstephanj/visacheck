@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000318",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Bangalore FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Anita",
+  "surname": "Bansal",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "6805 Second Marg",
+    "unit_number": "",
+    "postal_code": "456193",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 2001,
+    "month": 11,
+    "day": 30
+  },
+  "place_of_birth": {
+    "city": "Thane",
+    "state": "Maharashtra",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Consultant"
+}

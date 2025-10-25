@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000342",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Bangalore FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Amit",
+  "surname": "Mehta",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "9287 Main Lane",
+    "unit_number": "Block 49",
+    "postal_code": "079685",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1977,
+    "month": 3,
+    "day": 27
+  },
+  "place_of_birth": {
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Teacher"
+}

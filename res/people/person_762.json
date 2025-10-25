@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000762",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Giza FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Aisha",
+  "surname": "Ibrahim",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Egypt",
+  "address": {
+    "street_number": "896 Main حي",
+    "unit_number": "",
+    "postal_code": "05973",
+    "city": "Shubra El Kheima",
+    "state": "Qalyubia Governorate",
+    "country": "Egypt"
+  },
+  "date_of_birth": {
+    "year": 1973,
+    "month": 8,
+    "day": 5
+  },
+  "place_of_birth": {
+    "city": "Alexandria",
+    "state": "Alexandria Governorate",
+    "country": "Egypt"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}

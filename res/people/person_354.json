@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000354",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Delhi FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Anita",
+  "surname": "Mishra",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "9019 Oak Marg",
+    "unit_number": "",
+    "postal_code": "555267",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1979,
+    "month": 7,
+    "day": 28
+  },
+  "place_of_birth": {
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Student"
+}

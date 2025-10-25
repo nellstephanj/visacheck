@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000165",
+  "case_type": "Work Visa",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-21",
+  "intake_location": "Brisbane FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Blake",
+  "surname": "Brown",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "185 Station Rd",
+    "unit_number": "",
+    "postal_code": "1067",
+    "city": "Darwin",
+    "state": "QLD",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1972,
+    "month": 5,
+    "day": 22
+  },
+  "place_of_birth": {
+    "city": "Snowy Plain",
+    "state": "QLD",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Temporary Resident",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

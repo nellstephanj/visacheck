@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000823",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Guadalajara FO",
+  "applicant_is_minor": false,
+  "urgent": true,
+  "given_names": "Ana",
+  "surname": "García",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "6220 Second Callejón",
+    "unit_number": "Depto 15",
+    "postal_code": "55967",
+    "city": "Juárez",
+    "state": "Chihuahua",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1942,
+    "month": 8,
+    "day": 28
+  },
+  "place_of_birth": {
+    "city": "San Luis Potosí",
+    "state": "San Luis Potosí",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Teacher"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000704",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Port Said FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Omar",
+  "surname": "Abdel Aziz",
+  "variation_in_birth_certificate": true,
+  "gender": "Female",
+  "country_of_nationality": "Egypt",
+  "address": {
+    "street_number": "4676 Lincoln حي",
+    "unit_number": "",
+    "postal_code": "97258",
+    "city": "Cairo",
+    "state": "Cairo Governorate",
+    "country": "Egypt"
+  },
+  "date_of_birth": {
+    "year": 1962,
+    "month": 9,
+    "day": 30
+  },
+  "place_of_birth": {
+    "city": "Cairo",
+    "state": "Cairo Governorate",
+    "country": "Egypt"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}

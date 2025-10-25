@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000093",
+  "case_type": "Work Visa",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Brisbane FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Skyler",
+  "surname": "Nguyen",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "868 Station Rd",
+    "unit_number": "1",
+    "postal_code": "4494",
+    "city": "Sydney",
+    "state": "SA",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1953,
+    "month": 6,
+    "day": 16
+  },
+  "place_of_birth": {
+    "city": "Hobart",
+    "state": "SA",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

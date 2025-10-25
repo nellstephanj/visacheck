@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000156",
+  "case_type": "Work Visa",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Melbourne FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Charlie",
+  "surname": "Hall",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "28 Station Rd",
+    "unit_number": "3",
+    "postal_code": "2391",
+    "city": "Darwin",
+    "state": "WA",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1950,
+    "month": 10,
+    "day": 26
+  },
+  "place_of_birth": {
+    "city": "Perth",
+    "state": "WA",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Temporary Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Student"
+}

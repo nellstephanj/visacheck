@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000829",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mérida FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Roberto",
+  "surname": "Gómez",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "8134 Second Privada",
+    "unit_number": "",
+    "postal_code": "34828",
+    "city": "Mérida",
+    "state": "Yucatán",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1950,
+    "month": 5,
+    "day": 30
+  },
+  "place_of_birth": {
+    "city": "Guadalajara",
+    "state": "Jalisco",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Developer"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000240",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mumbai FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Raj",
+  "surname": "Singh",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "5547 Washington Lane",
+    "unit_number": "Apartment 26",
+    "postal_code": "881861",
+    "city": "Nainital",
+    "state": "Uttarakhand",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1986,
+    "month": 11,
+    "day": 17
+  },
+  "place_of_birth": {
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Developer"
+}

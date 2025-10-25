@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000642",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Annaba FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Nadia",
+  "surname": "Cherif",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Algeria",
+  "address": {
+    "street_number": "1967 First Place",
+    "unit_number": "",
+    "postal_code": "68818",
+    "city": "Oran",
+    "state": "Oran Province",
+    "country": "Algeria"
+  },
+  "date_of_birth": {
+    "year": 1998,
+    "month": 1,
+    "day": 12
+  },
+  "place_of_birth": {
+    "city": "Sidi Bel Abbès",
+    "state": "Sidi Bel Abbès Province",
+    "country": "Algeria"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Teacher"
+}

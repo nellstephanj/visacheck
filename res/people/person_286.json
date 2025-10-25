@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000286",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Chennai FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Usha",
+  "surname": "Pandey",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "2623 Main Main Road",
+    "unit_number": "",
+    "postal_code": "736404",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1995,
+    "month": 12,
+    "day": 16
+  },
+  "place_of_birth": {
+    "city": "Surat",
+    "state": "Gujarat",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Developer"
+}

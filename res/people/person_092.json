@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000092",
+  "case_type": "Work Visa",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-21",
+  "intake_location": "Brisbane FO",
+  "applicant_is_minor": true,
+  "urgent": true,
+  "given_names": "Blake",
+  "surname": "Johnson",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "804 Station Rd",
+    "unit_number": "1",
+    "postal_code": "2274",
+    "city": "Hobart",
+    "state": "VIC",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1957,
+    "month": 11,
+    "day": 23
+  },
+  "place_of_birth": {
+    "city": "Perth",
+    "state": "VIC",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Temporary Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Unemployed"
+}

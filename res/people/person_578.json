@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000578",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "George Town FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Ibrahim",
+  "surname": "Raj",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "8104 Lincoln Jalan",
+    "unit_number": "",
+    "postal_code": "16527",
+    "city": "Ipoh",
+    "state": "Perak",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1941,
+    "month": 6,
+    "day": 29
+  },
+  "place_of_birth": {
+    "city": "Malacca City",
+    "state": "Malacca",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Temporary Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Student"
+}

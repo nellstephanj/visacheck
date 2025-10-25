@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000114",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Brisbane FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Casey",
+  "surname": "Scott",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "941 Station Rd",
+    "unit_number": "1",
+    "postal_code": "5877",
+    "city": "Melbourne",
+    "state": "TAS",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1960,
+    "month": 3,
+    "day": 7
+  },
+  "place_of_birth": {
+    "city": "Melbourne",
+    "state": "TAS",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Temporary Resident",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Student"
+}

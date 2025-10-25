@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000778",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Cairo FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Tamer",
+  "surname": "Abdel Aziz",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Egypt",
+  "address": {
+    "street_number": "333 Jefferson ميدان",
+    "unit_number": "",
+    "postal_code": "56317",
+    "city": "Zagazig",
+    "state": "Sharqia Governorate",
+    "country": "Egypt"
+  },
+  "date_of_birth": {
+    "year": 1949,
+    "month": 3,
+    "day": 10
+  },
+  "place_of_birth": {
+    "city": "Ismailia",
+    "state": "Ismailia Governorate",
+    "country": "Egypt"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Developer"
+}

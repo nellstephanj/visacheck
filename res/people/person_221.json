@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000221",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Bangalore FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Amit",
+  "surname": "Shah",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "8186 Washington Lane",
+    "unit_number": "",
+    "postal_code": "533906",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1953,
+    "month": 10,
+    "day": 29
+  },
+  "place_of_birth": {
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Manager"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000065",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Brisbane FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Morgan",
+  "surname": "Baker",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "502 Station Rd",
+    "unit_number": "1",
+    "postal_code": "2135",
+    "city": "Sydney",
+    "state": "NT",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1949,
+    "month": 4,
+    "day": 24
+  },
+  "place_of_birth": {
+    "city": "Hobart",
+    "state": "NT",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Manager"
+}

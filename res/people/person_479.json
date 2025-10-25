@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000479",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Chennai FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Ashok",
+  "surname": "Khanna",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "1419 Second Main Road",
+    "unit_number": "Apartment 7",
+    "postal_code": "030456",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1955,
+    "month": 12,
+    "day": 10
+  },
+  "place_of_birth": {
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Chef"
+}

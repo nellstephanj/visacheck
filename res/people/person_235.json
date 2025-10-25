@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000235",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kolkata FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Ashok",
+  "surname": "Verma",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "6788 First Marg",
+    "unit_number": "",
+    "postal_code": "252069",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1986,
+    "month": 2,
+    "day": 7
+  },
+  "place_of_birth": {
+    "city": "Pune",
+    "state": "Maharashtra",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Student"
+}

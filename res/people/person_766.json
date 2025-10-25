@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000766",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Giza FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Youssef",
+  "surname": "Hassan",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Egypt",
+  "address": {
+    "street_number": "3548 Park طريق",
+    "unit_number": "عمارة 45",
+    "postal_code": "48114",
+    "city": "Fayyum",
+    "state": "Fayyum Governorate",
+    "country": "Egypt"
+  },
+  "date_of_birth": {
+    "year": 1972,
+    "month": 6,
+    "day": 20
+  },
+  "place_of_birth": {
+    "city": "Shubra El Kheima",
+    "state": "Qalyubia Governorate",
+    "country": "Egypt"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Student"
+}

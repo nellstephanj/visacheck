@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000116",
+  "case_type": "Work Visa",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-21",
+  "intake_location": "Sydney FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": " Rowan",
+  "surname": "Wright",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "556 Main St",
+    "unit_number": "1",
+    "postal_code": "2306",
+    "city": "Sydney",
+    "state": "ACT",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 2016,
+    "month": 9,
+    "day": 14
+  },
+  "place_of_birth": {
+    "city": "Snowy Plain",
+    "state": "ACT",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Chef"
+}

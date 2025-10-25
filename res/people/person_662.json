@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000662",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Annaba FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Youssef",
+  "surname": "Larbi",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Algeria",
+  "address": {
+    "street_number": "2447 Washington Boulevard",
+    "unit_number": "App 48",
+    "postal_code": "63448",
+    "city": "Sidi Bel Abbès",
+    "state": "Sidi Bel Abbès Province",
+    "country": "Algeria"
+  },
+  "date_of_birth": {
+    "year": 1977,
+    "month": 3,
+    "day": 16
+  },
+  "place_of_birth": {
+    "city": "Oran",
+    "state": "Oran Province",
+    "country": "Algeria"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Consultant"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000311",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mumbai FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Ashok",
+  "surname": "Singh",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "4993 Jefferson Marg",
+    "unit_number": "Flat 14",
+    "postal_code": "538858",
+    "city": "Bhubaneshwar",
+    "state": "Odisha",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1978,
+    "month": 11,
+    "day": 29
+  },
+  "place_of_birth": {
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Student"
+}

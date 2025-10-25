@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000832",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Monterrey FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Carlos",
+  "surname": "Gómez",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "7236 Lincoln Boulevard",
+    "unit_number": "Casa 24",
+    "postal_code": "07226",
+    "city": "Tampico",
+    "state": "Tamaulipas",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1982,
+    "month": 2,
+    "day": 28
+  },
+  "place_of_birth": {
+    "city": "Tampico",
+    "state": "Tamaulipas",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Chef"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000343",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mumbai FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Deepak",
+  "surname": "Khanna",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "1703 First Road",
+    "unit_number": "",
+    "postal_code": "981608",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1954,
+    "month": 10,
+    "day": 17
+  },
+  "place_of_birth": {
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Temporary Resident",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Scientist"
+}

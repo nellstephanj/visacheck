@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000891",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Guadalajara FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Rosa",
+  "surname": "Vásquez",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "8273 First Privada",
+    "unit_number": "",
+    "postal_code": "44213",
+    "city": "Tampico",
+    "state": "Tamaulipas",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1978,
+    "month": 3,
+    "day": 25
+  },
+  "place_of_birth": {
+    "city": "Tijuana",
+    "state": "Baja California",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Retail Worker"
+}

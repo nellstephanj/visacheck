@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000253",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Bangalore FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Priya",
+  "surname": "Verma",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "1708 Second Road",
+    "unit_number": "",
+    "postal_code": "803063",
+    "city": "Bhubaneshwar",
+    "state": "Odisha",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1963,
+    "month": 5,
+    "day": 10
+  },
+  "place_of_birth": {
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Chef"
+}

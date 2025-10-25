@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000095",
+  "case_type": "Work Visa",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Brisbane FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Parker",
+  "surname": "Baker",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "510 Eagles Road",
+    "unit_number": "3",
+    "postal_code": "1105",
+    "city": "Sydney",
+    "state": "ACT",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 2017,
+    "month": 2,
+    "day": 11
+  },
+  "place_of_birth": {
+    "city": "Sydney",
+    "state": "ACT",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Permanent Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Unemployed"
+}

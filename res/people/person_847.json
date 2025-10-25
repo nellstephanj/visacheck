@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000847",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Tijuana FO",
+  "applicant_is_minor": true,
+  "urgent": true,
+  "given_names": "Antonio",
+  "surname": "Flores",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "8176 Oak Calle",
+    "unit_number": "",
+    "postal_code": "96252",
+    "city": "Juárez",
+    "state": "Chihuahua",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1949,
+    "month": 10,
+    "day": 27
+  },
+  "place_of_birth": {
+    "city": "León",
+    "state": "Guanajuato",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}

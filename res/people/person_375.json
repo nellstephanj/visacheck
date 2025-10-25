@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000375",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mumbai FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Ashok",
+  "surname": "Verma",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "6291 Jefferson Marg",
+    "unit_number": "Flat 8",
+    "postal_code": "343484",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1953,
+    "month": 9,
+    "day": 22
+  },
+  "place_of_birth": {
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

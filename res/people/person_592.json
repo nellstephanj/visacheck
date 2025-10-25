@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000592",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kuala Lumpur FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Muthu",
+  "surname": "Yaacob",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "2424 Washington Lorong",
+    "unit_number": "",
+    "postal_code": "11868",
+    "city": "Malacca City",
+    "state": "Malacca",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1967,
+    "month": 10,
+    "day": 3
+  },
+  "place_of_birth": {
+    "city": "Kuching",
+    "state": "Sarawak",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Chef"
+}

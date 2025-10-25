@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000585",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "George Town FO",
+  "applicant_is_minor": false,
+  "urgent": true,
+  "given_names": "Bala",
+  "surname": "Lim",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "3238 Oak Lorong",
+    "unit_number": "",
+    "postal_code": "93207",
+    "city": "Kuantan",
+    "state": "Pahang",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1961,
+    "month": 11,
+    "day": 28
+  },
+  "place_of_birth": {
+    "city": "Ipoh",
+    "state": "Perak",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

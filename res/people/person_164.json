@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000164",
+  "case_type": "Work Visa",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Melbourne FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Charlie",
+  "surname": "Lee",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "111 Main St",
+    "unit_number": "1",
+    "postal_code": "7530",
+    "city": "Sydney",
+    "state": "WA",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1976,
+    "month": 10,
+    "day": 26
+  },
+  "place_of_birth": {
+    "city": "Sydney",
+    "state": "WA",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Permanent Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Developer"
+}

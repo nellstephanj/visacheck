@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000492",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Delhi FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Radha",
+  "surname": "Mishra",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "8372 Main Marg",
+    "unit_number": "",
+    "postal_code": "361978",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1958,
+    "month": 1,
+    "day": 8
+  },
+  "place_of_birth": {
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}

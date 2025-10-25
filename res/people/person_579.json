@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000579",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kota Kinabalu FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Khadijah",
+  "surname": "Kumar",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "8717 Jefferson Lorong",
+    "unit_number": "",
+    "postal_code": "33626",
+    "city": "Kuching",
+    "state": "Sarawak",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1975,
+    "month": 10,
+    "day": 31
+  },
+  "place_of_birth": {
+    "city": "Johor Bahru",
+    "state": "Johor",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Consultant"
+}

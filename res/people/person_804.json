@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000804",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mexico City FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Fernando",
+  "surname": "Pérez",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "3107 Second Boulevard",
+    "unit_number": "",
+    "postal_code": "97352",
+    "city": "Monterrey",
+    "state": "Nuevo León",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1949,
+    "month": 9,
+    "day": 1
+  },
+  "place_of_birth": {
+    "city": "León",
+    "state": "Guanajuato",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Consultant"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000844",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mexico City FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Ana",
+  "surname": "López",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "7467 First Calle",
+    "unit_number": "",
+    "postal_code": "92580",
+    "city": "Tijuana",
+    "state": "Baja California",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1943,
+    "month": 4,
+    "day": 22
+  },
+  "place_of_birth": {
+    "city": "Aguascalientes",
+    "state": "Aguascalientes",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}

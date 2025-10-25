@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000223",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Delhi FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Deepak",
+  "surname": "Gupta",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "9362 Park Main Road",
+    "unit_number": "Block 50",
+    "postal_code": "656687",
+    "city": "Bhubaneshwar",
+    "state": "Odisha",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1940,
+    "month": 12,
+    "day": 2
+  },
+  "place_of_birth": {
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Scientist"
+}

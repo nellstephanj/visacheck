@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000315",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mumbai FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Lata",
+  "surname": "Malhotra",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "1130 Jefferson Lane",
+    "unit_number": "",
+    "postal_code": "456024",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1940,
+    "month": 4,
+    "day": 10
+  },
+  "place_of_birth": {
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Temporary Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Manager"
+}

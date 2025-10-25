@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000214",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mumbai FO",
+  "applicant_is_minor": false,
+  "urgent": true,
+  "given_names": "Lata",
+  "surname": "Sinha",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "9258 Lincoln Main Road",
+    "unit_number": "",
+    "postal_code": "122985",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1956,
+    "month": 6,
+    "day": 11
+  },
+  "place_of_birth": {
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}

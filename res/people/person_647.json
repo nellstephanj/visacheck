@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000647",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Constantine FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Abdelkader",
+  "surname": "Saidi",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Algeria",
+  "address": {
+    "street_number": "341 Washington Boulevard",
+    "unit_number": "",
+    "postal_code": "27365",
+    "city": "Sétif",
+    "state": "Sétif Province",
+    "country": "Algeria"
+  },
+  "date_of_birth": {
+    "year": 1954,
+    "month": 5,
+    "day": 27
+  },
+  "place_of_birth": {
+    "city": "Bordj Bou Arréridj",
+    "state": "Bordj Bou Arréridj Province",
+    "country": "Algeria"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

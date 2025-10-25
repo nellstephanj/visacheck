@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000283",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mumbai FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Vikash",
+  "surname": "Chopra",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "8450 Washington Road",
+    "unit_number": "",
+    "postal_code": "182302",
+    "city": "Surat",
+    "state": "Gujarat",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1997,
+    "month": 12,
+    "day": 10
+  },
+  "place_of_birth": {
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Unemployed"
+}

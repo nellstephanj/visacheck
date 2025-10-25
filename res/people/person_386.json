@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000386",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Chennai FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Priya",
+  "surname": "Chhotray",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "2885 Second Main Road",
+    "unit_number": "",
+    "postal_code": "778645",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1959,
+    "month": 8,
+    "day": 13
+  },
+  "place_of_birth": {
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Unemployed"
+}

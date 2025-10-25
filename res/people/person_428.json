@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000428",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Delhi FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Meera",
+  "surname": "Choudhary",
+  "variation_in_birth_certificate": true,
+  "gender": "Female",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "276 Park Road",
+    "unit_number": "",
+    "postal_code": "211719",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1957,
+    "month": 9,
+    "day": 24
+  },
+  "place_of_birth": {
+    "city": "Pune",
+    "state": "Maharashtra",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Retail Worker"
+}

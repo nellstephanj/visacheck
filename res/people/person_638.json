@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000638",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Constantine FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Nadia",
+  "surname": "Mansouri",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Algeria",
+  "address": {
+    "street_number": "7976 Lincoln Avenue",
+    "unit_number": "",
+    "postal_code": "89764",
+    "city": "Algiers",
+    "state": "Algiers Province",
+    "country": "Algeria"
+  },
+  "date_of_birth": {
+    "year": 1945,
+    "month": 3,
+    "day": 23
+  },
+  "place_of_birth": {
+    "city": "Annaba",
+    "state": "Annaba Province",
+    "country": "Algeria"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Retail Worker"
+}

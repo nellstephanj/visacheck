@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000672",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Annaba FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Youssef",
+  "surname": "Saidi",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Algeria",
+  "address": {
+    "street_number": "6304 First Chemin",
+    "unit_number": "",
+    "postal_code": "48191",
+    "city": "Bordj Bou Arréridj",
+    "state": "Bordj Bou Arréridj Province",
+    "country": "Algeria"
+  },
+  "date_of_birth": {
+    "year": 1996,
+    "month": 8,
+    "day": 13
+  },
+  "place_of_birth": {
+    "city": "Oran",
+    "state": "Oran Province",
+    "country": "Algeria"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

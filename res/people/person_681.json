@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000681",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Algiers FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Samir",
+  "surname": "Ouali",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Algeria",
+  "address": {
+    "street_number": "3638 Main Place",
+    "unit_number": "",
+    "postal_code": "75890",
+    "city": "Biskra",
+    "state": "Biskra Province",
+    "country": "Algeria"
+  },
+  "date_of_birth": {
+    "year": 1945,
+    "month": 5,
+    "day": 22
+  },
+  "place_of_birth": {
+    "city": "Annaba",
+    "state": "Annaba Province",
+    "country": "Algeria"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Student"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000571",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "George Town FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Kamala",
+  "surname": "Wong",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "5595 Oak Tingkat",
+    "unit_number": "",
+    "postal_code": "67240",
+    "city": "Kuala Terengganu",
+    "state": "Terengganu",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1964,
+    "month": 2,
+    "day": 4
+  },
+  "place_of_birth": {
+    "city": "Johor Bahru",
+    "state": "Johor",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Retail Worker"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000387",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Chennai FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Ashok",
+  "surname": "Jain",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "6057 First Road",
+    "unit_number": "Block 2",
+    "postal_code": "344299",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1966,
+    "month": 11,
+    "day": 14
+  },
+  "place_of_birth": {
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}

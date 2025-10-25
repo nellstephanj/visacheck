@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000372",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mumbai FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Vikash",
+  "surname": "Malhotra",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "7163 Main Lane",
+    "unit_number": "",
+    "postal_code": "687100",
+    "city": "Delhi",
+    "state": "Delhi",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1955,
+    "month": 5,
+    "day": 28
+  },
+  "place_of_birth": {
+    "city": "Delhi",
+    "state": "Delhi",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Retail Worker"
+}

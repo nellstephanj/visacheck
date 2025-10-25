@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000793",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Cairo FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Khaled",
+  "surname": "Gamal",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Egypt",
+  "address": {
+    "street_number": "3003 Main حي",
+    "unit_number": "",
+    "postal_code": "46734",
+    "city": "El Mahalla El Kubra",
+    "state": "Gharbia Governorate",
+    "country": "Egypt"
+  },
+  "date_of_birth": {
+    "year": 1960,
+    "month": 4,
+    "day": 17
+  },
+  "place_of_birth": {
+    "city": "El Mahalla El Kubra",
+    "state": "Gharbia Governorate",
+    "country": "Egypt"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}

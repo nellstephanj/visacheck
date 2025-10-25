@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000257",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Chennai FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Sita",
+  "surname": "Kumar",
+  "variation_in_birth_certificate": true,
+  "gender": "Female",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "9528 Lincoln Main Road",
+    "unit_number": "",
+    "postal_code": "487615",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1983,
+    "month": 8,
+    "day": 2
+  },
+  "place_of_birth": {
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Consultant"
+}

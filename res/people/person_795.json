@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000795",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Alexandria FO",
+  "applicant_is_minor": false,
+  "urgent": true,
+  "given_names": "Nour",
+  "surname": "Mahmoud",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Egypt",
+  "address": {
+    "street_number": "3522 Lincoln حي",
+    "unit_number": "دور 4",
+    "postal_code": "34861",
+    "city": "Giza",
+    "state": "Giza Governorate",
+    "country": "Egypt"
+  },
+  "date_of_birth": {
+    "year": 1971,
+    "month": 10,
+    "day": 2
+  },
+  "place_of_birth": {
+    "city": "Port Said",
+    "state": "Port Said Governorate",
+    "country": "Egypt"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Developer"
+}

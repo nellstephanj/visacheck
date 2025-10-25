@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000090",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Sydney FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Casey",
+  "surname": "King",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "780 High St",
+    "unit_number": "1",
+    "postal_code": "6343",
+    "city": "Darwin",
+    "state": "VIC",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1953,
+    "month": 9,
+    "day": 18
+  },
+  "place_of_birth": {
+    "city": "Sydney",
+    "state": "VIC",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Permanent Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Chef"
+}

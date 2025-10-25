@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000398",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Bangalore FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Anita",
+  "surname": "Singh",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "1106 Park Cross",
+    "unit_number": "Flat 32",
+    "postal_code": "584242",
+    "city": "Chandigarh",
+    "state": "Punjab",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1998,
+    "month": 10,
+    "day": 15
+  },
+  "place_of_birth": {
+    "city": "Bhubaneshwar",
+    "state": "Odisha",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Scientist"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000251",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Delhi FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Lata",
+  "surname": "Kumar",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "846 Park Road",
+    "unit_number": "",
+    "postal_code": "239658",
+    "city": "Delhi",
+    "state": "Delhi",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1948,
+    "month": 11,
+    "day": 24
+  },
+  "place_of_birth": {
+    "city": "Bhubaneshwar",
+    "state": "Odisha",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Developer"
+}

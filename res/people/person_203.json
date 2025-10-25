@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000203",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Chennai FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Kavita",
+  "surname": "Khanna",
+  "variation_in_birth_certificate": true,
+  "gender": "Other",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "8329 Oak Main Road",
+    "unit_number": "",
+    "postal_code": "209274",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1954,
+    "month": 2,
+    "day": 4
+  },
+  "place_of_birth": {
+    "city": "Delhi",
+    "state": "Delhi",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

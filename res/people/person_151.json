@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000151",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Melbourne FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Avery",
+  "surname": "Allen",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "834 Eagles Road",
+    "unit_number": "1",
+    "postal_code": "5597",
+    "city": "Canberra",
+    "state": "NSW",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1978,
+    "month": 4,
+    "day": 25
+  },
+  "place_of_birth": {
+    "city": "Adelaide",
+    "state": "NSW",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Temporary Resident",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Student"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000817",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mérida FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "María",
+  "surname": "Morales",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "3900 Oak Calle",
+    "unit_number": "Piso 47",
+    "postal_code": "32770",
+    "city": "Mérida",
+    "state": "Yucatán",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1963,
+    "month": 11,
+    "day": 25
+  },
+  "place_of_birth": {
+    "city": "Torreón",
+    "state": "Coahuila",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Teacher"
+}

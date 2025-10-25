@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000567",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kota Kinabalu FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Kumar",
+  "surname": "Raj",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "8105 Main Jalan",
+    "unit_number": "",
+    "postal_code": "29722",
+    "city": "Klang",
+    "state": "Selangor",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1940,
+    "month": 11,
+    "day": 25
+  },
+  "place_of_birth": {
+    "city": "Ipoh",
+    "state": "Perak",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}

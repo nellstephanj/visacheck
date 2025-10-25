@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000727",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Luxor FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Khaled",
+  "surname": "Mostafa",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Egypt",
+  "address": {
+    "street_number": "9387 Lincoln ميدان",
+    "unit_number": "عمارة 27",
+    "postal_code": "68857",
+    "city": "Asyut",
+    "state": "Asyut Governorate",
+    "country": "Egypt"
+  },
+  "date_of_birth": {
+    "year": 1987,
+    "month": 1,
+    "day": 26
+  },
+  "place_of_birth": {
+    "city": "Giza",
+    "state": "Giza Governorate",
+    "country": "Egypt"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Developer"
+}

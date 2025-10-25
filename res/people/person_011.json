@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000011",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Sydney FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Lee",
+  "surname": "Allen",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "886 Eagles Road",
+    "unit_number": "A",
+    "postal_code": "8371",
+    "city": "Melbourne",
+    "state": "NSW",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 2005,
+    "month": 8,
+    "day": 10
+  },
+  "place_of_birth": {
+    "city": "Melbourne",
+    "state": "NSW",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Student"
+}

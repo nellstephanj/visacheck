@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000900",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Monterrey FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Roberto",
+  "surname": "Gómez",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "6953 Jefferson Privada",
+    "unit_number": "Piso 7",
+    "postal_code": "71607",
+    "city": "Torreón",
+    "state": "Coahuila",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1966,
+    "month": 6,
+    "day": 2
+  },
+  "place_of_birth": {
+    "city": "Puebla",
+    "state": "Puebla",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Temporary Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Teacher"
+}

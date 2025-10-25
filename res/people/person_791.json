@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000791",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Cairo FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Hassan",
+  "surname": "Youssef",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Egypt",
+  "address": {
+    "street_number": "3572 Oak حي",
+    "unit_number": "",
+    "postal_code": "60091",
+    "city": "Giza",
+    "state": "Giza Governorate",
+    "country": "Egypt"
+  },
+  "date_of_birth": {
+    "year": 1972,
+    "month": 5,
+    "day": 26
+  },
+  "place_of_birth": {
+    "city": "Luxor",
+    "state": "Luxor Governorate",
+    "country": "Egypt"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Teacher"
+}

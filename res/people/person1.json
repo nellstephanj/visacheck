@@ -1,0 +1,38 @@
+
+{
+	"visa_application_number": "[REDACTED]",
+	"case_type": "Schengen Short Stay",
+	"visa_type_requested": "Short Stay",
+	"application_type": "Initial",
+	"submission_date": "2023-05-09",
+	"intake_location": "Sydney FO",
+	"applicant_is_minor": false,
+	"urgent": true,
+	"given_names": "Test",
+	"surname": "Person",
+	"variation_in_birth_certificate": false,
+	"gender": "Female",
+	"country_of_nationality": "Australia",
+	"address": {
+		"street_number": "Eagles Road",
+		"unit_number": "A",
+		"postal_code": "XXXX",
+		"city": "Mount Reaper",
+		"state": "NSW",
+		"country": "Australia"
+	},
+	"date_of_birth": {
+		"year": null,
+		"note": "Year only (incomplete)"
+	},
+	"place_of_birth": {
+		"city": "Snowy Plain",
+		"state": "NSW",
+		"country": "Australia"
+	},
+	"residency_status_in_australia": "Permanent Resident",
+	"civil_status": "Married",
+	"packaged_member_of_eu": false,
+	"occupation": "Unemployed"
+}
+

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000155",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Sydney FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Parker",
+  "surname": "Baker",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "11 Eagles Road",
+    "unit_number": "1",
+    "postal_code": "9932",
+    "city": "Hobart",
+    "state": "ACT",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1965,
+    "month": 8,
+    "day": 5
+  },
+  "place_of_birth": {
+    "city": "Brisbane",
+    "state": "ACT",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Temporary Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Chef"
+}

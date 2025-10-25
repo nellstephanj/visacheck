@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000208",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mumbai FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Geeta",
+  "surname": "Chopra",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "7329 Park Road",
+    "unit_number": "",
+    "postal_code": "359272",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1984,
+    "month": 6,
+    "day": 15
+  },
+  "place_of_birth": {
+    "city": "Chandigarh",
+    "state": "Punjab",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Temporary Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

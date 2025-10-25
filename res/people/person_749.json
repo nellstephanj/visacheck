@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000749",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Giza FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Mahmoud",
+  "surname": "Fouad",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Egypt",
+  "address": {
+    "street_number": "6254 Jefferson طريق",
+    "unit_number": "دور 20",
+    "postal_code": "85439",
+    "city": "Tanta",
+    "state": "Gharbia Governorate",
+    "country": "Egypt"
+  },
+  "date_of_birth": {
+    "year": 1947,
+    "month": 7,
+    "day": 12
+  },
+  "place_of_birth": {
+    "city": "Tanta",
+    "state": "Gharbia Governorate",
+    "country": "Egypt"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

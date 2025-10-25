@@ -1,0 +1,38 @@
+{
+  "visa_application_number": "",
+  "case_type": "",
+  "visa_type_requested": "",
+  "application_type": "",
+  "submission_date": "",
+  "intake_location": "",
+  "applicant_is_minor": null,
+  "urgent": null,
+  "given_names": "",
+  "surname": "",
+  "variation_in_birth_certificate": null,
+  "gender": "",
+  "country_of_nationality": "",
+  "address": {
+    "street_number": "",
+    "unit_number": "",
+    "postal_code": "",
+    "city": "",
+    "state": "",
+    "country": ""
+  },
+  "date_of_birth": {
+    "year": null,
+    "month": null,
+    "day": null,
+    "note": ""
+  },
+  "place_of_birth": {
+    "city": "",
+    "state": "",
+    "country": ""
+  },
+  "residency_status_in_country_of_residence": "",
+  "civil_status": "",
+  "packaged_member_of_eu": null,
+  "occupation": ""
+}

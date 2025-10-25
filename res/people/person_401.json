@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000401",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mumbai FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Sunita",
+  "surname": "Sinha",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "5878 Park Road",
+    "unit_number": "",
+    "postal_code": "931109",
+    "city": "Bhubaneshwar",
+    "state": "Odisha",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1976,
+    "month": 7,
+    "day": 19
+  },
+  "place_of_birth": {
+    "city": "Nainital",
+    "state": "Uttarakhand",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Retail Worker"
+}

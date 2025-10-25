@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000560",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kuching FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Li Hua",
+  "surname": "Mohamed",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "4388 Main Jalan",
+    "unit_number": "",
+    "postal_code": "08247",
+    "city": "George Town",
+    "state": "Penang",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1949,
+    "month": 2,
+    "day": 24
+  },
+  "place_of_birth": {
+    "city": "Petaling Jaya",
+    "state": "Selangor",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Teacher"
+}

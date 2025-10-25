@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000312",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Delhi FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Manoj",
+  "surname": "Chopra",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "2924 Park Lane",
+    "unit_number": "",
+    "postal_code": "455489",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1959,
+    "month": 8,
+    "day": 5
+  },
+  "place_of_birth": {
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Chef"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000512",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kota Kinabalu FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Ahmad",
+  "surname": "Rahman",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "6061 Second Persiaran",
+    "unit_number": "Tingkat 24",
+    "postal_code": "84716",
+    "city": "Shah Alam",
+    "state": "Selangor",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1964,
+    "month": 3,
+    "day": 2
+  },
+  "place_of_birth": {
+    "city": "Kuala Lumpur",
+    "state": "Federal Territory of Kuala Lumpur",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Chef"
+}

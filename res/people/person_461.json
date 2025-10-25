@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000461",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kolkata FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Usha",
+  "surname": "Shah",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "2702 Jefferson Lane",
+    "unit_number": "",
+    "postal_code": "358365",
+    "city": "Chandigarh",
+    "state": "Punjab",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1958,
+    "month": 4,
+    "day": 24
+  },
+  "place_of_birth": {
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Unemployed"
+}

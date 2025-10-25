@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000841",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mérida FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Carmen",
+  "surname": "Gutiérrez",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "6913 First Privada",
+    "unit_number": "",
+    "postal_code": "00691",
+    "city": "Mexicali",
+    "state": "Baja California",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1952,
+    "month": 4,
+    "day": 17
+  },
+  "place_of_birth": {
+    "city": "Tampico",
+    "state": "Tamaulipas",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Manager"
+}

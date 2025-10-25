@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000897",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Guadalajara FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Guadalupe",
+  "surname": "Morales",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "3165 Park Callejón",
+    "unit_number": "",
+    "postal_code": "19909",
+    "city": "Guadalajara",
+    "state": "Jalisco",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1969,
+    "month": 8,
+    "day": 10
+  },
+  "place_of_birth": {
+    "city": "Juárez",
+    "state": "Chihuahua",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Developer"
+}

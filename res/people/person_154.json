@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000154",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-21",
+  "intake_location": "Melbourne FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Skyler",
+  "surname": "Baker",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "95 Eagles Road",
+    "unit_number": "A",
+    "postal_code": "2070",
+    "city": "Darwin",
+    "state": "SA",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 2001,
+    "month": 8,
+    "day": 1
+  },
+  "place_of_birth": {
+    "city": "Adelaide",
+    "state": "SA",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Permanent Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}

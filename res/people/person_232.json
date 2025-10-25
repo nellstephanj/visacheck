@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000232",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kolkata FO",
+  "applicant_is_minor": false,
+  "urgent": true,
+  "given_names": "Ashok",
+  "surname": "Patel",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "6472 Main Road",
+    "unit_number": "",
+    "postal_code": "126929",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1986,
+    "month": 6,
+    "day": 26
+  },
+  "place_of_birth": {
+    "city": "Nainital",
+    "state": "Uttarakhand",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Consultant"
+}

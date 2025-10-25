@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000008",
+  "case_type": "Work Visa",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-21",
+  "intake_location": "Melbourne FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Jordan",
+  "surname": "King",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "70 Main St",
+    "unit_number": "1",
+    "postal_code": "5698",
+    "city": "Darwin",
+    "state": "NSW",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1989,
+    "month": 6,
+    "day": 24
+  },
+  "place_of_birth": {
+    "city": "Hobart",
+    "state": "NSW",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Student"
+}

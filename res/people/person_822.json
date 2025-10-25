@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000822",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mexico City FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Antonio",
+  "surname": "Martínez",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "6852 Second Boulevard",
+    "unit_number": "",
+    "postal_code": "65041",
+    "city": "León",
+    "state": "Guanajuato",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1953,
+    "month": 10,
+    "day": 10
+  },
+  "place_of_birth": {
+    "city": "Cuernavaca",
+    "state": "Morelos",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000297",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kolkata FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Meera",
+  "surname": "Patel",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "1583 Second Road",
+    "unit_number": "Block 44",
+    "postal_code": "532136",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1947,
+    "month": 2,
+    "day": 7
+  },
+  "place_of_birth": {
+    "city": "Bhubaneshwar",
+    "state": "Odisha",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000050",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-21",
+  "intake_location": "Melbourne FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Parker",
+  "surname": "Nguyen",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "559 Main St",
+    "unit_number": "",
+    "postal_code": "3422",
+    "city": "Melbourne",
+    "state": "SA",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 2005,
+    "month": 10,
+    "day": 17
+  },
+  "place_of_birth": {
+    "city": "Brisbane",
+    "state": "SA",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Consultant"
+}

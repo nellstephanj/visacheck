@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000870",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Monterrey FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Ana",
+  "surname": "Hernández",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "1858 Lincoln Avenida",
+    "unit_number": "",
+    "postal_code": "85590",
+    "city": "Puebla",
+    "state": "Puebla",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1942,
+    "month": 2,
+    "day": 12
+  },
+  "place_of_birth": {
+    "city": "Monterrey",
+    "state": "Nuevo León",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Retail Worker"
+}

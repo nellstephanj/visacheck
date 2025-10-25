@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000096",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Brisbane FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Morgan",
+  "surname": "Scott",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "138 High St",
+    "unit_number": "2",
+    "postal_code": "5088",
+    "city": "Brisbane",
+    "state": "SA",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1983,
+    "month": 1,
+    "day": 9
+  },
+  "place_of_birth": {
+    "city": "Adelaide",
+    "state": "SA",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Permanent Resident",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Manager"
+}

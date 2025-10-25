@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000123",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Melbourne FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Riley",
+  "surname": "Wright",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "912 Main St",
+    "unit_number": "3",
+    "postal_code": "5764",
+    "city": "Perth",
+    "state": "ACT",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1947,
+    "month": 1,
+    "day": 22
+  },
+  "place_of_birth": {
+    "city": "Perth",
+    "state": "ACT",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Permanent Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Manager"
+}

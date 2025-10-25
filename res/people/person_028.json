@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000028",
+  "case_type": "Work Visa",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Sydney FO",
+  "applicant_is_minor": false,
+  "urgent": true,
+  "given_names": "Lee",
+  "surname": "Clark",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "507 High St",
+    "unit_number": "A",
+    "postal_code": "6086",
+    "city": "Brisbane",
+    "state": "VIC",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1974,
+    "month": 10,
+    "day": 20
+  },
+  "place_of_birth": {
+    "city": "Darwin",
+    "state": "VIC",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Retail Worker"
+}

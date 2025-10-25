@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000201",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Chennai FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Usha",
+  "surname": "Patel",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "1470 First Cross",
+    "unit_number": "Apartment 50",
+    "postal_code": "975262",
+    "city": "Surat",
+    "state": "Gujarat",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1974,
+    "month": 9,
+    "day": 13
+  },
+  "place_of_birth": {
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000063",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Initial",
+  "submission_date": "2025-10-21",
+  "intake_location": "Brisbane FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Parker",
+  "surname": "Allen",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "305 High St",
+    "unit_number": "A",
+    "postal_code": "9818",
+    "city": "Snowy Plain",
+    "state": "NT",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1941,
+    "month": 2,
+    "day": 3
+  },
+  "place_of_birth": {
+    "city": "Adelaide",
+    "state": "NT",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Teacher"
+}

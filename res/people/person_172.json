@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000172",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-21",
+  "intake_location": "Brisbane FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": " Rowan",
+  "surname": "Wilson",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "931 Eagles Road",
+    "unit_number": "1",
+    "postal_code": "3692",
+    "city": "Snowy Plain",
+    "state": "NSW",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 2008,
+    "month": 5,
+    "day": 28
+  },
+  "place_of_birth": {
+    "city": "Canberra",
+    "state": "NSW",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Permanent Resident",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Manager"
+}

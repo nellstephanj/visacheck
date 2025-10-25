@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000818",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Guadalajara FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Guadalupe",
+  "surname": "Martínez",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "3296 Second Avenida",
+    "unit_number": "",
+    "postal_code": "72851",
+    "city": "Querétaro",
+    "state": "Querétaro",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1985,
+    "month": 11,
+    "day": 13
+  },
+  "place_of_birth": {
+    "city": "Tampico",
+    "state": "Tamaulipas",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Chef"
+}

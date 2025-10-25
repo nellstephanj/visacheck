@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000814",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mexico City FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Antonio",
+  "surname": "Pérez",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "1037 Oak Avenida",
+    "unit_number": "",
+    "postal_code": "15278",
+    "city": "Monterrey",
+    "state": "Nuevo León",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1951,
+    "month": 3,
+    "day": 15
+  },
+  "place_of_birth": {
+    "city": "Puebla",
+    "state": "Puebla",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Scientist"
+}

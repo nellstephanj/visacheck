@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000527",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kota Kinabalu FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Muthu",
+  "surname": "Abdullah",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "8122 Second Lebuh",
+    "unit_number": "",
+    "postal_code": "87714",
+    "city": "Kuantan",
+    "state": "Pahang",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1991,
+    "month": 9,
+    "day": 18
+  },
+  "place_of_birth": {
+    "city": "Kuching",
+    "state": "Sarawak",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Manager"
+}

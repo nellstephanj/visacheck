@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000250",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kolkata FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Meera",
+  "surname": "Pandey",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "5638 Jefferson Marg",
+    "unit_number": "",
+    "postal_code": "281666",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 2001,
+    "month": 8,
+    "day": 4
+  },
+  "place_of_birth": {
+    "city": "Nainital",
+    "state": "Uttarakhand",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

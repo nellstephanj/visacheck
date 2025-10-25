@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000873",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mérida FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Miguel",
+  "surname": "Gómez",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "5522 Second Avenida",
+    "unit_number": "",
+    "postal_code": "00056",
+    "city": "León",
+    "state": "Guanajuato",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1958,
+    "month": 5,
+    "day": 27
+  },
+  "place_of_birth": {
+    "city": "Tijuana",
+    "state": "Baja California",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Manager"
+}

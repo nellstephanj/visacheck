@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000021",
+  "case_type": "Work Visa",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-21",
+  "intake_location": "Sydney FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Morgan",
+  "surname": "Martin",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "461 Eagles Road",
+    "unit_number": "A",
+    "postal_code": "3810",
+    "city": "Snowy Plain",
+    "state": "NT",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1961,
+    "month": 5,
+    "day": 27
+  },
+  "place_of_birth": {
+    "city": "Perth",
+    "state": "NT",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Temporary Resident",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

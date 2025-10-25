@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000410",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Chennai FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Kavita",
+  "surname": "Choudhary",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "7770 Main Cross",
+    "unit_number": "",
+    "postal_code": "267337",
+    "city": "Nainital",
+    "state": "Uttarakhand",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1944,
+    "month": 12,
+    "day": 22
+  },
+  "place_of_birth": {
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}

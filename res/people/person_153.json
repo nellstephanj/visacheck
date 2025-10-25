@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000153",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-21",
+  "intake_location": "Sydney FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Drew",
+  "surname": "Jones",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "852 Main St",
+    "unit_number": "1",
+    "postal_code": "5466",
+    "city": "Brisbane",
+    "state": "NT",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 1993,
+    "month": 10,
+    "day": 5
+  },
+  "place_of_birth": {
+    "city": "Perth",
+    "state": "NT",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Developer"
+}

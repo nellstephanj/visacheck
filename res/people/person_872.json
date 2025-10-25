@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000872",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mérida FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Isabel",
+  "surname": "Cruz",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "573 First Boulevard",
+    "unit_number": "Piso 29",
+    "postal_code": "42787",
+    "city": "Torreón",
+    "state": "Coahuila",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1994,
+    "month": 8,
+    "day": 23
+  },
+  "place_of_birth": {
+    "city": "Torreón",
+    "state": "Coahuila",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Consultant"
+}

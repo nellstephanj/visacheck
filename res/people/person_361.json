@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000361",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Chennai FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Lata",
+  "surname": "Kumar",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "9374 Second Marg",
+    "unit_number": "Flat 32",
+    "postal_code": "532204",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1952,
+    "month": 8,
+    "day": 10
+  },
+  "place_of_birth": {
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Unemployed"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000737",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Giza FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Amr",
+  "surname": "Rashid",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Egypt",
+  "address": {
+    "street_number": "9992 Lincoln منطقة",
+    "unit_number": "عمارة 26",
+    "postal_code": "87821",
+    "city": "Giza",
+    "state": "Giza Governorate",
+    "country": "Egypt"
+  },
+  "date_of_birth": {
+    "year": 1942,
+    "month": 3,
+    "day": 26
+  },
+  "place_of_birth": {
+    "city": "Aswan",
+    "state": "Aswan Governorate",
+    "country": "Egypt"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Divorced",
+  "packaged_member_of_eu": false,
+  "occupation": "Scientist"
+}

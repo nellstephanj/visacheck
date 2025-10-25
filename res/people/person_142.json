@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000142",
+  "case_type": "Work Visa",
+  "visa_type_requested": "Short Stay",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-21",
+  "intake_location": "Brisbane FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Taylor",
+  "surname": "Young",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "921 Eagles Road",
+    "unit_number": "A",
+    "postal_code": "1619",
+    "city": "Adelaide",
+    "state": "NSW",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 2014,
+    "month": 6,
+    "day": 5
+  },
+  "place_of_birth": {
+    "city": "Sydney",
+    "state": "NSW",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Temporary Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

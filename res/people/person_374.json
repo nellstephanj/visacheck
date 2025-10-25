@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000374",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Mumbai FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Sita",
+  "surname": "Jain",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "450 Main Marg",
+    "unit_number": "",
+    "postal_code": "593142",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1962,
+    "month": 7,
+    "day": 16
+  },
+  "place_of_birth": {
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Unemployed"
+}

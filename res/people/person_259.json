@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000259",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Delhi FO",
+  "applicant_is_minor": false,
+  "urgent": true,
+  "given_names": "Usha",
+  "surname": "Agarwal",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "India",
+  "address": {
+    "street_number": "8001 Lincoln Road",
+    "unit_number": "Block 9",
+    "postal_code": "752814",
+    "city": "Bhubaneshwar",
+    "state": "Odisha",
+    "country": "India"
+  },
+  "date_of_birth": {
+    "year": 1945,
+    "month": 9,
+    "day": 16
+  },
+  "place_of_birth": {
+    "city": "Surat",
+    "state": "Gujarat",
+    "country": "India"
+  },
+  "residency_status_in_country_of_residence": "Temporary Resident",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Consultant"
+}

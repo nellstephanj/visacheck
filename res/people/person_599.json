@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000599",
+  "case_type": "Tourist",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Kota Kinabalu FO",
+  "applicant_is_minor": false,
+  "urgent": true,
+  "given_names": "Hassan",
+  "surname": "Raj",
+  "variation_in_birth_certificate": false,
+  "gender": "Male",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "6260 Oak Lebuh",
+    "unit_number": "Blok 44",
+    "postal_code": "77078",
+    "city": "Miri",
+    "state": "Sarawak",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1981,
+    "month": 10,
+    "day": 20
+  },
+  "place_of_birth": {
+    "city": "Kuala Terengganu",
+    "state": "Terengganu",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Developer"
+}

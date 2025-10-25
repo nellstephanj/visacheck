@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000887",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Tijuana FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Ana",
+  "surname": "Vásquez",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Mexico",
+  "address": {
+    "street_number": "8959 Jefferson Privada",
+    "unit_number": "Local 30",
+    "postal_code": "62740",
+    "city": "Guadalajara",
+    "state": "Jalisco",
+    "country": "Mexico"
+  },
+  "date_of_birth": {
+    "year": 1967,
+    "month": 4,
+    "day": 21
+  },
+  "place_of_birth": {
+    "city": "Tijuana",
+    "state": "Baja California",
+    "country": "Mexico"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Chef"
+}

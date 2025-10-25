@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000509",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "George Town FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Siti",
+  "surname": "Mohamed",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "7094 Park Lorong",
+    "unit_number": "",
+    "postal_code": "20148",
+    "city": "Petaling Jaya",
+    "state": "Selangor",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1952,
+    "month": 3,
+    "day": 12
+  },
+  "place_of_birth": {
+    "city": "Shah Alam",
+    "state": "Selangor",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}

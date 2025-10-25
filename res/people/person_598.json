@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000598",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "George Town FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Shanti",
+  "surname": "Lee",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Malaysia",
+  "address": {
+    "street_number": "250 Jefferson Lebuh",
+    "unit_number": "Unit 44",
+    "postal_code": "93836",
+    "city": "Kuantan",
+    "state": "Pahang",
+    "country": "Malaysia"
+  },
+  "date_of_birth": {
+    "year": 1973,
+    "month": 10,
+    "day": 30
+  },
+  "place_of_birth": {
+    "city": "Shah Alam",
+    "state": "Selangor",
+    "country": "Malaysia"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Consultant"
+}

@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000732",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Cairo FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Hassan",
+  "surname": "Farouk",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Egypt",
+  "address": {
+    "street_number": "2657 Main حي",
+    "unit_number": "",
+    "postal_code": "42139",
+    "city": "Tanta",
+    "state": "Gharbia Governorate",
+    "country": "Egypt"
+  },
+  "date_of_birth": {
+    "year": 1952,
+    "month": 1,
+    "day": 27
+  },
+  "place_of_birth": {
+    "city": "Suez",
+    "state": "Suez Governorate",
+    "country": "Egypt"
+  },
+  "residency_status_in_country_of_residence": "Citizen",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Scientist"
+}

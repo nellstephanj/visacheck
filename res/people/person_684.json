@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000684",
+  "case_type": "Student Visa",
+  "visa_type_requested": "Short Stay 60 Days",
+  "application_type": "Initial",
+  "submission_date": "2025-10-22",
+  "intake_location": "Annaba FO",
+  "applicant_is_minor": false,
+  "urgent": false,
+  "given_names": "Nadia",
+  "surname": "Rahmani",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Algeria",
+  "address": {
+    "street_number": "2263 Main Avenue",
+    "unit_number": "",
+    "postal_code": "74093",
+    "city": "Tlemcen",
+    "state": "Tlemcen Province",
+    "country": "Algeria"
+  },
+  "date_of_birth": {
+    "year": 1962,
+    "month": 9,
+    "day": 12
+  },
+  "place_of_birth": {
+    "city": "Tiaret",
+    "state": "Tiaret Province",
+    "country": "Algeria"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Teacher"
+}

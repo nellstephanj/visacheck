@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000641",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Short Stay 30 Days",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-22",
+  "intake_location": "Annaba FO",
+  "applicant_is_minor": true,
+  "urgent": false,
+  "given_names": "Aicha",
+  "surname": "Chabane",
+  "variation_in_birth_certificate": false,
+  "gender": "Female",
+  "country_of_nationality": "Algeria",
+  "address": {
+    "street_number": "2735 Washington Place",
+    "unit_number": "",
+    "postal_code": "25870",
+    "city": "Tebessa",
+    "state": "Tebessa Province",
+    "country": "Algeria"
+  },
+  "date_of_birth": {
+    "year": 1980,
+    "month": 11,
+    "day": 1
+  },
+  "place_of_birth": {
+    "city": "Sidi Bel Abbès",
+    "state": "Sidi Bel Abbès Province",
+    "country": "Algeria"
+  },
+  "residency_status_in_country_of_residence": "Permanent Resident",
+  "civil_status": "Single",
+  "packaged_member_of_eu": false,
+  "occupation": "Engineer"
+}

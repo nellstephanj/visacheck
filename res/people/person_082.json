@@ -1,0 +1,37 @@
+{
+  "visa_application_number": "AUTO000082",
+  "case_type": "Schengen Short Stay",
+  "visa_type_requested": "Long Stay",
+  "application_type": "Renewal",
+  "submission_date": "2025-10-21",
+  "intake_location": "Melbourne FO",
+  "applicant_is_minor": true,
+  "urgent": true,
+  "given_names": "Jamie",
+  "surname": "Torres",
+  "variation_in_birth_certificate": false,
+  "gender": "Other",
+  "country_of_nationality": "Australia",
+  "address": {
+    "street_number": "91 Eagles Road",
+    "unit_number": "1",
+    "postal_code": "2317",
+    "city": "Darwin",
+    "state": "QLD",
+    "country": "Australia"
+  },
+  "date_of_birth": {
+    "year": 2018,
+    "month": 10,
+    "day": 26
+  },
+  "place_of_birth": {
+    "city": "Snowy Plain",
+    "state": "QLD",
+    "country": "Australia"
+  },
+  "residency_status_in_australia": "Permanent Resident",
+  "civil_status": "Married",
+  "packaged_member_of_eu": false,
+  "occupation": "Nurse"
+}
