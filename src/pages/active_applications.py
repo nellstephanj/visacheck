@@ -1,23 +1,16 @@
 """Active Applications Page"""
 import streamlit as st
 import json
-import random
 from pathlib import Path
-from datetime import datetime, timedelta
+from datetime import datetime
 from util.session_manager import SessionManager
+from config.settings import Settings
 
 
 def load_person_data(file_path):
     """Load person data from JSON file"""
     with open(file_path, 'r') as f:
         return json.load(f)
-
-
-def get_random_people(people_dir, count=20):
-    """Get random people from the people directory"""
-    json_files = list(Path(people_dir).glob("person_*.json"))
-    selected_files = random.sample(json_files, min(count, len(json_files)))
-    return [load_person_data(file) for file in selected_files]
 
 
 def calculate_days_in_process(submission_date_str):
@@ -27,8 +20,8 @@ def calculate_days_in_process(submission_date_str):
         today = datetime.now()
         days = (today - submission_date).days
         return days
-    except:
-        return random.randint(-5, 30)
+    except Exception as e:
+        raise ValueError(f"Unable to calculate days in process: invalid date format '{submission_date_str}'. Expected format: YYYY-MM-DD") from e
 
 
 def get_days_color(days):
@@ -74,42 +67,47 @@ def get_days_circle_html(days):
     return html
 
 
-def generate_mock_applications(people):
-    """Generate mock application data from people"""
+def get_people_files(people_dir):
+    """Get all people files sorted by filename"""
+    return sorted(list(Path(people_dir).glob("person_*.json")))
+
+
+def get_total_applications_count(people_dir):
+    """Get total count of applications for display"""
+    files = get_people_files(people_dir)
+    return len(files)
+
+
+def get_applications_page(people_dir, page_number=1, per_page=25):
+    """Get applications for a specific page"""
+    files = get_people_files(people_dir)
+    start_idx = (page_number - 1) * per_page
+    end_idx = start_idx + per_page
+    page_files = files[start_idx:end_idx]
+    
     applications = []
-    
-    offices = [
-        "Kai e2e Registration officer 9",
-        "Kai e2e Registration officer 5",
-        "Kai e2e Registration officer 3",
-        "Kai e2e Registration officer 7",
-        None  # For unassigned
-    ]
-    
-    group_names = ["Nguyen", "Johnson", "Smith", "Garcia", "Martinez", "Chen"]
-    
-    for idx, person in enumerate(people):
-        # Calculate submission date (random between 0-40 days ago)
-        days_ago = random.randint(0, 40)
-        submission_date = datetime.now() - timedelta(days=days_ago)
+    for file_path in page_files:
+        person_data = load_person_data(file_path)
         
-        # Group size (2-5 people)
-        group_size = random.randint(2, 5)
+        # Calculate days in process
+        submission_date_str = person_data.get('submission_date')
+        if not submission_date_str:
+            continue
+            
+        days_in_process = calculate_days_in_process(submission_date_str)
+        submission_date = datetime.strptime(submission_date_str, "%Y-%m-%d")
         
         application = {
-            'id': idx + 1,
             'submission_date': submission_date.strftime("%d/%m/%Y"),
-            'submission_date_iso': submission_date.strftime("%Y-%m-%d"),
-            'days_in_process': days_ago,
-            'application_number': person.get('visa_application_number', f'NLDMFAZ30599854234{idx:04d}'),
-            'group_size': group_size,
-            'group_name': random.choice(group_names),
-            'intake_location': person.get('intake_location', 'Abu Dhabi-FO'),
-            'application_status': 'To Decide',
-            'date_of_arrival': (datetime.now() + timedelta(days=random.randint(5, 30))).strftime("%d/%m/%Y"),
-            'nationality': person.get('country_of_nationality', 'Unknown'),
-            'assigned_user': random.choice(offices),
-            'person_data': person
+            'days_in_process': days_in_process,
+            'application_number': person_data.get('visa_application_number', 'N/A'),
+            'intake_location': person_data.get('intake_location', 'N/A'),
+            'application_status': 'To Decide',  # Static for now
+            'urgent': person_data.get('urgent', False),
+            'case_type': person_data.get('case_type', 'N/A'),
+            'visa_type_requested': person_data.get('visa_type_requested', 'N/A'),
+            'nationality': person_data.get('country_of_nationality', 'N/A'),
+            'person_data': person_data
         }
         applications.append(application)
     
@@ -135,133 +133,162 @@ def active_applications_page():
     # Page title
     st.title("Active Applications")
     
-    # Action buttons at the top
-    col1, col2, col3 = st.columns([1, 1, 4])
-    with col2:
-        if st.button("Assign", type="primary", use_container_width=True):
-            st.info("Assign functionality coming soon")
+    # Get the people directory from settings
+    settings = Settings()
+    people_dir = settings.PEOPLE_DIR
+    
+    # Get total count for display
+    total_count = get_total_applications_count(people_dir)
+    
+    # Pagination setup
+    per_page = 25
+    total_pages = (total_count + per_page - 1) // per_page
+    
+    # Initialize page number in session state
+    if 'current_page' not in st.session_state:
+        st.session_state.current_page = 1
+    
+    # Display total count
+    st.write(f"**Total Applications:** {total_count}")
+    
+    # Pagination controls
+    col1, col2, col3, col4 = st.columns([1, 2, 2, 1])
+    
     with col1:
-        if st.button("Unassign", use_container_width=True):
-            st.info("Unassign functionality coming soon")
+        if st.button("← Previous", disabled=st.session_state.current_page <= 1):
+            st.session_state.current_page -= 1
+            st.rerun()
+    
+    with col2:
+        st.write(f"Page {st.session_state.current_page} of {total_pages}")
+    
+    with col3:
+        st.write(f"Showing {min(per_page, total_count - (st.session_state.current_page - 1) * per_page)} of {total_count} applications")
+    
+    with col4:
+        if st.button("Next →", disabled=st.session_state.current_page >= total_pages):
+            st.session_state.current_page += 1
+            st.rerun()
     
     st.divider()
     
-    # Get the people directory
-    base_dir = Path(__file__).parent.parent.parent
-    people_dir = base_dir / "res" / "people"
+    # Get applications for current page
+    try:
+        applications = get_applications_page(people_dir, st.session_state.current_page, per_page)
+    except Exception as e:
+        st.error(f"Error loading applications: {str(e)}")
+        return
     
-    # Initialize session state for applications
-    if 'active_applications' not in st.session_state:
-        people = get_random_people(people_dir, count=20)
-        st.session_state['active_applications'] = generate_mock_applications(people)
-        st.session_state['selected_applications'] = []
+    if not applications:
+        st.info("No applications found on this page.")
+        return
     
-    applications = st.session_state.get('active_applications', [])
+    # Create table header
+    header_cols = st.columns([1.2, 1, 1.5, 1.2, 1.2, 0.8, 1.2, 1.2, 1.2, 1.5])
+    headers = [
+        "Submission Date",
+        "Days in Process", 
+        "Application Number",
+        "Intake Location",
+        "Application Status",
+        "Urgent",
+        "Case Type",
+        "Visa Type Requested",
+        "Nationality",
+        "Action"
+    ]
     
-    # Tabs for Active and Pending
-    tab1, tab2 = st.tabs(["Active", "Pending"])
+    for col, header in zip(header_cols, headers):
+        col.markdown(f"**{header}**")
     
-    with tab1:
-        st.markdown("### Active Applications List")
-        st.write("")
+    st.markdown("---")
+    
+    # Display applications
+    for idx, app in enumerate(applications):
+        cols = st.columns([1.2, 1, 1.5, 1.2, 1.2, 0.8, 1.2, 1.2, 1.2, 1.5])
         
-        # Create table header
-        header_cols = st.columns([0.5, 1, 1.2, 1.5, 1, 1, 1.2, 1, 1.2, 1.5, 1.5, 1.8])
-        headers = [
-            "",  # Checkbox
-            "Submission Date",
-            "Days in Process",
-            "Application Number",
-            "Group Size",
-            "Group Name",
-            "Intake Location",
-            "Application Status",
-            "Date of Arrival",
-            "Nationality",
-            "Assigned User",
-            "Action"
-        ]
+        # Submission Date
+        with cols[0]:
+            st.write(app['submission_date'])
         
-        for col, header in zip(header_cols, headers):
-            col.markdown(f"**{header}**")
+        # Days in Process (with colored circle)
+        with cols[1]:
+            days = app['days_in_process']
+            st.markdown(get_days_circle_html(days), unsafe_allow_html=True)
+        
+        # Application Number
+        with cols[2]:
+            st.write(app['application_number'])
+        
+        # Intake Location
+        with cols[3]:
+            st.write(app['intake_location'])
+        
+        # Application Status (with badge)
+        with cols[4]:
+            st.markdown(f"""
+                <div style='background-color: #00BCD4; padding: 4px 8px; 
+                            border-radius: 4px; text-align: center; color: white;
+                            font-size: 12px; font-weight: bold;'>
+                    {app['application_status']}
+                </div>
+            """, unsafe_allow_html=True)
+        
+        # Urgent
+        with cols[5]:
+            if app['urgent']:
+                st.markdown("🔴 **Yes**")
+            else:
+                st.write("No")
+        
+        # Case Type
+        with cols[6]:
+            st.write(app['case_type'])
+        
+        # Visa Type Requested
+        with cols[7]:
+            st.write(app['visa_type_requested'])
+        
+        # Nationality
+        with cols[8]:
+            st.write(app['nationality'])
+        
+        # Action Button
+        with cols[9]:
+            if st.button("Use agent", key=f"execute_{st.session_state.current_page}_{idx}", use_container_width=True):
+                # Store application data in session state for workflow page
+                st.session_state['workflow_app_data'] = app
+                st.session_state[f'show_success_{idx}'] = True
+                st.rerun()
         
         st.markdown("---")
         
-        # Display applications
-        for app in applications:
-            cols = st.columns([0.5, 1, 1.2, 1.5, 1, 1, 1.2, 1, 1.2, 1.5, 1.5, 1.8])
-            
-            # Checkbox
-            with cols[0]:
-                checkbox_key = f"app_check_{app['id']}"
-                is_checked = st.checkbox("", key=checkbox_key, label_visibility="collapsed")
-                if is_checked and app['id'] not in st.session_state['selected_applications']:
-                    st.session_state['selected_applications'].append(app['id'])
-                elif not is_checked and app['id'] in st.session_state['selected_applications']:
-                    st.session_state['selected_applications'].remove(app['id'])
-            
-            # Submission Date
-            with cols[1]:
-                st.write(app['submission_date'])
-            
-            # Days in Process (with colored circle)
-            with cols[2]:
-                days = app['days_in_process']
-                st.markdown(get_days_circle_html(days), unsafe_allow_html=True)
-            
-            # Application Number
-            with cols[3]:
-                st.write(app['application_number'])
-            
-            # Group Size (with icon)
-            with cols[4]:
-                st.markdown(f"👥 {app['group_size']}")
-            
-            # Group Name
-            with cols[5]:
-                st.write(app['group_name'])
-            
-            # Intake Location
-            with cols[6]:
-                st.write(app['intake_location'])
-            
-            # Application Status (with badge)
-            with cols[7]:
-                st.markdown(f"""
-                    <div style='background-color: #00BCD4; padding: 4px 8px; 
-                                border-radius: 4px; text-align: center; color: white;
-                                font-size: 12px; font-weight: bold;'>
-                        {app['application_status']}
-                    </div>
-                """, unsafe_allow_html=True)
-            
-            # Date of Arrival
-            with cols[8]:
-                st.write(app['date_of_arrival'])
-            
-            # Nationality
-            with cols[9]:
-                st.write(app['nationality'])
-            
-            # Assigned User
-            with cols[10]:
-                if app['assigned_user']:
-                    st.write(app['assigned_user'])
-                else:
-                    st.markdown("*UnAssigned*")
-            
-            # Action Button
-            with cols[11]:
-                if st.button("Execute Agent Workflow", key=f"execute_{app['id']}", use_container_width=True):
-                    show_workflow_modal(app)
-            
-            st.markdown("---")
-        
-        # Show count
-        st.write(f"**Total Active Applications:** {len(applications)}")
+        # Show success message underneath the row if button was clicked
+        if st.session_state.get(f'show_success_{idx}', False):
+            st.success(f"✅ Agent loaded for {app['application_number']}! Click the 🤖 Sexy Visa Agent tab in the sidebar to continue.")
+            # Clear the success message flag
+            if f'show_success_{idx}' in st.session_state:
+                del st.session_state[f'show_success_{idx}']
     
-    with tab2:
-        st.info("Pending applications will be displayed here")
+    # Bottom pagination
+    st.divider()
+    col1, col2, col3, col4 = st.columns([1, 2, 2, 1])
+    
+    with col1:
+        if st.button("← Prev", disabled=st.session_state.current_page <= 1, key="bottom_prev"):
+            st.session_state.current_page -= 1
+            st.rerun()
+    
+    with col2:
+        st.write(f"Page {st.session_state.current_page} of {total_pages}")
+    
+    with col3:
+        st.write(f"Applications {(st.session_state.current_page - 1) * per_page + 1}-{min(st.session_state.current_page * per_page, total_count)} of {total_count}")
+    
+    with col4:
+        if st.button("Next →", disabled=st.session_state.current_page >= total_pages, key="bottom_next"):
+            st.session_state.current_page += 1
+            st.rerun()
     
     # Help section
     st.divider()
@@ -284,61 +311,3 @@ def active_applications_page():
         )
 
 
-def show_workflow_modal(application):
-    """Show modal for agent workflow execution"""
-    @st.dialog(f"🤖 Agent Workflow - {application['application_number']}", width="large")
-    def workflow_dialog():
-        st.markdown("### Application Details")
-        
-        col1, col2 = st.columns(2)
-        
-        with col1:
-            st.markdown(f"**Application Number:** {application['application_number']}")
-            st.markdown(f"**Group Name:** {application['group_name']}")
-            st.markdown(f"**Group Size:** 👥 {application['group_size']}")
-            st.markdown(f"**Submission Date:** {application['submission_date']}")
-        
-        with col2:
-            st.markdown(f"**Nationality:** {application['nationality']}")
-            st.markdown(f"**Intake Location:** {application['intake_location']}")
-            st.markdown(f"**Days in Process:** {application['days_in_process']}")
-            st.markdown(f"**Status:** {application['application_status']}")
-        
-        st.divider()
-        
-        st.markdown("### Workflow Actions")
-        
-        # Workflow steps
-        workflows = [
-            "🔍 Verify Documents",
-            "👤 Check Biometrics",
-            "🌍 EU-VIS Matching",
-            "📋 Validate Information",
-            "✅ Final Review"
-        ]
-        
-        st.write("Select workflow steps to execute:")
-        
-        selected_workflows = []
-        for workflow in workflows:
-            if st.checkbox(workflow, value=True, key=f"wf_{workflow}"):
-                selected_workflows.append(workflow)
-        
-        st.write("")
-        
-        col1, col2, col3 = st.columns([2, 1, 1])
-        
-        with col2:
-            if st.button("Cancel", use_container_width=True):
-                st.rerun()
-        
-        with col3:
-            if st.button("Execute", type="primary", use_container_width=True):
-                if selected_workflows:
-                    st.success(f"✅ Executing {len(selected_workflows)} workflow step(s)...")
-                    st.balloons()
-                    # Here you would trigger the actual workflow
-                else:
-                    st.warning("Please select at least one workflow step")
-    
-    workflow_dialog()

@@ -18,6 +18,7 @@ class Settings:
         self.RES_DIR = os.path.join(self.BASE_DIR, 'res')
         self.RES_DEMO_DIR = os.path.join(self.RES_DIR, 'demo')
         self.RES_IMG_DIR = os.path.join(self.RES_DIR, 'img')
+        self.PEOPLE_DIR = os.path.join(self.RES_DIR, 'people')
         
         # Session-specific directories (only created if session_id provided)
         if self.session_id:
@@ -50,7 +51,7 @@ class Settings:
         # Always create shared directories
         shared_dirs = [
             self.DATA_DIR, self.PROMPT_DIR,
-            self.RES_DIR, self.RES_DEMO_DIR, self.RES_IMG_DIR
+            self.RES_DIR, self.RES_DEMO_DIR, self.RES_IMG_DIR, self.PEOPLE_DIR
         ]
         
         # Only create session-specific directories if session_id is provided
