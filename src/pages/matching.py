@@ -38,17 +38,38 @@ def format_date_of_birth(dob):
     return "Not provided"
 
 
-def get_robohash_url(identifier, size=200):
-    """Generate robohash.org URL for profile picture"""
-    return f"https://robohash.org/{identifier}?size={size}x{size}"
+def get_profile_picture_url(person_data=None, identifier=None, size=200):
+    """Generate randomuser.me URL for realistic profile picture
+    
+    Args:
+        person_data: Dict containing person information (preferred, includes gender)
+        identifier: Fallback identifier if person_data not provided
+        size: Not used but kept for API compatibility
+    """
+    # Determine gender from person data
+    gender = None
+    seed_base = identifier
+    
+    if person_data and isinstance(person_data, dict):
+        gender = person_data.get('gender', '').lower()
+        seed_base = person_data.get('visa_application_number', identifier)
+    
+    # Use identifier to generate a consistent seed for the same person
+    seed = abs(hash(str(seed_base))) % 100
+    
+    # Use gender-appropriate portraits
+    if gender == 'female' or gender == 'f':
+        return f"https://randomuser.me/api/portraits/women/{seed}.jpg"
+    else:
+        return f"https://randomuser.me/api/portraits/men/{seed}.jpg"
 
 
 def display_person_card(person, is_applicant=False, card_id=None):
     """Display a person card with profile picture and details"""
     
-    # Generate unique identifier for robohash
+    # Generate unique identifier for profile picture
     identifier = person.get('visa_application_number', f"person_{card_id}")
-    profile_pic_url = get_robohash_url(identifier)
+    profile_pic_url = get_profile_picture_url(person_data=person, identifier=identifier)
     
     # Create card container
     with st.container(border=True):
@@ -89,7 +110,7 @@ def display_candidate_compact(person, candidate_num, is_selected=False):
     """Display a compact candidate card for the list"""
     
     identifier = person.get('visa_application_number', f"candidate_{candidate_num}")
-    profile_pic_url = get_robohash_url(identifier, size=150)
+    profile_pic_url = get_profile_picture_url(person_data=person, identifier=identifier, size=150)
     
     # Create container with selection highlighting
     container_style = "border: 3px solid #4CAF50;" if is_selected else ""
