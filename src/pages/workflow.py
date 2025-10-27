@@ -49,7 +49,7 @@ def get_hidden_orchestration_decision(user_message, current_step, completed_step
         system_prompt = f"""You are a hidden Workflow Orchestration Agent for visa application {application['application_number']}.
         
         Current state:
-        - Current step: {current_step} (-1=not started, 0=documents, 1=biometrics, 2=euvis, 3=final)
+        - Current step: {current_step} (-1=not started, 0=Intake, 1=Registered, 2=ReadyForMatch, 3=Verificcaiton 4=Decision 5=ToPrint 6=Completed)
         - Completed steps: {completed_steps}
         - Application: {application['nationality']} citizen applying for {application['visa_type_requested']}
         
@@ -57,7 +57,7 @@ def get_hidden_orchestration_decision(user_message, current_step, completed_step
         
         Determine workflow action. Respond ONLY with:
         DECISION: [CHAT|AGENT]
-        STEP: [0|1|2|3] (only if DECISION is AGENT)
+        STEP: [0|1|2|3|4|5|6] (only if DECISION is AGENT)
         
         Logic:
         - If user wants to start and current_step is -1 → DECISION: AGENT, STEP: 0
@@ -262,7 +262,7 @@ def stream_specialist_agent(agent_config, application):
         st.error(f"Error in {agent_config['name']}: {str(e)}")
 
 
-def update_workflow_state(workflow_key, step):
+def update_workflow_state(workflow_key, step, application):
     """Update workflow state when moving to a new step"""
     workflow_state = st.session_state.get(f"{workflow_key}_state", {})
     workflow_state['current_step'] = step
@@ -272,6 +272,20 @@ def update_workflow_state(workflow_key, step):
         workflow_state.setdefault('completed_steps', []).append(step)
     
     st.session_state[f"{workflow_key}_state"] = workflow_state
+    
+    # Map agent step to application status for visual pipeline update
+    step_to_status = {
+        0: 'Verification',  # Document Verification Agent
+        1: 'Verification',  # Biometrics Verification Agent
+        2: 'Ready for Match',  # EU-VIS Matching Agent
+        3: 'To Decide'  # Final Review Agent
+    }
+    
+    # Update application status in session state
+    if step in step_to_status:
+        new_status = step_to_status[step]
+        application['status'] = new_status
+        st.session_state['workflow_app_data'] = application
 
 
 def process_orchestration_agent_streaming(chat_key, application, user_message, workflow_key, workflow_state):
@@ -304,11 +318,14 @@ def process_orchestration_agent_streaming(chat_key, application, user_message, w
         # Step 3: Execute specialist agent if orchestration decided to trigger one
         if orchestration_decision.get('trigger_agent') and orchestration_decision.get('step') is not None:
             step = orchestration_decision['step']
-            update_workflow_state(workflow_key, step)
+            update_workflow_state(workflow_key, step, application)
             
             agent_config = get_specialist_agent_config(step, application)
             if agent_config:
                 stream_specialist_agent(agent_config, application)
+                
+                # Trigger rerun to update the visual pipeline
+                st.rerun()
         
     except Exception as e:
         with st.chat_message("assistant", avatar="🤖"):
@@ -823,23 +840,3 @@ def workflow_page():
         
         # Process orchestration agent and stream response
         process_orchestration_agent_streaming(chat_key, application, user_message, workflow_key, workflow_state)
-    
-    # Help section
-    st.divider()
-    col1, col2 = st.columns(2)
-    
-    with col1:
-        st.link_button(
-            "✉️ Mail Support",
-            "mailto:support@visacheck.com",
-            type="secondary",
-            use_container_width=True
-        )
-    
-    with col2:
-        st.link_button(
-            "📚 Workflow Guidelines",
-            "https://example.com/workflow-guidelines",
-            type="secondary",
-            use_container_width=True
-        )
