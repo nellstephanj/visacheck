@@ -6,6 +6,7 @@ from util.session_manager import SessionManager
 from util.azure_openai_functions import OpenAIHandler
 from util.logging_functions import LoggingHandler
 from config.settings import Settings
+from datetime import datetime
 import random
 
 
@@ -439,6 +440,284 @@ def generate_euvis_match(application):
     return match_details
 
 
+def get_workflow_stages():
+    """Define workflow stages matching the overview page"""
+    return [
+        {
+            'id': 'unassigned',
+            'name': 'New Application',
+            'icon': '📝',
+            'color': '#9E9E9E',
+            'statuses': ['New', 'Unassigned']
+        },
+        {
+            'id': 'intake',
+            'name': 'Intake',
+            'icon': '📋',
+            'color': '#2196F3',
+            'statuses': ['Intake', 'Data Entry']
+        },
+        {
+            'id': 'registered',
+            'name': 'Registered',
+            'icon': '✅',
+            'color': '#4CAF50',
+            'statuses': ['Registered', 'Submitted']
+        },
+        {
+            'id': 'ready_for_matching',
+            'name': 'Ready for Match',
+            'icon': '🔍',
+            'color': '#FF9800',
+            'statuses': ['Ready for Match', 'Awaiting Match', 'To Match']
+        },
+        {
+            'id': 'verification',
+            'name': 'Verification',
+            'icon': '🔬',
+            'color': '#9C27B0',
+            'statuses': ['To Consult', 'To be Checked', 'Verification', 'Under Review']
+        },
+        {
+            'id': 'decision',
+            'name': 'Decision',
+            'icon': '⚖️',
+            'color': '#FF5722',
+            'statuses': ['To Decide', 'Decision Pending', 'Awaiting Decision']
+        },
+        {
+            'id': 'print',
+            'name': 'To Print',
+            'icon': '🖨️',
+            'color': '#00BCD4',
+            'statuses': ['To Print', 'Print Queue', 'Awaiting Approval']
+        },
+        {
+            'id': 'completed',
+            'name': 'Completed',
+            'icon': '🎉',
+            'color': '#4CAF50',
+            'statuses': ['Completed', 'Closed', 'Archived']
+        },
+        {
+            'id': 'rolled_back',
+            'name': 'Rolled Back',
+            'icon': '🔄',
+            'color': '#FF9800',
+            'statuses': ['Rolled Back', 'Returned', 'Rework']
+        },
+        {
+            'id': 'rejected',
+            'name': 'Rejected',
+            'icon': '❌',
+            'color': '#F44336',
+            'statuses': ['Rejected', 'Declined', 'Refused']
+        }
+    ]
+
+
+def map_status_to_stage(status):
+    """Map application status to workflow stage"""
+    if not status:
+        return None
+    
+    stages = get_workflow_stages()
+    for stage in stages:
+        if status in stage['statuses']:
+            return stage
+    
+    # Default to unassigned if no match
+    return stages[0]
+
+
+def render_application_overview(application):
+    """Render a visual overview of where the application is in the workflow"""
+    st.markdown("### 📊 Application Pipeline Status")
+    
+    # Get current status and map to stage
+    current_status = application.get('status', 'New')
+    current_stage = map_status_to_stage(current_status)
+    
+    if not current_stage:
+        st.warning("Unable to determine current workflow stage")
+        return
+    
+    # Get all stages
+    stages = get_workflow_stages()
+    
+    # Calculate days in process
+    days_in_process = application.get('days_in_process', 0)
+    submission_date = application.get('submission_date', 'Unknown')
+    
+    # Display summary metrics
+    col1, col2, col3, col4 = st.columns(4)
+    
+    with col1:
+        st.metric("Current Stage", current_stage['name'])
+    
+    with col2:
+        st.metric("Status", current_status)
+    
+    with col3:
+        urgent_indicator = "🔴 Yes" if application.get('urgent', False) else "No"
+        st.metric("Urgent", urgent_indicator)
+    
+    with col4:
+        st.metric("Days in Process", days_in_process)
+    
+    st.markdown("---")
+    
+    # Render visual pipeline
+    st.markdown("#### Workflow Progress")
+    
+    # Create horizontal pipeline visual
+    pipeline_html = """
+    <style>
+        .pipeline-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+            overflow-x: auto;
+        }
+        .stage-box {
+            flex: 1;
+            min-width: 100px;
+            text-align: center;
+            padding: 15px 10px;
+            margin: 0 5px;
+            border-radius: 8px;
+            border: 2px solid #ddd;
+            background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .stage-box.active {
+            border: 3px solid #2196F3;
+            background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+            box-shadow: 0 4px 8px rgba(33, 150, 243, 0.3);
+            transform: scale(1.05);
+        }
+        .stage-box.completed {
+            border: 2px solid #4CAF50;
+            background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+        }
+        .stage-icon {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+        .stage-name {
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .stage-arrow {
+            font-size: 1.5em;
+            color: #999;
+            padding: 0 5px;
+        }
+        .active-badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #2196F3;
+            color: white;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+    </style>
+    <div class="pipeline-container">
+    """
+    
+    # Determine which stages have been completed (assumption: stages before current are completed)
+    current_stage_index = next((i for i, s in enumerate(stages) if s['id'] == current_stage['id']), 0)
+    
+    # Main workflow stages (excluding rolled_back and rejected for primary flow)
+    main_stages = [s for s in stages if s['id'] not in ['rolled_back', 'rejected']]
+    
+    for i, stage in enumerate(main_stages):
+        is_current = stage['id'] == current_stage['id']
+        is_completed = i < current_stage_index and current_stage['id'] not in ['rolled_back', 'rejected']
+        
+        # Determine stage class
+        stage_class = "active" if is_current else ("completed" if is_completed else "")
+        
+        # Add stage box
+        pipeline_html += f"""
+        <div class="stage-box {stage_class}" style="border-color: {stage['color']};">
+            {f'<div class="active-badge">▶</div>' if is_current else ''}
+            <div class="stage-icon">{stage['icon']}</div>
+            <div class="stage-name">{stage['name']}</div>
+        </div>
+        """
+        
+        # Add arrow between stages (except after last stage)
+        if i < len(main_stages) - 1:
+            pipeline_html += '<div class="stage-arrow">→</div>'
+    
+    pipeline_html += "</div>"
+    
+    # Show special status if rolled back or rejected
+    if current_stage['id'] == 'rolled_back':
+        pipeline_html += f"""
+        <div style="text-align: center; margin-top: 20px; padding: 15px; background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%); border-radius: 8px; border: 2px solid {current_stage['color']};">
+            <div style="font-size: 2em;">{current_stage['icon']}</div>
+            <div style="font-weight: bold; margin-top: 10px; color: #E65100;">Application Rolled Back for Corrections</div>
+        </div>
+        """
+    elif current_stage['id'] == 'rejected':
+        pipeline_html += f"""
+        <div style="text-align: center; margin-top: 20px; padding: 15px; background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 100%); border-radius: 8px; border: 2px solid {current_stage['color']};">
+            <div style="font-size: 2em;">{current_stage['icon']}</div>
+            <div style="font-weight: bold; margin-top: 10px; color: #C62828;">Application Rejected</div>
+        </div>
+        """
+    
+    st.html(pipeline_html)
+    
+    # Show stage details
+    st.markdown("---")
+    st.markdown("#### Current Stage Details")
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.markdown(f"**Stage:** {current_stage['icon']} {current_stage['name']}")
+        st.markdown(f"**Submitted:** {submission_date}")
+        st.markdown(f"**Processing Time:** {days_in_process} days")
+    
+    with col2:
+        # Determine expected actions based on stage
+        if current_stage['id'] == 'unassigned':
+            st.markdown("**Next Action:** Assign to case officer")
+        elif current_stage['id'] == 'intake':
+            st.markdown("**Next Action:** Complete data entry and validation")
+        elif current_stage['id'] == 'registered':
+            st.markdown("**Next Action:** Initiate biometric matching")
+        elif current_stage['id'] == 'ready_for_matching':
+            st.markdown("**Next Action:** 🤖 AI Matching Agent will process")
+        elif current_stage['id'] == 'verification':
+            st.markdown("**Next Action:** 🤖 AI Verification Agent will analyze")
+        elif current_stage['id'] == 'decision':
+            st.markdown("**Next Action:** 🤖 AI Decision Agent recommendation + Officer decision")
+        elif current_stage['id'] == 'print':
+            st.markdown("**Next Action:** Print and dispatch visa")
+        elif current_stage['id'] == 'completed':
+            st.markdown("**Status:** ✅ Processing complete")
+        elif current_stage['id'] == 'rolled_back':
+            st.markdown("**Next Action:** Correct issues and resubmit")
+        elif current_stage['id'] == 'rejected':
+            st.markdown("**Status:** ❌ Application declined")
+    
+    st.markdown("---")
+
+
 def workflow_page():
     """Sexy Visa Agent Workflow Page - Clean Implementation"""
     
@@ -463,6 +742,9 @@ def workflow_page():
     
     # Page title
     st.title(f"🤖 Sexy Visa Agent - {application['application_number']}")
+    
+    # Render application overview pipeline
+    render_application_overview(application)
     
     # Application details section
     st.markdown("### Application Details")
