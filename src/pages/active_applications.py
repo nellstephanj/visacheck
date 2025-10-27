@@ -71,7 +71,8 @@ def get_days_circle_html(days):
 def get_people_files(people_dir):
     """Get all people files sorted by filename"""
     files = list(Path(people_dir).glob("person_*.json"))
-    random.shuffle(files)  # Randomize the order
+    # Sort by filename for consistent ordering instead of random shuffle
+    files.sort(key=lambda f: f.name)
     return files
 
 
@@ -261,37 +262,23 @@ def active_applications_page():
         
         # Action Button
         with cols[9]:
-            action_col1, action_col2 = st.columns(2)
-            
-            with action_col1:
-                if st.button("🤖 Agent", key=f"execute_{st.session_state.current_page}_{idx}", use_container_width=True):
-                    # Store application data in session state for workflow page
-                    st.session_state['workflow_app_data'] = app
-                    st.session_state[f'show_success_{idx}'] = True
-                    st.rerun()
-            
-            with action_col2:
-                if st.button("🎯 Decide", key=f"decide_{st.session_state.current_page}_{idx}", use_container_width=True):
-                    # Store application data in session state for decision page
-                    st.session_state['decision_app_data'] = app
-                    st.session_state[f'show_decision_{idx}'] = True
-                    # Note: User should click the Decision tab in sidebar to continue
+            # Use application number as unique key instead of index
+            button_key = f"execute_{app['application_number']}"
+            if st.button("🤖 Agent", key=button_key, use_container_width=True):
+                # Store application data in session state for workflow page
+                st.session_state['workflow_app_data'] = app
+                st.session_state[f'show_success_{app["application_number"]}'] = True
+                st.rerun()
         
         st.markdown("---")
         
         # Show success message underneath the row if button was clicked
-        if st.session_state.get(f'show_success_{idx}', False):
+        if st.session_state.get(f'show_success_{app["application_number"]}', False):
             st.success(f"✅ Agent loaded for {app['application_number']}! Click the 🤖 Sexy Visa Agent tab in the sidebar to continue.")
             # Clear the success message flag
-            if f'show_success_{idx}' in st.session_state:
-                del st.session_state[f'show_success_{idx}']
+            if f'show_success_{app["application_number"]}' in st.session_state:
+                del st.session_state[f'show_success_{app["application_number"]}']
         
-        # Show decision success message
-        if st.session_state.get(f'show_decision_{idx}', False):
-            st.success(f"🎯 Application ready for decision: {app['application_number']}! Click the ⚖️ Application Decision tab in the sidebar to continue.")
-            # Clear the success message flag
-            if f'show_decision_{idx}' in st.session_state:
-                del st.session_state[f'show_decision_{idx}']
     
     # Bottom pagination
     st.divider()
