@@ -1,6 +1,7 @@
 """Active Applications Page"""
 import streamlit as st
 import json
+import random
 from pathlib import Path
 from datetime import datetime
 from util.session_manager import SessionManager
@@ -69,7 +70,9 @@ def get_days_circle_html(days):
 
 def get_people_files(people_dir):
     """Get all people files sorted by filename"""
-    return sorted(list(Path(people_dir).glob("person_*.json")))
+    files = list(Path(people_dir).glob("person_*.json"))
+    random.shuffle(files)  # Randomize the order
+    return files
 
 
 def get_total_applications_count(people_dir):
@@ -97,12 +100,15 @@ def get_applications_page(people_dir, page_number=1, per_page=25):
         days_in_process = calculate_days_in_process(submission_date_str)
         submission_date = datetime.strptime(submission_date_str, "%Y-%m-%d")
         
+        # Random application status
+        status_options = ['To Decide', 'Ready for Match', 'To Consult', 'Rolled Back', 'Awaiting Approval']
+        
         application = {
             'submission_date': submission_date.strftime("%d/%m/%Y"),
             'days_in_process': days_in_process,
             'application_number': person_data.get('visa_application_number', 'N/A'),
             'intake_location': person_data.get('intake_location', 'N/A'),
-            'application_status': 'To Decide',  # Static for now
+            'application_status': random.choice(status_options),
             'urgent': person_data.get('urgent', False),
             'case_type': person_data.get('case_type', 'N/A'),
             'visa_type_requested': person_data.get('visa_type_requested', 'N/A'),
