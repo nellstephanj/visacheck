@@ -587,6 +587,28 @@ def render_application_overview(application):
     # Render visual pipeline
     st.markdown("#### Workflow Progress")
     
+    # Show AI Agents information for each stage
+    with st.expander("🤖 View AI Agents Working in Each Stage", expanded=False):
+        st.markdown("""
+        **AI Agent Activity by Workflow Stage:**
+        
+        | Stage | AI Agents | MCP Tools Used | Description |
+        |-------|-----------|----------------|-------------|
+        | 📝 **New Application** | 📊 Case Assignment Agent | • Workload Analysis | Automatically assigns applications to available officers |
+        | 📋 **Intake** | 📋 Intake Agent | • Country Lookup<br/>• Document OCR<br/>• Consistency Check | Validates data completeness and country information |
+        | ✅ **Registered** | - | • Document Classification | Automatic document indexing and categorization |
+        | 🔍 **Ready for Match** | 🔍 Matching Agent | • Photo Comparison<br/>• BVV Lookup<br/>• EUVIS Lookup<br/>• User Data Comparison | Performs biometric matching and database cross-reference |
+        | 🔬 **Verification** | 🔬 Verification Agent | • Document OCR<br/>• Document Verification<br/>• BVV Lookup<br/>• EUVIS Lookup<br/>• Fraud Detection<br/>• Country Lookup<br/>• Consistency Check | Comprehensive document analysis and fraud detection |
+        | ⚖️ **Decision** | ⚖️ Decision Agent | • Risk Scoring<br/>• BVV Lookup<br/>• Fraud Detection<br/>• Consistency Check | Generates recommendation with 100-point scoring system |
+        | 🖨️ **To Print** | 📄 Document Generation Agent | • Document Templates | Generates official visa documents for printing |
+        | 🎉 **Completed** | - | - | Application archived |
+        
+        **Legend:**
+        - 🤖 = AI Agent actively processing
+        - 🔧 = MCP Tool utilized
+        - 👤 = Human officer decision required
+        """)
+    
     # Create horizontal pipeline visual
     pipeline_html = """
     <style>
@@ -599,7 +621,7 @@ def render_application_overview(application):
         }
         .stage-box {
             flex: 1;
-            min-width: 100px;
+            min-width: 120px;
             text-align: center;
             padding: 15px 10px;
             margin: 0 5px;
@@ -628,6 +650,16 @@ def render_application_overview(application):
             font-weight: bold;
             margin-top: 5px;
         }
+        .stage-agent {
+            font-size: 0.7em;
+            color: #666;
+            margin-top: 3px;
+            font-style: italic;
+        }
+        .stage-box.active .stage-agent {
+            color: #1976D2;
+            font-weight: bold;
+        }
         .stage-arrow {
             font-size: 1.5em;
             color: #999;
@@ -648,9 +680,44 @@ def render_application_overview(application):
             font-size: 0.8em;
             font-weight: bold;
         }
+        .agent-badge {
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #FF9800;
+            color: white;
+            border-radius: 10px;
+            padding: 2px 6px;
+            font-size: 0.7em;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        .stage-box.active .agent-badge {
+            background: #2196F3;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
     </style>
     <div class="pipeline-container">
     """
+    
+    # Define which agent works on each stage
+    stage_agents = {
+        'unassigned': '📊 Assign',
+        'intake': '📋 Intake',
+        'registered': '✅ Auto',
+        'ready_for_matching': '🔍 Match',
+        'verification': '🔬 Verify',
+        'decision': '⚖️ Decide',
+        'print': '🖨️ Print',
+        'completed': None,
+        'rolled_back': None,
+        'rejected': None
+    }
     
     # Determine which stages have been completed (assumption: stages before current are completed)
     current_stage_index = next((i for i, s in enumerate(stages) if s['id'] == current_stage['id']), 0)
@@ -665,12 +732,16 @@ def render_application_overview(application):
         # Determine stage class
         stage_class = "active" if is_current else ("completed" if is_completed else "")
         
+        # Get agent for this stage
+        agent_name = stage_agents.get(stage['id'])
+        
         # Add stage box
         pipeline_html += f"""
         <div class="stage-box {stage_class}" style="border-color: {stage['color']};">
             {f'<div class="active-badge">▶</div>' if is_current else ''}
             <div class="stage-icon">{stage['icon']}</div>
             <div class="stage-name">{stage['name']}</div>
+            {f'<div class="agent-badge">🤖 {agent_name}</div>' if agent_name else ''}
         </div>
         """
         
@@ -710,27 +781,47 @@ def render_application_overview(application):
         st.markdown(f"**Processing Time:** {days_in_process} days")
     
     with col2:
-        # Determine expected actions based on stage
+        # Determine expected actions and AI agents based on stage
         if current_stage['id'] == 'unassigned':
+            st.markdown("**🤖 Active Agent:** 📊 Case Assignment Agent")
             st.markdown("**Next Action:** Assign to case officer")
+            st.markdown("**🔧 Tools:** Workload Analysis")
         elif current_stage['id'] == 'intake':
+            st.markdown("**🤖 Active Agent:** 📋 Intake Agent")
             st.markdown("**Next Action:** Complete data entry and validation")
+            st.markdown("**🔧 Tools:** Country Lookup, Document OCR, Consistency Check")
         elif current_stage['id'] == 'registered':
+            st.markdown("**🤖 Active Agent:** Document Classification (Auto)")
             st.markdown("**Next Action:** Initiate biometric matching")
+            st.markdown("**🔧 Tools:** Document Indexing")
         elif current_stage['id'] == 'ready_for_matching':
-            st.markdown("**Next Action:** 🤖 AI Matching Agent will process")
+            st.markdown("**🤖 Active Agent:** 🔍 Matching Agent")
+            st.markdown("**Next Action:** AI will process biometric matching")
+            st.markdown("**🔧 Tools:** Photo Comparison, BVV, EUVIS, User Data")
         elif current_stage['id'] == 'verification':
-            st.markdown("**Next Action:** 🤖 AI Verification Agent will analyze")
+            st.markdown("**🤖 Active Agent:** 🔬 Verification Agent")
+            st.markdown("**Next Action:** AI will analyze documents & detect fraud")
+            st.markdown("**🔧 Tools:** OCR, Document Verify, BVV, EUVIS, Fraud Detection")
         elif current_stage['id'] == 'decision':
-            st.markdown("**Next Action:** 🤖 AI Decision Agent recommendation + Officer decision")
+            st.markdown("**🤖 Active Agent:** ⚖️ Decision Agent")
+            st.markdown("**Next Action:** AI recommendation + Officer decision")
+            st.markdown("**🔧 Tools:** Risk Scoring (100-point system)")
         elif current_stage['id'] == 'print':
+            st.markdown("**🤖 Active Agent:** 📄 Document Generation Agent")
             st.markdown("**Next Action:** Print and dispatch visa")
+            st.markdown("**🔧 Tools:** Document Templates")
         elif current_stage['id'] == 'completed':
+            st.markdown("**🤖 Active Agent:** None")
             st.markdown("**Status:** ✅ Processing complete")
+            st.markdown("**Next Action:** Archived")
         elif current_stage['id'] == 'rolled_back':
+            st.markdown("**🤖 Active Agent:** None (Human Review Required)")
             st.markdown("**Next Action:** Correct issues and resubmit")
+            st.markdown("**Requires:** 👤 Human Intervention")
         elif current_stage['id'] == 'rejected':
+            st.markdown("**🤖 Active Agent:** None")
             st.markdown("**Status:** ❌ Application declined")
+            st.markdown("**Next Action:** Notification sent")
     
     st.markdown("---")
 
