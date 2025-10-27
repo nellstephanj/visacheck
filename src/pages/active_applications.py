@@ -261,11 +261,21 @@ def active_applications_page():
         
         # Action Button
         with cols[9]:
-            if st.button("Use agent", key=f"execute_{st.session_state.current_page}_{idx}", use_container_width=True):
-                # Store application data in session state for workflow page
-                st.session_state['workflow_app_data'] = app
-                st.session_state[f'show_success_{idx}'] = True
-                st.rerun()
+            action_col1, action_col2 = st.columns(2)
+            
+            with action_col1:
+                if st.button("🤖 Agent", key=f"execute_{st.session_state.current_page}_{idx}", use_container_width=True):
+                    # Store application data in session state for workflow page
+                    st.session_state['workflow_app_data'] = app
+                    st.session_state[f'show_success_{idx}'] = True
+                    st.rerun()
+            
+            with action_col2:
+                if st.button("🎯 Decide", key=f"decide_{st.session_state.current_page}_{idx}", use_container_width=True):
+                    # Store application data in session state for decision page
+                    st.session_state['decision_app_data'] = app
+                    st.session_state[f'show_decision_{idx}'] = True
+                    # Note: User should click the Decision tab in sidebar to continue
         
         st.markdown("---")
         
@@ -275,6 +285,13 @@ def active_applications_page():
             # Clear the success message flag
             if f'show_success_{idx}' in st.session_state:
                 del st.session_state[f'show_success_{idx}']
+        
+        # Show decision success message
+        if st.session_state.get(f'show_decision_{idx}', False):
+            st.success(f"🎯 Application ready for decision: {app['application_number']}! Click the ⚖️ Application Decision tab in the sidebar to continue.")
+            # Clear the success message flag
+            if f'show_decision_{idx}' in st.session_state:
+                del st.session_state[f'show_decision_{idx}']
     
     # Bottom pagination
     st.divider()
