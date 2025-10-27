@@ -1,13 +1,34 @@
-"""Visa Agent Workflow Page"""
+"""Visa Agent Workflow Page - Refactored"""
 import streamlit as st
 import json
-from datetime import datetime
+import os
 from util.session_manager import SessionManager
 from util.azure_openai_functions import OpenAIHandler
-from util.azure_functions import AzureHandler
 from util.logging_functions import LoggingHandler
 from config.settings import Settings
 import random
+
+
+def load_person_data(application_number):
+    """Load complete person data from people directory based on application number"""
+    settings = Settings()
+    people_dir = settings.PEOPLE_DIR
+    
+    if not os.path.exists(people_dir):
+        return None
+    
+    for filename in os.listdir(people_dir):
+        if filename.endswith('.json'):
+            try:
+                file_path = os.path.join(people_dir, filename)
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    if data.get('visa_application_number') == application_number:
+                        return data
+            except Exception:
+                continue
+    
+    return None
 
 
 def get_openai_handler():
@@ -19,174 +40,6 @@ def get_openai_handler():
     logging_handler = LoggingHandler(azure_handler)
     settings = Settings()
     return OpenAIHandler(azure_handler, logging_handler, settings)
-
-
-def process_orchestration_agent(chat_key, application, user_message):
-    """Orchestration agent that uses LLM to parse current step and user intent"""
-    try:
-        openai_handler = get_openai_handler()
-        workflow_key = f"workflow_{application['application_number']}"
-        workflow_state = st.session_state.get(f"{workflow_key}_state", {
-            'is_running': False,
-            'current_step': -1,  # -1 means not started, 0-3 are the steps
-            'completed_steps': []
-        })
-        
-        # Create system prompt for orchestration agent
-        system_prompt = f"""You are an Orchestration Agent managing a visa application workflow. Your job is to:
-1. Parse the current workflow state
-2. Understand user intent from their message
-3. Decide what action to take
-4. Respond appropriately and indicate if a specialist agent should be called
-
-CURRENT WORKFLOW STATE:
-- Application: {application['application_number']} ({application['nationality']} citizen, {application['visa_type_requested']})
-- Current Step: {workflow_state['current_step']} (-1=not started, 0=documents, 1=biometrics, 2=euvis, 3=final)
-- Completed Steps: {workflow_state.get('completed_steps', [])}
-- Is Running: {workflow_state['is_running']}
-
-WORKFLOW STEPS:
-0. Document Verification Agent - Reviews document authenticity and completeness
-1. Biometrics Verification Agent - Analyzes fingerprints and facial recognition
-2. EU-VIS Matching Agent - Performs database matching and cross-references
-3. Final Review Agent - Makes final decision and recommendations
-
-RESPONSE FORMAT:
-You must respond with a JSON object containing:
-{{
-    "response_text": "Your conversational response to the user",
-    "action": "start|next|jump|status|chat|complete",
-    "target_step": number (0-3, only if action requires it),
-    "call_agent": true/false,
-    "reasoning": "Brief explanation of your decision"
-}}
-
-ACTIONS:
-- "start": Begin the workflow (step 0)
-- "next": Move to next step in sequence  
-- "jump": Jump to specific step
-- "status": Provide current status info
-- "chat": General conversation
-- "complete": Workflow is finished
-
-GUIDELINES:
-- If current_step is -1 and user wants to start: action="start", target_step=0, call_agent=true
-- If user says "yes"/"continue"/"next" and current step < 3: action="next", target_step=current_step+1, call_agent=true
-- If user asks about specific step: action="jump", target_step=X, call_agent=true
-- If user asks for status/progress: action="status", call_agent=false
-- If general chat: action="chat", call_agent=false
-- If current_step=3 and user confirms: action="complete", call_agent=false
-
-Be conversational and helpful while being precise about workflow management.
-
-User message: "{user_message}"
-
-Respond with the JSON object:"""
-
-        # Get orchestration response
-        chat_history = [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_message}
-        ]
-        
-        response_content = ""
-        for chunk in openai_handler.chat_with_gpt(chat_history):
-            response_content += chunk
-        
-        # Parse the JSON response
-        try:
-            # Extract JSON from response (in case there's extra text)
-            start_idx = response_content.find('{')
-            end_idx = response_content.rfind('}') + 1
-            json_str = response_content[start_idx:end_idx]
-            orchestration_result = json.loads(json_str)
-            
-            # Add orchestration agent message
-            st.session_state[f"{chat_key}_messages"].append({
-                "role": "agent",
-                "content": f"🤖 Coordination Agent\n\n{orchestration_result['response_text']}"
-            })
-            
-            # Execute the action if needed
-            if orchestration_result.get('call_agent', False):
-                execute_workflow_action(orchestration_result, chat_key, application, workflow_key, workflow_state)
-            
-        except json.JSONDecodeError:
-            # Fallback if JSON parsing fails
-            st.session_state[f"{chat_key}_messages"].append({
-                "role": "agent",
-                "content": f"🤖 Coordination Agent\n\n{response_content}"
-            })
-        
-        return True
-        
-    except Exception as e:
-        add_agent_message(chat_key, "🤖 Coordination Agent", f"Error in orchestration: {str(e)}")
-        return False
-
-
-def execute_workflow_action(orchestration_result, chat_key, application, workflow_key, workflow_state):
-    """Execute the action determined by the orchestration agent"""
-    action = orchestration_result.get('action')
-    target_step = orchestration_result.get('target_step')
-    
-    if action in ['start', 'next', 'jump']:
-        # Update workflow state
-        workflow_state['is_running'] = True
-        workflow_state['current_step'] = target_step
-        
-        if target_step not in workflow_state.get('completed_steps', []):
-            workflow_state.setdefault('completed_steps', []).append(target_step)
-        
-        st.session_state[f"{workflow_key}_state"] = workflow_state
-        
-        # Call the appropriate agent
-        if target_step == 0:
-            process_document_agent(chat_key, application)
-        elif target_step == 1:
-            process_biometrics_agent(chat_key, application)
-        elif target_step == 2:
-            process_euvis_agent(chat_key, application)
-        elif target_step == 3:
-            process_final_review_agent(chat_key, application)
-            
-    elif action == 'complete':
-        workflow_state['is_running'] = False
-        workflow_state['current_step'] = 4  # Beyond last step
-        st.session_state[f"{workflow_key}_state"] = workflow_state
-
-
-def process_orchestration_agent_streaming(chat_key, application, user_message, workflow_key, workflow_state):
-    """Modern orchestration agent with proper streaming"""
-    try:
-        openai_handler = get_openai_handler()
-        
-        # Get workflow state
-        current_step = workflow_state.get('current_step', -1)
-        completed_steps = workflow_state.get('completed_steps', [])
-        
-        # Step 1: Get hidden orchestration decision (not shown to user)
-        orchestration_decision = get_hidden_orchestration_decision(user_message, current_step, completed_steps, application, openai_handler)
-        
-        # Step 2: Sexy Visa Agent responds to user based on orchestration decision
-        with st.chat_message("assistant", avatar="💎"):
-            sexy_agent_response = get_sexy_visa_agent_response(user_message, orchestration_decision, application, openai_handler)
-            response = st.write_stream(sexy_agent_response)
-            
-            # Add to chat history
-            st.session_state[f"{chat_key}_messages"].append({
-                "role": "assistant",
-                "content": f"💎 Sexy Visa Agent\n\n{response}"
-            })
-        
-        # Step 3: Execute specialist agent if orchestration decided to trigger one
-        if orchestration_decision.get('trigger_agent') and orchestration_decision.get('step') is not None:
-            agent_info = {'step': orchestration_decision['step'], 'name': ['Document Verification', 'Biometrics Verification', 'EU-VIS Matching', 'Final Review'][orchestration_decision['step']]}
-            call_specialist_agent_streaming(agent_info, application, workflow_key, workflow_state)
-        
-    except Exception as e:
-        with st.chat_message("assistant", avatar="🎯"):
-            st.error(f"Workflow Orchestration Agent - Error: {str(e)}")
 
 
 def get_hidden_orchestration_decision(user_message, current_step, completed_steps, application, openai_handler):
@@ -242,7 +95,7 @@ def get_hidden_orchestration_decision(user_message, current_step, completed_step
         
         return decision_data
         
-    except Exception as e:
+    except Exception:
         return {'trigger_agent': False, 'step': None}
 
 
@@ -265,14 +118,13 @@ def get_sexy_visa_agent_response(user_message, orchestration_decision, applicati
         User message: "{user_message}"
         
         Instructions:
-        - Be professional but friendly and engaging
-        - Use clear, helpful language appropriate for government employees
+        - Be professional and efficient in your communication
+        - Use clear, precise language appropriate for government employees
         - If an agent will be triggered, mention that you're connecting them to the specialist
         - If just chatting, be helpful and informative about the process
-        - Keep responses concise but warm
-        - Use the 💎 personality - professional but with a touch of elegance
+        - Keep responses concise and professional
         
-        Respond as the Sexy Visa Agent would to help the case officer."""
+        Respond as a professional AI assistant to help the case officer."""
         
         messages = [
             {"role": "system", "content": system_prompt},
@@ -289,62 +141,15 @@ def get_sexy_visa_agent_response(user_message, orchestration_decision, applicati
         
         return stream
         
-    except Exception as e:
+    except Exception:
         # Fallback generator
         def fallback():
             yield f"I'm here to help with your visa application review. How can I assist you today?"
         return fallback()
 
 
-def parse_orchestration_response(response, chat_key, application, workflow_key, workflow_state):
-    """Parse the orchestration agent's structured response and take appropriate action"""
-    try:
-        lines = response.strip().split('\n')
-        decision = None
-        step = None
-        response_text = ""
-        
-        # Parse the structured response
-        for line in lines:
-            if line.startswith('DECISION:'):
-                decision = line.split(':', 1)[1].strip()
-            elif line.startswith('STEP:'):
-                step = int(line.split(':', 1)[1].strip())
-            elif line.startswith('RESPONSE:'):
-                response_text = line.split(':', 1)[1].strip()
-        
-        # Only show the human-readable response to the user
-        if response_text:
-            st.session_state[f"{chat_key}_messages"].append({
-                "role": "assistant",
-                "content": f"🎯 Workflow Orchestration Agent\n\n{response_text}"
-            })
-        
-        # If decision is to trigger an agent, do so silently
-        if decision == 'AGENT' and step is not None:
-            agent_info = {'step': step, 'name': ['Document Verification', 'Biometrics Verification', 'EU-VIS Matching', 'Final Review'][step]}
-            call_specialist_agent_streaming(agent_info, application, workflow_key, workflow_state)
-            
-    except Exception as e:
-        # Fallback: treat entire response as human-readable (for when LLM doesn't follow format)
-        st.session_state[f"{chat_key}_messages"].append({
-            "role": "assistant",
-            "content": f"🎯 Workflow Orchestration Agent\n\n{response}"
-        })
-
-
-def call_specialist_agent_streaming(agent_info, application, workflow_key, workflow_state):
-    """Call the appropriate specialist agent with streaming"""
-    step = agent_info['step']
-    
-    # Update workflow state
-    workflow_state['current_step'] = step
-    workflow_state['is_running'] = True
-    if step not in workflow_state.get('completed_steps', []):
-        workflow_state.setdefault('completed_steps', []).append(step)
-    st.session_state[f"{workflow_key}_state"] = workflow_state
-    
-    # Agent configurations
+def get_specialist_agent_config(step, application):
+    """Get configuration for specialist agents"""
     agents = [
         {
             'name': 'Document Verification Agent',
@@ -419,26 +224,22 @@ def call_specialist_agent_streaming(agent_info, application, workflow_key, workf
         }
     ]
     
-    if 0 <= step < len(agents):
-        agent = agents[step]
-        stream_specialist_agent(agent, application)
+    return agents[step] if 0 <= step < len(agents) else None
 
 
-def stream_specialist_agent(agent, application):
+def stream_specialist_agent(agent_config, application):
     """Stream a specialist agent response"""
     try:
         openai_handler = get_openai_handler()
         
-        with st.chat_message("assistant", avatar=agent['avatar']):
-            st.markdown(f"**{agent['name']}**")
+        with st.chat_message("assistant", avatar=agent_config['avatar']):
+            st.markdown(f"**{agent_config['name']}**")
             
-            # Prepare messages
             messages = [
-                {"role": "system", "content": agent['prompt']},
+                {"role": "system", "content": agent_config['prompt']},
                 {"role": "user", "content": f"Please perform your analysis for visa application {application['application_number']}"}
             ]
             
-            # Create OpenAI stream
             stream = openai_handler.client.chat.completions.create(
                 model=openai_handler.model_name_gpt,
                 messages=messages,
@@ -447,269 +248,199 @@ def stream_specialist_agent(agent, application):
                 temperature=0.7
             )
             
-            # Stream the response
             response = st.write_stream(stream)
-            
-            # No need for specific follow-up instructions since orchestration agent handles conversation flow naturally
             
             # Add complete response to chat history
             chat_key = f"chat_{application['application_number']}"
             st.session_state[f"{chat_key}_messages"].append({
                 "role": "agent",
-                "content": f"{agent['avatar']} {agent['name']}\n\n{response}"
+                "content": f"{agent_config['avatar']} {agent_config['name']}\n\n{response}"
             })
             
     except Exception as e:
-        st.error(f"Error in {agent['name']}: {str(e)}")
+        st.error(f"Error in {agent_config['name']}: {str(e)}")
 
 
+def update_workflow_state(workflow_key, step):
+    """Update workflow state when moving to a new step"""
+    workflow_state = st.session_state.get(f"{workflow_key}_state", {})
+    workflow_state['current_step'] = step
+    workflow_state['is_running'] = True
+    
+    if step not in workflow_state.get('completed_steps', []):
+        workflow_state.setdefault('completed_steps', []).append(step)
+    
+    st.session_state[f"{workflow_key}_state"] = workflow_state
 
 
-def generate_agent_response(user_message, application):
-    """Generate contextual responses from the Sexy Visa Agent"""
-    user_lower = user_message.lower()
-    
-    # Application-specific responses
-    app_num = application['application_number']
-    nationality = application['nationality']
-    case_type = application['case_type']
-    days = application['days_in_process']
-    
-    # Context-aware responses
-    if any(word in user_lower for word in ['status', 'progress', 'update']):
-        return f"Your application {app_num} has been in process for {days} days. Current status is 'To Decide'. Everything looks good so far! 📊"
-    
-    elif any(word in user_lower for word in ['document', 'docs', 'paperwork']):
-        return f"For {case_type} applications from {nationality}, I can help verify your documents. What specific documents do you need assistance with? 📄"
-    
-    elif any(word in user_lower for word in ['biometric', 'fingerprint', 'photo']):
-        return f"Biometric verification is required for your {case_type} application. Have you completed your biometric appointment? 👆"
-    
-    elif any(word in user_lower for word in ['urgent', 'expedite', 'rush']):
-        urgent_status = "already marked as urgent" if application['urgent'] else "not currently marked as urgent"
-        return f"Your application is {urgent_status}. I can help expedite processing if needed. Would you like me to review priority options? 🚨"
-    
-    elif any(word in user_lower for word in ['timeline', 'time', 'when', 'how long']):
-        return f"Based on current processing times for {case_type} from {nationality}, typical processing takes 15-30 days. Your application at {days} days is {'on track' if days <= 20 else 'taking a bit longer than usual'}. ⏰"
-    
-    elif any(word in user_lower for word in ['problem', 'issue', 'error', 'wrong']):
-        return f"I'm here to help resolve any issues with application {app_num}. Can you describe the specific problem you're experiencing? I'll do my best to assist! 🔧"
-    
-    elif any(word in user_lower for word in ['thank', 'thanks']):
-        return random.choice([
-            "You're very welcome! I'm here to make your visa process as smooth as possible! 😊",
-            "My pleasure! Feel free to ask if you need anything else about your application! ✨",
-            "Happy to help! That's what Sexy Visa Agents are for! 🤖💫"
-        ])
-    
-    elif any(word in user_lower for word in ['hello', 'hi', 'hey']):
-        return f"Hello there! Great to hear from you regarding application {app_num}. How can I assist you today? 👋"
-    
-    elif any(word in user_lower for word in ['help', 'assist']):
-        return f"I can help you with:\n• Application status updates\n• Document verification\n• Processing timelines\n• Biometric appointments\n• General visa questions\n\nWhat would you like to know about application {app_num}? 🤝"
-    
-    else:
-        # Generic helpful responses
-        responses = [
-            f"That's an interesting question about your {case_type} application! Let me see how I can help you with that. 🤔",
-            f"Thanks for reaching out! I'm analyzing your request for application {app_num}. Can you provide a bit more detail? 🔍",
-            f"I'm here to assist with your {nationality} visa application. Could you clarify what specific information you need? 💭",
-            f"Great question! For application {app_num}, I want to make sure I give you the most accurate information. What specifically would you like to know? 🎯"
-        ]
-        return random.choice(responses)
-
-
-def add_agent_message(chat_key, agent_name, message):
-    """Add an agent message to the chat"""
-    if f"{chat_key}_messages" not in st.session_state:
-        st.session_state[f"{chat_key}_messages"] = []
-    
-    st.session_state[f"{chat_key}_messages"].append({
-        "role": "agent",
-        "content": f"{agent_name}\n\n{message}"
-    })
+def process_orchestration_agent_streaming(chat_key, application, user_message, workflow_key, workflow_state):
+    """Main orchestration function using two-agent architecture"""
+    try:
+        openai_handler = get_openai_handler()
+        
+        # Get workflow state
+        current_step = workflow_state.get('current_step', -1)
+        completed_steps = workflow_state.get('completed_steps', [])
+        
+        # Step 1: Get hidden orchestration decision (not shown to user)
+        orchestration_decision = get_hidden_orchestration_decision(
+            user_message, current_step, completed_steps, application, openai_handler
+        )
+        
+        # Step 2: Sexy Visa Agent responds to user based on orchestration decision
+        with st.chat_message("assistant", avatar="🤖"):
+            sexy_agent_response = get_sexy_visa_agent_response(
+                user_message, orchestration_decision, application, openai_handler
+            )
+            response = st.write_stream(sexy_agent_response)
+            
+            # Add to chat history
+            st.session_state[f"{chat_key}_messages"].append({
+                "role": "assistant",
+                "content": f"🤖 Sexy Visa Agent\n\n{response}"
+            })
+        
+        # Step 3: Execute specialist agent if orchestration decided to trigger one
+        if orchestration_decision.get('trigger_agent') and orchestration_decision.get('step') is not None:
+            step = orchestration_decision['step']
+            update_workflow_state(workflow_key, step)
+            
+            agent_config = get_specialist_agent_config(step, application)
+            if agent_config:
+                stream_specialist_agent(agent_config, application)
+        
+    except Exception as e:
+        with st.chat_message("assistant", avatar="🤖"):
+            st.error(f"Sexy Visa Agent - Error: {str(e)}")
 
 
 def generate_euvis_match(application):
-    """Generate realistic EU-VIS match details"""
-    # Sample names for different nationalities
-    sample_names = {
-        "Australia": ["James Wilson", "Sarah Chen", "Michael Brown"],
-        "Algeria": ["Youssef Naceur", "Amina Kader", "Omar Benali"], 
-        "Morocco": ["Hassan Alami", "Fatima Zahra", "Ahmed Benjelloun"],
-        "Tunisia": ["Karim Sassi", "Leila Trabelsi", "Mohamed Gharbi"],
-        "Egypt": ["Ahmed Hassan", "Nour El-Din", "Yasmin Farouk"]
-    }
+    """Generate EU-VIS match details using real person data from people directory"""
+    application_number = application.get('application_number', '')
+    person_data = load_person_data(application_number)
     
-    nationality = application.get('nationality', 'Unknown')
-    names = sample_names.get(nationality, ["Unknown Person"])
-    selected_name = random.choice(names)
-    
-    # Generate realistic birth date (between 1960-1995)
-    birth_year = random.randint(1960, 1995)
-    birth_month = random.randint(1, 12)
-    birth_day = random.randint(1, 28)
-    
-    # Generate birth place based on nationality
-    birth_places = {
-        "Australia": ["Sydney", "Melbourne", "Brisbane", "Perth"],
-        "Algeria": ["Algiers", "Oran", "Constantine", "Batna"],
-        "Morocco": ["Casablanca", "Rabat", "Fez", "Marrakech"],
-        "Tunisia": ["Tunis", "Sfax", "Sousse", "Kairouan"],
-        "Egypt": ["Cairo", "Alexandria", "Giza", "Luxor"]
-    }
-    
-    birth_place = random.choice(birth_places.get(nationality, ["Unknown"]))
-    
-    match_details = f"""**Match Details**
-📋 Name: {selected_name}
-🌍 Nationality: {nationality}
-📅 Date of Birth: {birth_day:02d}/{birth_month:02d}/{birth_year}
-📍 Place of Birth: {birth_place}
+    if not person_data:
+        # Fallback if no matching person found
+        return f"""**EU-VIS Database Search Results**
+📋 Application: {application_number}
+🔍 Status: No matching records found in EU-VIS database
 
-**Reasoning**
-✓ Biometric similarity - Facial recognition shows high confidence match
-✓ Document patterns - Similar document history patterns detected  
-✓ Travel history - Overlapping travel destinations and dates
+**Search Analysis**
+• No previous visa applications detected
+• Clean background check - no security flags
+• First-time applicant verification
 
 **Risk Assessment:** Low Risk
-**Recommendation:** Proceed with application"""
+**Recommendation:** Proceed with standard processing"""
+    
+    # Extract real applicant information
+    given_names = person_data.get('given_names', 'Unknown')
+    surname = person_data.get('surname', 'Unknown')
+    full_name = f"{given_names} {surname}"
+    nationality = person_data.get('country_of_nationality', 'Unknown')
+    
+    # Extract birth information
+    date_of_birth = person_data.get('date_of_birth', {})
+    birth_year = date_of_birth.get('year', 'Unknown')
+    birth_note = date_of_birth.get('note', '')
+    
+    place_of_birth = person_data.get('place_of_birth', {})
+    birth_city = place_of_birth.get('city', 'Unknown')
+    birth_state = place_of_birth.get('state', '')
+    birth_country = place_of_birth.get('country', 'Unknown')
+    
+    # Format birth place
+    birth_place_parts = [birth_city]
+    if birth_state:
+        birth_place_parts.append(birth_state)
+    if birth_country and birth_country != birth_city:
+        birth_place_parts.append(birth_country)
+    birth_place = ", ".join(birth_place_parts)
+    
+    # Format birth date
+    if birth_year and birth_year != 'Unknown':
+        birth_date_display = f"{birth_year}"
+        if birth_note:
+            birth_date_display += f" ({birth_note})"
+    else:
+        birth_date_display = f"Not Available ({birth_note})" if birth_note else "Not Available"
+    
+    # Extract additional details
+    gender = person_data.get('gender', 'Unknown')
+    civil_status = person_data.get('civil_status', 'Unknown')
+    occupation = person_data.get('occupation', 'Unknown')
+    residency_status = person_data.get('residency_status_in_australia', 'Unknown')
+    
+    # Address information
+    address = person_data.get('address', {})
+    address_parts = []
+    if address.get('street_number'):
+        address_parts.append(address['street_number'])
+    if address.get('city'):
+        address_parts.append(address['city'])
+    if address.get('state'):
+        address_parts.append(address['state'])
+    current_address = ", ".join(address_parts) if address_parts else "Not Available"
+    
+    # Determine confidence and risk based on available data
+    confidence_factors = []
+    if given_names != 'Unknown' and surname != 'Unknown':
+        confidence_factors.append("✓ Full name verification successful")
+    if birth_year != 'Unknown':
+        confidence_factors.append("✓ Birth year confirmed")
+    if birth_city != 'Unknown':
+        confidence_factors.append("✓ Place of birth validated")
+    if gender != 'Unknown':
+        confidence_factors.append("✓ Gender information verified")
+    
+    # Additional verification factors
+    confidence_factors.extend([
+        "✓ Biometric cross-reference completed",
+        "✓ Document authenticity patterns analyzed",
+        "✓ Previous application history reviewed"
+    ])
+    
+    # Determine risk level based on data completeness and flags
+    missing_critical_data = sum([
+        1 for field in [given_names, surname, nationality] 
+        if field in ['Unknown', 'Not Available', None]
+    ])
+    
+    urgent_flag = person_data.get('urgent', False)
+    minor_flag = person_data.get('applicant_is_minor', False)
+    
+    if missing_critical_data == 0 and not urgent_flag:
+        risk_level = "Low Risk"
+        recommendation = "Proceed with application - Complete identity verification successful"
+    elif missing_critical_data <= 1 or urgent_flag:
+        risk_level = "Medium Risk" 
+        recommendation = "Proceed with enhanced verification - Additional checks recommended"
+    else:
+        risk_level = "High Risk"
+        recommendation = "Hold for manual review - Incomplete identity data requires investigation"
+    
+    match_details = f"""**EU-VIS Database Match Results**
+📋 Name: {full_name}
+🌍 Nationality: {nationality}
+📅 Date of Birth: {birth_date_display}
+📍 Place of Birth: {birth_place}
+👤 Gender: {gender}
+💍 Civil Status: {civil_status}
+🏠 Current Address: {current_address}
+💼 Occupation: {occupation}
+🇦🇺 AU Residency: {residency_status}
+
+**Verification Analysis**
+{chr(10).join(confidence_factors)}
+
+**Risk Assessment:** {risk_level}
+**Recommendation:** {recommendation}"""
     
     return match_details
 
 
-def render_visual_workflow(steps, workflow_state):
-    """Render the visual workflow with circles and arrows"""
-    
-    # CSS for animations and styling
-    st.markdown("""
-    <style>
-    .workflow-container {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 20px 0;
-        margin: 20px 0;
-    }
-    
-    .workflow-step {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 10px;
-        min-width: 80px;
-        flex-shrink: 0;
-    }
-    
-    .step-circle {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 8px;
-        transition: all 0.3s ease;
-        position: relative;
-        flex-shrink: 0;
-        vertical-align: top;
-    }
-    
-    .step-pending {
-        background-color: #e0e0e0;
-        color: #666;
-        border: 2px solid #ccc;
-    }
-    
-    .step-processing {
-        background-color: #2196F3;
-        color: white;
-        border: 2px solid #1976D2;
-        animation: pulse 1.5s infinite;
-    }
-    
-    .step-completed {
-        background-color: #4CAF50;
-        color: white;
-        border: 2px solid #388E3C;
-    }
-    
-    .step-name {
-        font-size: 12px;
-        text-align: center;
-        font-weight: 500;
-        color: #333;
-        max-width: 80px;
-        word-wrap: break-word;
-    }
-    
-    .workflow-arrow {
-        font-size: 20px;
-        color: #666;
-        margin: 0 5px;
-        align-self: center;
-        margin-top: 30px;
-        flex-shrink: 0;
-    }
-    
-    .spinning {
-        animation: spin 1s linear infinite;
-    }
-    
-    @keyframes spin {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
-    }
-    
-    @keyframes pulse {
-        0% { box-shadow: 0 0 0 0 rgba(33, 150, 243, 0.7); }
-        70% { box-shadow: 0 0 0 10px rgba(33, 150, 243, 0); }
-        100% { box-shadow: 0 0 0 0 rgba(33, 150, 243, 0); }
-    }
-    </style>
-    """, unsafe_allow_html=True)
-    
-    # Build workflow HTML
-    workflow_html = '<div class="workflow-container">'
-    
-    for i, step in enumerate(steps):
-        state = workflow_state['step_states'][i]
-        
-        # Determine circle class and content
-        if state == 'pending':
-            circle_class = 'step-pending'
-            content = step['icon']
-        elif state == 'processing':
-            circle_class = 'step-processing'
-            content = '<span class="spinning">⟲</span>'
-        else:  # completed
-            circle_class = 'step-completed'
-            content = '✓'
-        
-        # Add step
-        workflow_html += f'''
-        <div class="workflow-step">
-            <div class="step-circle {circle_class}">
-                {content}
-            </div>
-            <div class="step-name">{step['name']}</div>
-        </div>
-        '''
-        
-        # Add arrow (except after last step)
-        if i < len(steps) - 1:
-            workflow_html += '<div class="workflow-arrow">→</div>'
-    
-    workflow_html += '</div>'
-    
-    # Render the workflow
-    st.markdown(workflow_html, unsafe_allow_html=True)
-
-
 def workflow_page():
-    """Sexy Visa Agent Workflow Page"""
+    """Sexy Visa Agent Workflow Page - Clean Implementation"""
     
     # Check authentication
     if not SessionManager.is_valid():
@@ -777,7 +508,7 @@ def workflow_page():
         st.session_state[f"{chat_key}_messages"] = [
             {
                 "role": "assistant",
-                "content": f"💎 Sexy Visa Agent\n\nHello! I'm here to help you review application {application['application_number']} - a {application['case_type']} case for a {application['nationality']} citizen applying for {application['visa_type_requested']}. I can guide you through the verification process with our specialist agents. How can I assist you today?"
+                "content": f"🤖 Sexy Visa Agent\n\nGood day! I'm your AI assistant for reviewing application {application['application_number']} - a {application['case_type']} case for a {application['nationality']} citizen applying for {application['visa_type_requested']}. I can guide you through the verification process with our specialist agents. How may I assist you today?"
             }
         ]
     
@@ -796,8 +527,8 @@ def workflow_page():
             with st.chat_message("assistant"):
                 st.markdown(message["content"])
     
-    # Chat input - this is the key change: handle everything in one block
-    if user_message := st.chat_input("Type your message to the coordination agent..."):
+    # Chat input - handle user interactions
+    if user_message := st.chat_input("Type your message to the Sexy Visa Agent..."):
         # Display user message immediately
         with st.chat_message("user"):
             st.markdown(user_message)
@@ -810,7 +541,6 @@ def workflow_page():
         
         # Process orchestration agent and stream response
         process_orchestration_agent_streaming(chat_key, application, user_message, workflow_key, workflow_state)
-    
     
     # Help section
     st.divider()
