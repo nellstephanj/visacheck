@@ -107,6 +107,7 @@ def main():
     from pages.workflow import workflow_page
     from pages.case_assignment import case_assignment_page
     from pages.decision import decision_page
+    from pages.overview import overview_page
     
     if not is_authenticated:
         # Not authenticated - only login page
@@ -118,11 +119,12 @@ def main():
         # Authenticated - main pages
         pages = [
             st.Page(main_page_wrapper, title="VisaCheck", icon="📄"),
-            st.Page(active_applications_page, title="Active Applications", icon="📊"),
+            st.Page(overview_page, title="Application Overview", icon="📊"),
+            st.Page(active_applications_page, title="Active Applications", icon="📋"),
             st.Page(case_assignment_page, title="Case Assignment", icon="🎯"),
             st.Page(workflow_page, title="Sexy Visa Agent", icon="🤖"),
             st.Page(decision_page, title="Application Decision", icon="⚖️"),
-            st.Page(intake_page, title="Visa Intake", icon="📋"),
+            st.Page(intake_page, title="Visa Intake", icon="📝"),
             st.Page(matching_page, title="EU-VIS Matching", icon="🔍")
         ]
         

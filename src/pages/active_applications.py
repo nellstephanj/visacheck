@@ -101,7 +101,7 @@ def get_applications_page(people_dir, page_number=1, per_page=25):
         submission_date = datetime.strptime(submission_date_str, "%Y-%m-%d")
         
         # Random application status
-        status_options = ['To Decide', 'Ready for Match', 'To Consult', 'Rolled Back', 'Awaiting Approval']
+        status_options = ['To Decide', 'Ready for Matching', 'To Consult', 'Rolled Back', 'Awaiting Approval']
         
         application = {
             'submission_date': submission_date.strftime("%d/%m/%Y"),
