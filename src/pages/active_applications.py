@@ -191,7 +191,7 @@ def active_applications_page():
         return
     
     # Create table header
-    header_cols = st.columns([1.2, 1, 1.5, 1.2, 1.2, 0.8, 1.2, 1.2, 1.2, 1.5])
+    header_cols = st.columns([1.2, 1, 1.5, 1.2, 1.2, 0.8, 1.2, 1.2, 1.2, 2.0])
     headers = [
         "Submission Date",
         "Days in Process", 
@@ -202,7 +202,7 @@ def active_applications_page():
         "Case Type",
         "Visa Type Requested",
         "Nationality",
-        "Action"
+        "Actions"
     ]
     
     for col, header in zip(header_cols, headers):
@@ -212,7 +212,7 @@ def active_applications_page():
     
     # Display applications
     for idx, app in enumerate(applications):
-        cols = st.columns([1.2, 1, 1.5, 1.2, 1.2, 0.8, 1.2, 1.2, 1.2, 1.5])
+        cols = st.columns([1.2, 1, 1.5, 1.2, 1.2, 0.8, 1.2, 1.2, 1.2, 2.0])
         
         # Submission Date
         with cols[0]:
@@ -260,24 +260,42 @@ def active_applications_page():
         with cols[8]:
             st.write(app['nationality'])
         
-        # Action Button
+        # Action Buttons
         with cols[9]:
-            # Use application number as unique key instead of index
-            button_key = f"execute_{app['application_number']}"
-            if st.button("🤖 Agent", key=button_key, use_container_width=True):
-                # Store application data in session state for workflow page
-                st.session_state['workflow_app_data'] = app
-                st.session_state[f'show_success_{app["application_number"]}'] = True
-                st.rerun()
+            action_col1, action_col2 = st.columns([1, 1], gap="small")
+            
+            with action_col1:
+                # Agent button
+                button_key = f"agent_{app['application_number']}"
+                if st.button("🤖 Agent", key=button_key, use_container_width=True, type="secondary"):
+                    # Store application data in session state for workflow page
+                    st.session_state['workflow_app_data'] = app
+                    st.session_state[f'show_success_{app["application_number"]}'] = True
+                    st.rerun()
+            
+            with action_col2:
+                # Decision button
+                decision_key = f"decision_{app['application_number']}"
+                if st.button("⚖️ Decision", key=decision_key, use_container_width=True, type="primary"):
+                    # Store application data in session state for decision page
+                    st.session_state['decision_app_data'] = app
+                    st.session_state[f'show_decision_success_{app["application_number"]}'] = True
+                    st.rerun()
         
         st.markdown("---")
         
-        # Show success message underneath the row if button was clicked
+        # Show success message underneath the row if buttons were clicked
         if st.session_state.get(f'show_success_{app["application_number"]}', False):
-            st.success(f"✅ Agent loaded for {app['application_number']}! Click the 🤖 Sexy Visa Agent tab in the sidebar to continue.")
+            st.success(f"✅ Agent loaded for {app['application_number']}! Click the 🤖 Visa AI tab in the sidebar to continue.")
             # Clear the success message flag
             if f'show_success_{app["application_number"]}' in st.session_state:
                 del st.session_state[f'show_success_{app["application_number"]}']
+        
+        if st.session_state.get(f'show_decision_success_{app["application_number"]}', False):
+            st.success(f"✅ Application {app['application_number']} loaded for decision! Click the ⚖️ Decision tab in the sidebar to continue.")
+            # Clear the success message flag
+            if f'show_decision_success_{app["application_number"]}' in st.session_state:
+                del st.session_state[f'show_decision_success_{app["application_number"]}']
         
     
     # Bottom pagination

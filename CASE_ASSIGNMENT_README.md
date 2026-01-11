@@ -295,7 +295,7 @@ The Case Assignment Orchestration integrates seamlessly with:
 - Click "Use agent" to trigger workflow
 - Cases can be bulk-imported to assignment system
 
-### 2. Workflow Page (Sexy Visa Agent)
+### 2. Workflow Page (Visa AI)
 - Assigned agents can process cases through the workflow
 - Human agents verify AI agent work
 - Complete case review pipeline

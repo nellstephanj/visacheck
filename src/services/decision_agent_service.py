@@ -1,8 +1,7 @@
 """Decision Agent Service - AI-powered visa application decision recommendation system"""
 import logging
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any
 from datetime import datetime
-import json
 
 logger = logging.getLogger(__name__)
 
@@ -514,10 +513,10 @@ Write in a professional tone suitable for government case officers."""
                 {"role": "user", "content": prompt}
             ]
             
-            response = await self.openai_handler.client.chat.completions.create(
+            response = self.openai_handler.client.chat.completions.create(
                 model=self.openai_handler.model_name_gpt,
                 messages=messages,
-                max_tokens=800,
+                max_completion_tokens=800,
                 temperature=0.7
             )
             

@@ -90,7 +90,7 @@ def get_hidden_orchestration_decision(user_message, current_step, completed_step
         response = openai_handler.client.chat.completions.create(
             model=openai_handler.model_name_gpt,
             messages=messages,
-            max_tokens=50,
+            max_completion_tokens=50,
             temperature=0.3
         )
         
@@ -118,7 +118,7 @@ def get_hidden_orchestration_decision(user_message, current_step, completed_step
 
 
 def get_sexy_visa_agent_response(user_message, orchestration_decision, application, openai_handler):
-    """Get user-facing response from Sexy Visa Agent based on orchestration decision"""
+    """Get user-facing response from Visa AI based on orchestration decision"""
     try:
         # Determine context based on orchestration decision
         if orchestration_decision.get('trigger_agent'):
@@ -132,7 +132,7 @@ def get_sexy_visa_agent_response(user_message, orchestration_decision, applicati
         else:
             context = "The orchestration system has decided this requires a conversational response only."
         
-        system_prompt = f"""You are the Sexy Visa Agent - the friendly, professional interface for government employees reviewing visa applications.
+        system_prompt = f"""You are the Visa AI - the friendly, professional interface for government employees reviewing visa applications.
         
         You are handling application {application['application_number']} for a {application['nationality']} citizen applying for {application['visa_type_requested']}.
         
@@ -157,7 +157,7 @@ def get_sexy_visa_agent_response(user_message, orchestration_decision, applicati
             model=openai_handler.model_name_gpt,
             messages=messages,
             stream=True,
-            max_tokens=500,
+            max_completion_tokens=500,
             temperature=0.7
         )
         
@@ -292,7 +292,7 @@ def stream_specialist_agent(agent_config, application):
                 model=openai_handler.model_name_gpt,
                 messages=messages,
                 stream=True,
-                max_tokens=4096,
+                max_completion_tokens=4096,
                 temperature=0.7
             )
             
@@ -362,7 +362,7 @@ def process_orchestration_agent_streaming(chat_key, application, user_message, w
             user_message, current_step, completed_steps, application, openai_handler
         )
         
-        # Step 2: Sexy Visa Agent responds to user based on orchestration decision
+        # Step 2: Visa AI responds to user based on orchestration decision
         with st.chat_message("assistant", avatar="🤖"):
             sexy_agent_response = get_sexy_visa_agent_response(
                 user_message, orchestration_decision, application, openai_handler
@@ -372,7 +372,7 @@ def process_orchestration_agent_streaming(chat_key, application, user_message, w
             # Add to chat history
             st.session_state[f"{chat_key}_messages"].append({
                 "role": "assistant",
-                "content": f"🤖 Sexy Visa Agent\n\n{response}"
+                "content": f"🤖 Visa AI\n\n{response}"
             })
         
         # Step 3: Execute specialist agent if orchestration decided to trigger one
@@ -389,7 +389,7 @@ def process_orchestration_agent_streaming(chat_key, application, user_message, w
         
     except Exception as e:
         with st.chat_message("assistant", avatar="🤖"):
-            st.error(f"Sexy Visa Agent - Error: {str(e)}")
+            st.error(f"Visa AI - Error: {str(e)}")
 
 
 def generate_euvis_match(application):
@@ -1019,7 +1019,7 @@ def render_decision_interface(application):
 
 
 def workflow_page():
-    """Sexy Visa Agent Workflow Page - Clean Implementation"""
+    """Visa AI Workflow Page - Clean Implementation"""
     
     # Check authentication
     if not SessionManager.is_valid():
@@ -1041,7 +1041,7 @@ def workflow_page():
     application = st.session_state['workflow_app_data']
     
     # Page title
-    st.title(f"🤖 Sexy Visa Agent - {application['application_number']}")
+    st.title(f"🤖 Visa AI - {application['application_number']}")
     
     # Render application overview pipeline
     render_application_overview(application)
@@ -1090,7 +1090,7 @@ def workflow_page():
         st.session_state[f"{chat_key}_messages"] = [
             {
                 "role": "assistant",
-                "content": f"🤖 Sexy Visa Agent\n\nGood day! I'm your AI assistant for reviewing application {application['application_number']} - a {application['case_type']} case for a {application['nationality']} citizen applying for {application['visa_type_requested']}. I can guide you through the verification process with our specialist agents. How may I assist you today?"
+                "content": f"🤖 Visa AI\n\nGood day! I'm your AI assistant for reviewing application {application['application_number']} - a {application['case_type']} case for a {application['nationality']} citizen applying for {application['visa_type_requested']}. I can guide you through the verification process with our specialist agents. How may I assist you today?"
             }
         ]
     
@@ -1116,7 +1116,7 @@ def workflow_page():
         render_decision_interface(application)
     
     # Chat input - handle user interactions
-    if user_message := st.chat_input("Type your message to the Sexy Visa Agent..."):
+    if user_message := st.chat_input("Type your message to the Visa AI..."):
         # Display user message immediately
         with st.chat_message("user"):
             st.markdown(user_message)

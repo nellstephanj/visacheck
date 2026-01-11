@@ -45,7 +45,7 @@ The Application Decision Agent has been successfully implemented and integrated 
 - **`src/main.py`**
   - Added `decision_page` import
   - Registered "⚖️ Application Decision" in navigation
-  - Positioned after Sexy Visa Agent
+  - Positioned after Visa AI
 
 ### 2. Active Applications
 - **`src/pages/active_applications.py`**

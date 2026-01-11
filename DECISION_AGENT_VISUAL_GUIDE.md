@@ -23,7 +23,7 @@
 📄 VisaCheck
 📊 Active Applications
 🎯 Case Assignment
-🤖 Sexy Visa Agent
+🤖 Visa AI
 ⚖️ Application Decision  ← Click here!
 📋 Visa Intake
 🔍 EU-VIS Matching

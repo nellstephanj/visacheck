@@ -76,7 +76,7 @@
                     └─────────────────┼─────────────────┘
                                       ↓
 ┌────────────────────────────────────────────────────────────────────────────┐
-│                      🤖 SEXY VISA AGENT WORKFLOW                           │
+│                      🤖 Visa AI WORKFLOW                           │
 │  • Document Verification Agent                                             │
 │  • Biometrics Verification Agent                                           │
 │  • EU-VIS Matching Agent                                                   │

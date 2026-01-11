@@ -83,7 +83,7 @@ Successfully implemented a comprehensive **Case Assignment Orchestration Agent**
 **File:** `src/main.py` (modified)
 
 - Added Case Assignment page to authenticated navigation
-- Positioned between Active Applications and Sexy Visa Agent
+- Positioned between Active Applications and Visa AI
 - Icon: 🎯
 - Accessible to all authenticated users
 
@@ -248,7 +248,7 @@ Score = (
     ↓
 🎯 Case Assignment  ← NEW!
     ↓
-🤖 Sexy Visa Agent
+🤖 Visa AI
     ↓
 ✅ Case Decision
 ```

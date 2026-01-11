@@ -122,7 +122,7 @@ def main():
             st.Page(overview_page, title="Application Overview", icon="📊"),
             st.Page(active_applications_page, title="Active Applications", icon="📋"),
             st.Page(case_assignment_page, title="Case Assignment", icon="🎯"),
-            st.Page(workflow_page, title="Sexy Visa Agent", icon="🤖"),
+            st.Page(workflow_page, title="Visa AI", icon="🤖"),
             st.Page(decision_page, title="Application Decision", icon="⚖️"),
             st.Page(intake_page, title="Visa Intake", icon="📝"),
             st.Page(matching_page, title="EU-VIS Matching", icon="🔍")

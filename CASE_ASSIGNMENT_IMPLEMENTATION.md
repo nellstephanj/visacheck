@@ -80,7 +80,7 @@ Successfully implemented a comprehensive **Case Assignment Orchestration Agent**
 ### 5. Navigation Integration
 
 Updated `src/main.py` to include the new Case Assignment page in the authenticated user navigation flow:
-- Added between Active Applications and Sexy Visa Agent
+- Added between Active Applications and Visa AI
 - Icon: 🎯
 - Title: "Case Assignment"
 
@@ -142,7 +142,7 @@ Prevents agent overload:
     ↓ (pending cases)
 🎯 Case Assignment  ← NEW!
     ↓ (assigned to agents)
-🤖 Sexy Visa Agent
+🤖 Visa AI
     ↓ (processing workflow)
 ✅ Completion
 ```
@@ -152,7 +152,7 @@ Prevents agent overload:
 1. **Load Cases**: Import from Active Applications (via people directory)
 2. **Assign**: Use orchestration algorithm to assign to best agents
 3. **Track**: Monitor agent workload and capacity
-4. **Process**: Cases flow to Sexy Visa Agent workflow
+4. **Process**: Cases flow to Visa AI workflow
 5. **Verify**: Human agents verify AI agent work
 
 ## Technical Architecture

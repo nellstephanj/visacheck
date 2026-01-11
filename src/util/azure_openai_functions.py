@@ -162,7 +162,7 @@ class OpenAIHandler:
                     #model="gpt-4o",
                     model=self.model_name_gpt,
                     messages=messages,
-                    max_tokens=3000,
+                    max_completion_tokens=3000,
                     temperature=0.3,
                     top_p=1.0,
                     n=1
@@ -203,7 +203,7 @@ class OpenAIHandler:
             response = self.client.chat.completions.create(
                 model=self.model_name_gpt,
                 messages=messages,
-                max_tokens=3000,
+                max_completion_tokens=3000,
                 temperature=0.3,
                 top_p=1.0,
                 n=1
@@ -266,7 +266,7 @@ class OpenAIHandler:
         response = self.client.chat.completions.create(
             model=self.model_name_gpt,
             messages=messages,
-            max_tokens=16384,
+            max_completion_tokens=16384,
             temperature=0.3,
             top_p=1.0,
             n=1,
@@ -305,7 +305,7 @@ class OpenAIHandler:
                 model=self.model_name_gpt,
                 #model="genaitrainingtool_gpt4o",
                 messages=messages,
-                max_tokens=16384,
+                max_completion_tokens=16384,
                 temperature=0.3,
                 top_p=1.0,
                 n=1,
@@ -361,7 +361,7 @@ class OpenAIHandler:
             response = self.client.chat.completions.create(
                 model=self.model_name_gpt,
                 messages=messages,
-                max_tokens=4096,
+                max_completion_tokens=4096,
                 temperature=0.7,
                 top_p=1.0,
                 n=1,
@@ -418,7 +418,7 @@ class OpenAIHandler:
                     {"role": "user", 
                      "content": prompt_template.format(text=extracted_text)}
                 ],
-                max_tokens=16384,
+                max_completion_tokens=16384,
                 temperature=0.3,
                 top_p=1.0,
                 n=1,

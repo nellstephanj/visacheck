@@ -215,7 +215,7 @@ The Application Overview Dashboard has been successfully created and integrated 
 📊 Application Overview  ← NEW (2nd position)
 📋 Active Applications
 🎯 Case Assignment
-🤖 Sexy Visa Agent
+🤖 Visa AI
 ⚖️ Application Decision
 📝 Visa Intake
 🔍 EU-VIS Matching

@@ -242,8 +242,8 @@ Each agent shows:
 ### 📊 Active Applications → 🎯 Case Assignment
 Load cases from Active Applications into the assignment system for batch processing
 
-### 🎯 Case Assignment → 🤖 Sexy Visa Agent  
-Assigned cases flow to the Sexy Visa Agent workflow for processing
+### 🎯 Case Assignment → 🤖 Visa AI  
+Assigned cases flow to the Visa AI workflow for processing
 
 ### 📋 Visa Intake → 📊 Active Applications → 🎯 Case Assignment
 Complete pipeline from intake to assignment

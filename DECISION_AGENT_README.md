@@ -294,7 +294,7 @@ The system references internal policy codes for traceability:
 2. **Main Navigation**
    - Registered as "⚖️ Application Decision" in sidebar
    - Available to all authenticated users
-   - Positioned after Sexy Visa Agent
+   - Positioned after Visa AI
 
 3. **Session Management**
    - Uses SessionManager for authentication checks
