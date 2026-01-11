@@ -502,6 +502,82 @@ mindmap
 
 ---
 
+## AI Context & Data Integrity Guidelines
+
+### Factual Context Only Principle
+
+> **CRITICAL**: All context provided to AI agents in this system consists exclusively of **factual, verified information**. The system is designed to prevent AI from making decisions based on assumptions or inferred data.
+
+#### Context Sources (Factual Data Only)
+
+| Source Type | Description | Verification Method |
+|-------------|-------------|--------------------|
+| **Application Data** | Submitted by applicant, stored in Azure | Database records |
+| **Document Content** | Extracted via OCR from uploaded documents | Document verification tools |
+| **Database Lookups** | BVV, EUVIS, and other official records | API responses from authoritative sources |
+| **Biometric Results** | Photo comparison scores, identity verification | MCP tool outputs with confidence scores |
+| **Country Information** | Official country codes, requirements, formats | Validated reference data |
+| **Historical Records** | Previous visa applications, travel history | Verified database entries |
+
+#### What AI Agents MUST NOT Do
+
+- ❌ **Assume** missing information or fill gaps with inferred data
+- ❌ **Guess** applicant intentions or undocumented circumstances
+- ❌ **Extrapolate** beyond the factual data provided
+- ❌ **Make predictions** without explicit supporting evidence
+- ❌ **Override** factual MCP tool results with assumptions
+
+#### What AI Agents MUST Do
+
+- ✅ **Base all analysis** exclusively on verified, factual context
+- ✅ **Flag missing data** rather than assuming values
+- ✅ **Cite specific sources** for every conclusion or recommendation
+- ✅ **Request human review** when factual data is insufficient
+- ✅ **Clearly state confidence levels** based on available factual evidence
+- ✅ **Distinguish** between verified facts and areas requiring additional verification
+
+#### Decision Transparency Requirements
+
+Every AI agent recommendation must include:
+
+1. **Evidence Trail**: List of factual data points used in the decision
+2. **Source Attribution**: Which MCP tool or database provided each data point
+3. **Confidence Justification**: Why the confidence level is appropriate given the facts
+4. **Uncertainty Disclosure**: Clear identification of any data gaps or limitations
+
+```mermaid
+flowchart LR
+    subgraph Context_Flow["📊 Factual Context Flow"]
+        direction TB
+        MCP[🔧 MCP Tools] -->|Verified Results| Context[📋 Factual Context]
+        DB[(💾 Azure Storage)] -->|Database Records| Context
+        Docs[📄 Documents] -->|OCR Extracted Data| Context
+        External[🌐 External APIs] -->|Authoritative Data| Context
+    end
+    
+    subgraph AI_Processing["🤖 AI Agent Processing"]
+        Context -->|Facts Only| Agent[AI Agent]
+        Agent -->|Evidence-Based| Decision[Decision/Recommendation]
+        Agent -->|Data Gap Detected| Human[👤 Human Review]
+    end
+    
+    subgraph NOT_Allowed["🚫 Not Allowed"]
+        Assumption[Assumptions]
+        Inference[Inferred Data]
+        Guesses[Guesses]
+    end
+    
+    Assumption -.->|BLOCKED| Agent
+    Inference -.->|BLOCKED| Agent
+    Guesses -.->|BLOCKED| Agent
+    
+    style Context_Flow fill:#E8F5E9,stroke:#4CAF50,stroke-width:2px
+    style AI_Processing fill:#E3F2FD,stroke:#2196F3,stroke-width:2px
+    style NOT_Allowed fill:#FFEBEE,stroke:#F44336,stroke-width:2px
+```
+
+---
+
 ## Integration Notes
 
 ### MCP Tool Requirements
@@ -523,11 +599,23 @@ Agents communicate through:
 1. **Session State**: Streamlit session management
 2. **Azure Queue**: Asynchronous task processing
 3. **Event System**: Trigger-based workflow progression
-4. **OpenAI Function Calling**: Structured agent responses
+4. **OpenAI Function Calling**: Structured agent responses with factual context only
 5. **Database Events**: Status change notifications
+6. **Factual Context Injection**: All agent prompts include verified data from MCP tools and databases—never assumed or inferred information
+
+### Data Integrity Enforcement
+
+The system enforces factual data integrity through:
+
+1. **Context Validation**: All data passed to AI agents is sourced from verified systems
+2. **Source Tracking**: Every data point includes its origin (MCP tool, database, document)
+3. **No Hallucination Policy**: Agents are instructed to flag uncertainties rather than assume
+4. **Audit Logging**: All AI decisions record the exact factual inputs used
+5. **Human Escalation**: Insufficient factual data triggers mandatory human review
 
 ---
 
-**Document Version**: 1.1  
-**Last Updated**: December 9, 2025  
-**Author**: Stephan Nell
+**Document Version**: 1.2  
+**Last Updated**: January 11, 2026  
+**Author**: Stephan Nell  
+**Key Update**: Added AI Context & Data Integrity Guidelines - emphasizing factual-only context principle
